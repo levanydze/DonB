@@ -1,11 +1,11 @@
-import infoJson from "../../json/info.json";
+import infoJson from "../../../json/info.json";
 import styles from "./Footer.module.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import LowerFooter from "./LowerFooter";
-import SocialMedia from "../miniComponents/SocialMedia/SocialMedia";
+import SocialMedia from "../../../components/miniComponents/SocialMedia/SocialMedia";
 
 export default function Footer() {
   const { address, phoneNumber, email, name } = infoJson;
