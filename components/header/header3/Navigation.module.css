@@ -1,0 +1,12 @@
+.navigationWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px;
+  max-width: 1500px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* BURGER MENU CLASSES */

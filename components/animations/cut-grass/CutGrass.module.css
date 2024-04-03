@@ -1,0 +1,108 @@
+.CutGrassWrapper {
+  width: 100%;
+  position: relative;
+  background-image: url(https://github.com/levanydze/constructionSupport/blob/main/assets/unnamed.png?raw=true);
+  background-size: 180px;
+  height: 96px;
+}
+
+.absolute {
+  margin-bottom: -10px;
+  margin-top: -90px;
+}
+
+.nonAbsolute {
+  background-color: var(--backgroundLight);
+}
+
+.cutter {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.cutter img {
+  margin-top: -15px;
+  transform: scaleX(-1);
+  height: 100px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.animateCutter {
+  animation: cutting 2.8s forwards;
+}
+
+@keyframes cutting {
+  0% {
+    transform: translateX(60px) rotate(15deg) scaleX(-1);
+  }
+  6% {
+    transform: translateX(60px) rotate(-15deg) scaleX(-1);
+  }
+  12% {
+    transform: translateX(60px) rotate(13deg) scaleX(-1);
+  }
+  17% {
+    transform: translateX(60px) rotate(-13deg) scaleX(-1);
+  }
+  22% {
+    transform: translateX(60px) rotate(10deg) scaleX(-1);
+  }
+  26% {
+    transform: translateX(60px) rotate(-10deg) scaleX(-1);
+  }
+  30% {
+    transform: translateX(60px) rotate(8deg) scaleX(-1);
+  }
+  34% {
+    transform: translateX(60px) rotate(-8deg) scaleX(-1);
+  }
+  38% {
+    transform: translateX(60px) rotate(6deg) scaleX(-1);
+  }
+
+  41% {
+    transform: translateX(60px) rotate(-6deg) scaleX(-1);
+  }
+
+  44% {
+    transform: translateX(60px) rotate(3deg) scaleX(-1);
+  }
+
+  46% {
+    transform: translateX(60px) rotate(-3deg) scaleX(-1);
+  }
+
+  48% {
+    transform: translateX(60px) rotate(0deg) scaleX(-1);
+  }
+  65% {
+    transform: translateX(-40px) rotate(30deg) scaleX(-1);
+  }
+
+  70% {
+    transform: translateX(-40px) rotate(30deg) scaleX(-1);
+  }
+
+  73% {
+    transform: translateX(-30px) rotate(10deg) scaleX(-1);
+  }
+  90% {
+    transform: translateX(80vw) scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(98vw) rotate(0deg) translateX(-100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .CutGrassWrapper {
+    display: none;
+  }
+  .animateCutter {
+    animation: none;
+  }
+}

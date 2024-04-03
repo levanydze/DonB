@@ -1,0 +1,21 @@
+.socialMediaIcon {
+  border: 1px solid rgb(136, 136, 136);
+  padding: 8px;
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--textLight);
+  width: 40px;
+  height: 40px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 10px;
+}
+
+.socialMedia a {
+  transition: all 0.3s ease-in-out;
+}
+.socialMedia a:hover {
+  background-color: var(--color1);
+}

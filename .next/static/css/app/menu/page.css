@@ -1,0 +1,142 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/menu/components/ServerCard.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.ServerCard_cardWrapper__y1O6m {
+  width: 350px;
+  height: 450px;
+  margin-bottom: 30px;
+  margin: 0 10px;
+}
+
+.ServerCard_cardWrapper__y1O6m img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+/* .cardInfoDiv {
+} */
+.ServerCard_dotted__aluQ4 {
+  border-bottom: 1px dotted var(--color2);
+  width: 100%;
+  flex: 1;
+}
+
+.ServerCard_namePrice__aTJ42 {
+  display: flex;
+}
+
+.ServerCard_namePrice__aTJ42 h1 {
+  margin-top: 5px;
+}
+.ServerCard_cardWrapper__y1O6m h2 {
+  padding-top: 5px;
+}
+
+.ServerCard_details__ByFzB {
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 1200px) {
+  .ServerCard_cardWrapper__y1O6m {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .ServerCard_cardWrapper__y1O6m {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ServerCard_cardWrapper__y1O6m {
+    height: 350px;
+  }
+}
+
+/* detail info styles */
+
+.ServerCard_details__ByFzB {
+  height: 18px;
+}
+
+.ServerCard_vegan__H6Xml {
+  background-color: var(--vegan);
+}
+
+.ServerCard_special__iJcTg {
+  background-color: var(--color1);
+}
+
+.ServerCard_season__ZJxMC {
+  background-color: var(--season);
+}
+
+.ServerCard_spicy__Lym86 {
+  background-color: var(--spicy);
+}
+
+.ServerCard_newItem__SfqLe {
+  background-color: var(--new);
+}
+/* 12 */
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./components/anyPageHead/PageHeadImage/PageHeadImage.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+.PageHeadImage_mainWrapper__bPr6g {
+  overflow: hidden;
+  position: relative;
+}
+.PageHeadImage_mainImage__WYtcp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 560px;
+  z-index: -1;
+  margin-bottom: -25px;
+}
+.PageHeadImage_short__gqB50 {
+  height: 350px;
+}
+.PageHeadImage_imageDarkLayer__3Imbt {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlayDark);
+}
+
+.PageHeadImage_overlayWrapper__QC4jh {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: var(--textLight);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .PageHeadImage_mainImage__WYtcp {
+    height: 400px;
+  }
+  .PageHeadImage_short__gqB50 {
+    height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .PageHeadImage_mainImage__WYtcp {
+    height: 350px;
+  }
+  .PageHeadImage_short__gqB50 {
+    height: 250px;
+  }
+}
+

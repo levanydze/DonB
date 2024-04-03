@@ -1,0 +1,13 @@
+.logoWrap {
+  text-align: center;
+  line-height: 20px;
+  z-index: 100;
+}
+.logoWrap h1 {
+  font-size: 18px;
+}
+.logoWrap h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--textLight);
+}

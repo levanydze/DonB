@@ -1,0 +1,335 @@
+"use client";
+import React, { useRef, useState } from "react";
+import { sendEmail } from "./EmailService"; // npm install --save @emailjs/browser
+import styles from "./ContactForm.module.css";
+
+const ContactForm: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [emailSent, setEmailSent] = useState<boolean>(false);
+  const [buttonDisable, setButtonDisable] = useState<boolean>(false);
+
+  const [nameValue, setNameValue] = useState<string>("");
+  const [nameError, setNameError] = useState<boolean>(false);
+  const [emailValue, setEmailValue] = useState<string>("");
+  const [emailError, setEmailError] = useState<boolean>(false);
+  const [messageValue, setMessageValue] = useState<string>("");
+  const [messageError, setMessageError] = useState<boolean>(false);
+
+  const handleErrors = () => {
+    setNameError(false);
+    setMessageError(false);
+    setEmailError(false);
+
+    if (!nameValue) {
+      setNameError(true);
+    }
+    if (!emailValue) {
+      setEmailError(true);
+    }
+    if (!messageValue) {
+      setMessageError(true);
+    }
+  };
+
+  const handleEmailSent = () => {
+    setEmailSent(true);
+  };
+
+  const onSubmit = sendEmail(form, handleEmailSent);
+
+  return (
+    <div className="container1">
+      <div className={styles.formHead}>
+        <h2 className="title2 color1 ">Contact Us</h2>
+        <h3 className="title6 ">For Better Experience</h3>
+        <p className="twoLines"></p>
+      </div>
+      <form
+        className={`${styles.form} ${emailSent ? styles.none : ""}`}
+        ref={form}
+        onSubmit={onSubmit}
+      >
+        <div className={styles.smallInputs}>
+          <input
+            className={`${styles.input} ${styles.miniInput} ${
+              nameError ? styles.inputRed : ""
+            }`}
+            type="text"
+            name="user_name"
+            placeholder="Enter your full name"
+            value={nameValue}
+            onChange={(e) => setNameValue(e.target.value)}
+          />
+
+          <input
+            className={`${styles.input} ${styles.miniInput}
+             ${emailError ? styles.inputRed : ""}
+           `}
+            type="email"
+            name="user_email"
+            placeholder="Email"
+            value={emailValue}
+            onChange={(e) => setEmailValue(e.target.value)}
+          />
+        </div>
+        <textarea
+          className={`${styles.textArea} ${styles.input}
+           ${messageError ? styles.inputRed : ""}
+         `}
+          name="message"
+          placeholder="Your message here"
+          value={messageValue}
+          onChange={(e) => setMessageValue(e.target.value)}
+        />
+        <button
+          value="SENDd"
+          type={nameValue && messageValue && emailValue ? "submit" : "button"}
+          className={`${!buttonDisable ? "button1" : "button1Disabled"} w-full 
+            styles.buttonSend
+          `}
+          onClick={
+            !nameValue || !messageValue || !emailValue
+              ? handleErrors
+              : () => setButtonDisable(true)
+          }
+        >
+          Send
+        </button>
+      </form>
+      <div className={emailSent ? styles.formSent : styles.hide}>
+        <h6 className="title5"> Thank you for your message</h6>
+      </div>
+    </div>
+  );
+};
+
+export default ContactForm;
+// "use client";
+// import React, { useRef, useState } from "react";
+// import { sendEmail } from "./EmailService";
+// import styles from "./ContactForm.module.css";
+
+// const ContactForm: React.FC = () => {
+//   const form = useRef<HTMLFormElement>(null);
+//   const [emailSent, setEmailSent] = useState<boolean>(false);
+//   const [buttonDisable, setButtonDisable] = useState<boolean>(false);
+
+//   const [nameValue, setNameValue] = useState<string>("");
+//   const [nameError, setNameError] = useState<boolean>(false);
+//   const [emailValue, setEmailValue] = useState<string>("");
+//   const [emailError, setEmailError] = useState<boolean>(false);
+//   const [messageValue, setMessageValue] = useState<string>("");
+//   const [messageError, setMessageError] = useState<boolean>(false);
+
+//   // const handleInformation = () => {
+//   //   // Reset error states
+//   //   setNameError(false);
+//   //   setEmailError(false);
+//   //   setMessageError(false);
+
+//   //   // Set error states based on input values
+//   //   if (!nameValue) {
+//   //     setNameError(true);
+//   //   }
+//   //   if (!emailValue) {
+//   //     setEmailError(true);
+//   //   }
+//   //   if (!messageValue) {
+//   //     setMessageError(true);
+//   //   }
+
+//   //   // Return true if there are no errors
+//   //   return !(nameError || emailError || messageError);
+//   // };
+
+//   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+//     event.preventDefault();
+
+//     // Check if any error exists
+//     // if (!handleInformation()) {
+//     // Do not submit the form if there are errors
+//     // return;
+//     // }
+//     // If no errors, proceed with form submission
+//     sendEmail(form, handleEmailSent);
+//   };
+
+//   const handleEmailSent = () => {
+//     setEmailSent(true);
+//   };
+
+//   return (
+//     <div className="container1">
+//       <div className={styles.formHead}>
+//         <h2 className="title2 color1 ">Contact Us</h2>
+//         <h3 className="title6 ">For Better Experience</h3>
+//         <p className="twoLines"></p>
+//       </div>
+//       <form
+//         className={`${styles.form} ${emailSent ? styles.none : ""}`}
+//         ref={form}
+//         onSubmit={onSubmit} // Corrected here
+//       >
+//         <div className={styles.smallInputs}>
+//           <input
+//             className={`${styles.input} ${styles.miniInput} ${
+//               nameError ? styles.inputRed : ""
+//             }`}
+//             type="text"
+//             name="user_name"
+//             placeholder="Enter your full name"
+//             value={nameValue}
+//             onChange={(e) => setNameValue(e.target.value)}
+//           />
+
+//           <input
+//             className={`${styles.input} ${styles.miniInput}
+//             ${emailError ? styles.inputRed : ""}
+//           `}
+//             type="email"
+//             name="user_email"
+//             placeholder="Email"
+//             value={emailValue}
+//             onChange={(e) => setEmailValue(e.target.value)}
+//           />
+//         </div>
+//         <textarea
+//           className={`${styles.textArea} ${styles.input}
+//           ${messageError ? styles.inputRed : ""}
+//         `}
+//           name="message"
+//           placeholder="Your message here"
+//           value={messageValue}
+//           onChange={(e) => setMessageValue(e.target.value)}
+//         />
+//         <input
+//           value="send"
+//           type="submit"
+//           className={`button1 ${styles.buttonSend}`}
+//           // disabled={!nameValue || !emailValue || !messageValue} // This line is not needed since onSubmit handles validation
+//         />
+//       </form>
+//       <div className={emailSent ? styles.formSent : styles.hide}>
+//         <h6 className="title5"> Thank you for your message</h6>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContactForm;
+
+// ------------------------------------------
+
+// "use client";
+// import React, { useRef, useState } from "react";
+// import { sendEmail } from "./EmailService";
+// import styles from "./ContactForm.module.css";
+
+// const ContactForm: React.FC = () => {
+//   const form = useRef<HTMLFormElement>(null);
+//   const [emailSent, setEmailSent] = useState<boolean>(false);
+//   const [buttonDisable, setButtonDisable] = useState<boolean>(false);
+
+//   const [nameValue, setNameValue] = useState<string>("");
+//   const [nameError, setNameError] = useState<boolean>(false);
+//   const [emailValue, setEmailValue] = useState<string>("");
+//   const [emailError, setEmailError] = useState<boolean>(false);
+//   const [messageValue, setMessageValue] = useState<string>("");
+//   const [messageError, setMessageError] = useState<boolean>(false);
+
+//   // const handleInformation = () => {
+//   //   // Reset error states
+//   //   setNameError(false);
+//   //   setEmailError(false);
+//   //   setMessageError(false);
+
+//   //   // Set error states based on input values
+//   //   if (!nameValue) {
+//   //     setNameError(true);
+//   //   }
+//   //   if (!emailValue) {
+//   //     setEmailError(true);
+//   //   }
+//   //   if (!messageValue) {
+//   //     setMessageError(true);
+//   //   }
+
+//   //   // Return true if there are no errors
+//   //   return !(nameError || emailError || messageError);
+//   // };
+
+//   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+//     event.preventDefault();
+
+//     // Check if any error exists
+//     // if (!handleInformation()) {
+//     // Do not submit the form if there are errors
+//     // return;
+//     // }
+//     // If no errors, proceed with form submission
+//     sendEmail(form, handleEmailSent);
+//   };
+
+//   const handleEmailSent = () => {
+//     setEmailSent(true);
+//   };
+
+//   return (
+//     <div className="container1">
+//       <div className={styles.formHead}>
+//         <h2 className="title2 color1 ">Contact Us</h2>
+//         <h3 className="title6 ">For Better Experience</h3>
+//         <p className="twoLines"></p>
+//       </div>
+//       <form
+//         className={`${styles.form} ${emailSent ? styles.none : ""}`}
+//         ref={form}
+//         onSubmit={onSubmit} // Corrected here
+//       >
+//         <div className={styles.smallInputs}>
+//           <input
+//             className={`${styles.input} ${styles.miniInput} ${
+//               nameError ? styles.inputRed : ""
+//             }`}
+//             type="text"
+//             name="user_name"
+//             placeholder="Enter your full name"
+//             value={nameValue}
+//             onChange={(e) => setNameValue(e.target.value)}
+//           />
+
+//           <input
+//             className={`${styles.input} ${styles.miniInput}
+//             ${emailError ? styles.inputRed : ""}
+//           `}
+//             type="email"
+//             name="user_email"
+//             placeholder="Email"
+//             value={emailValue}
+//             onChange={(e) => setEmailValue(e.target.value)}
+//           />
+//         </div>
+//         <textarea
+//           className={`${styles.textArea} ${styles.input}
+//           ${messageError ? styles.inputRed : ""}
+//         `}
+//           name="message"
+//           placeholder="Your message here"
+//           value={messageValue}
+//           onChange={(e) => setMessageValue(e.target.value)}
+//         />
+//         <input
+//           value="send"
+//           type="submit"
+//           className={`button1 ${styles.buttonSend}`}
+//           // disabled={!nameValue || !emailValue || !messageValue} // This line is not needed since onSubmit handles validation
+//         />
+//       </form>
+//       <div className={emailSent ? styles.formSent : styles.hide}>
+//         <h6 className="title5"> Thank you for your message</h6>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContactForm;
