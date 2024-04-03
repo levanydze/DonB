@@ -1,5 +1,5 @@
 import Link from "next/link";
-import infoJson from "../../json/info.json";
+import infoJson from "../../../json/info.json";
 import styles from "./LowerFooter.module.css";
 export default function LowerFooter() {
   const { madeByLink } = infoJson;
