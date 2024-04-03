@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   title: {
     // if i write absolute title it will ignore template title
     // absolute: "",
-    default: "Levanidze Restaurant AB",
+    default: "ChaCha AB Restaurant AB",
     //  instead of that  --> %s <--  i can write title on any page.  what i write after --> | <-- it will be weiten after title
-    template: "%s | Levanidze Restaurant AB",
+    template: "%s | ChaCha AB Restaurant AB",
   },
   description:
     "We Buid Your Dreams Schools and all constructions that can be done",
