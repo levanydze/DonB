@@ -30,7 +30,7 @@ export default function Home() {
     March26Main,
   } = imagesJson;
   return (
-    <main>
+    <main className="fadeOut">
       <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
       <CutGrass absolute />
 

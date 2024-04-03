@@ -29,7 +29,7 @@ export default async function ServerMenu() {
   const { headImage, pizza3High } = imagesJson;
 
   return (
-    <>
+    <div className="fadeOut">
       <PageHeadImage
         value="OUR DELICIOUS MENU"
         image={pizza3High}
@@ -70,6 +70,6 @@ export default async function ServerMenu() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
