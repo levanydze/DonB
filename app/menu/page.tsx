@@ -45,25 +45,27 @@ export default async function ServerMenu() {
             <div className="flex items-center flex-wrap justify-center">
               {section.menuItems
                 .sort((a, b) => a.priority - b.priority) // Sort by ascending priority
-                .map((item) => (
-                  <ServerCard
-                    key={item.id}
-                    id={item.id}
-                    name={item.name}
-                    image={item.image}
-                    description={item.description}
-                    disable={item.disable}
-                    portions={item.portions}
-                    price={item.price}
-                    priority={item.priority}
-                    season={item.season}
-                    special={item.special}
-                    spicy={item.spicy}
-                    vegan={item.vegan}
-                    newItem={item.newItem}
-                    ingredients={item.ingredients}
-                  />
-                ))}
+                .map((item) =>
+                  !item.disable ? (
+                    <ServerCard
+                      key={item.id}
+                      id={item.id}
+                      name={item.name}
+                      image={item.image}
+                      description={item.description}
+                      disable={item.disable}
+                      portions={item.portions}
+                      price={item.price}
+                      priority={item.priority}
+                      season={item.season}
+                      special={item.special}
+                      spicy={item.spicy}
+                      vegan={item.vegan}
+                      newItem={item.newItem}
+                      ingredients={item.ingredients}
+                    />
+                  ) : null
+                )}
             </div>
           </div>
         ))}
