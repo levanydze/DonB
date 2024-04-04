@@ -52,10 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}  `}
+        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}   `}
       >
         <Header />
-        {children}
+        <div className="background">{children}</div>
         <Footer />
         <LowerFoot />
       </body>

@@ -1,5 +1,4 @@
 import GuyWithServices from "../components/sectionComponents/GuyWithServices/GuyWithServices";
-// import ImageTextButton from "../../components/sectionComponents/ImageTextButton/ImageTextButton";
 import FourBox from "../components/sectionComponents/FourBoxes/FourBox";
 import TextIntoPhoto from "../components/sectionComponents/TextIntoPhoto/TextIntoPhoto";
 import imagesJson from "../json/images.json";

@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 body {
+  background-color: var(--backgroundLight);
+}
+.background {
   background-color: var(--backgroundDark);
 }
 
