@@ -4,7 +4,7 @@ import Hours from "./components/Hours";
 import Text from "./components/Text";
 import infoJson from "../../../json/info.json";
 
-export default function MapAndTimes() {
+export default function MapTimes() {
   const { mapLocation } = infoJson;
   return (
     <div className="container1">

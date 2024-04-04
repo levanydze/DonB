@@ -2,7 +2,7 @@ import React from "react";
 import PageHeadImage from "../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../json/images.json";
 import Dashboard from "../..//components/animations/SliderPeople/Dashboard";
-import MapAndTimes from "../..//components/sectionComponents/map&times/MapTimes";
+import MapTimes from "../..//components/sectionComponents/map&times/MapTimes";
 import TwoTextAbout from "../..//components/sectionComponents/TwoTextAbout/TwoTextAbout";
 import PhotoText from "../..//components/sectionComponents/PhotoText/PhotoText";
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
       />
       {/* <FramerSlider /> */}
       <Dashboard />
-      <MapAndTimes />
+      <MapTimes />
     </div>
   );
 }

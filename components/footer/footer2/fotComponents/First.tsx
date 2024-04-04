@@ -7,7 +7,7 @@ import infoJson from "../../../../json/info.json";
 export default function First() {
   const { address, email, phoneNumber } = infoJson;
   return (
-    <div>
+    <section>
       <h5 className="title3">Contact info</h5>
       <div className={styles.contactDiv}>
         <p>{address}</p>
@@ -15,6 +15,6 @@ export default function First() {
         <p>{phoneNumber}</p>
       </div>
       <SocialMedia />
-    </div>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ import imagesJson from "../json/images.json";
 import assetsJson from "../json/assets.json";
 import PhotoText from "../components/sectionComponents/PhotoText/PhotoText";
 import HomePageMain from "../components/HomePageHeads/HomePageMain/HomePageMain";
-import MapAndTimes from "../components/sectionComponents/map&times/MapTimes";
+import MapTimes from "../components/sectionComponents/map&times/MapTimes";
 import TwoTextAbout from "../components/sectionComponents/TwoTextAbout/TwoTextAbout";
 import Dashboard from "../components/animations/SliderPeople/Dashboard";
 import CutGrass from "../components/animations/cut-grass/CutGrass";
@@ -62,7 +62,7 @@ export default function Home() {
       <Dashboard />
       <CutGrass absolute />
       <FourBox />
-      <MapAndTimes />
+      <MapTimes />
     </main>
   );
 }

@@ -46,4 +46,7 @@
   .textMapWrap {
     flex-direction: column;
   }
+  .mapAndTimesWrapper {
+    height: 1080px;
+  }
 }

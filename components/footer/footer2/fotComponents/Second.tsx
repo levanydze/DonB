@@ -5,7 +5,7 @@ import { navItems } from "../../../../controlFolder/control";
 
 export default function Second() {
   return (
-    <div>
+    <section>
       <h5 className="title3">Navigation</h5>
 
       <div className={styles.menuWrap}>
@@ -16,6 +16,6 @@ export default function Second() {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
