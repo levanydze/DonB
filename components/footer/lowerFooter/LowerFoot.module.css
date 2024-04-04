@@ -1,11 +1,14 @@
 .lowerWrap {
+  background-color: var(--color2);
+}
+.footerOverlay {
+  background-color: rgba(0, 0, 0, 0.422);
+  height: 50px;
+  width: 100%;
   display: flex;
-  height: 100px;
   align-items: center;
   justify-content: center;
   font-size: 11px;
-  position: relative;
-  background-color: var(--overlay);
 }
 
 .heartName {
@@ -21,7 +24,7 @@
   color: var(--red);
   margin: 3px 5px 0 5px;
 }
-.lowerWrap div {
+.footerOverlay div {
   margin: 0 1%;
 }
 .dimmed {
@@ -40,7 +43,7 @@
 }
 
 @media (max-width: 650px) {
-  .lowerWrap {
+  .footerOverlay {
     flex-wrap: wrap;
     padding: 0 40px;
   }

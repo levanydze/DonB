@@ -4,7 +4,6 @@ import First from "./fotComponents/First";
 import Second from "./fotComponents/Second";
 import Third from "./fotComponents/Third";
 import Fourth from "./fotComponents/Fourth";
-import LowerFoot from "./LowerFoot";
 
 export default function Footer() {
   return (
@@ -15,7 +14,6 @@ export default function Footer() {
         <Third />
         <Fourth />
       </div>
-      <LowerFoot />
     </div>
   );
 }

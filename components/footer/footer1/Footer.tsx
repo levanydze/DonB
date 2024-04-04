@@ -4,7 +4,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
-import LowerFooter from "./LowerFooter";
 import SocialMedia from "../../../components/miniComponents/SocialMedia/SocialMedia";
 
 export default function Footer() {
@@ -35,7 +34,6 @@ export default function Footer() {
         <SocialMedia />
       </div>
       <div className="measaureLine"></div>
-      <LowerFooter />
     </footer>
   );
 }

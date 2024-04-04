@@ -7,6 +7,7 @@ import "./css/containers.css";
 import "./css/globals.css";
 import Header from "../components/header/header3/Header";
 import Footer from "../components/footer/footer2/Footer";
+import LowerFoot from "../components/footer/lowerFooter/LowerFoot";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <LowerFoot />
       </body>
     </html>
   );
