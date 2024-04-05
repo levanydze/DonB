@@ -36,12 +36,12 @@ export default async function MenuDetails({ itemId }: MenuDetailsProps) {
           />
         </div>
         <div className={styles.infoWrapper}>
-          <h1 className="title6 font1 color1">{data.name}</h1>
+          <h2 className="title6 font1 color1">{data.name}</h2>
           <h2 className="title2 font1 textLight">
             INGREDIENTS: {data.ingredients}
           </h2>
-          <h3 className="text1 textMedium">{data.description}</h3>
-          <h4 className="textLight title1 font1">{data.portions}</h4>
+          <p className="text1 textMedium">{data.description}</p>
+          <p className="textLight title1 font1">{data.portions}</p>
           <div className={styles.specifications}>
             {data.special ? (
               <p className={`menuTags ${styles.special}`}>special</p>

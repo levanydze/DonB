@@ -45,5 +45,3 @@ export default async function ServerCard({
     </div>
   );
 }
-
-// 12
