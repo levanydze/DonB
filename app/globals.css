@@ -1,4 +1,7 @@
-/* config 23 February */
+@import "./css/elements";
+@import "./css/animations";
+@import "./css/buttons";
+@import "./css/containers";
 
 @tailwind base;
 @tailwind components;
@@ -29,16 +32,13 @@ body {
   --red: #fe0222;
   --orange: #fd7702;
   --yellow: #ffbb00;
+
   --color1: #d6a51f; /*pripary bright color */
   --color2: #002e5b; /* secondary dark color*/
-  --color3: red; /* not sure */
 
   /* used for components background*/
   --backgroundDark: rgb(20, 20, 20);
   --backgroundLight: rgb(255, 255, 255);
-
-  /* image backgrunds needed*/
-  /* here */
 
   /* used for photo overlay to write text over */
   --overlayLight: rgba(0, 0, 0, 0.218);

@@ -17,17 +17,7 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
-  const {
-    textIntoPhoto,
-    chef,
-    headImage,
-    guy,
-    olivOilApple,
-    pizzaHands,
-    chef2,
-    chef3,
-    March26Main,
-  } = imagesJson;
+  const { textIntoPhoto, olivOilApple, pizzaHands, chef2, chef3 } = imagesJson;
   return (
     <main className="fadeOut">
       <HomePageMain image={pizzaHands} alt="pizza" outline={true} />

@@ -1,3 +1,7 @@
+export const companyName = "Levanidze";
+export const companyDomain = "https://vuvuleo.com/";
+export const companyDescription = "Delicios Georgian food In city of Stockholm";
+
 // menu list order
 export const sectionOrder = [
   "dinner",
@@ -12,8 +16,6 @@ export const sectionOrder = [
 import { NavItemProps } from "../components/header/header3/Navigation";
 export const navItems: NavItemProps[] = [
   { title: "HOME", url: "/", homePage: true },
-  // { title: "MENU", url: "/menu" },
-  // { title: "Menu Clientside", url: "/fireClientMenu" },
   { title: "Menu", url: "/menu" },
   { title: "ABOUT", url: "/about" },
   { title: "CONTACT", url: "/contact" },

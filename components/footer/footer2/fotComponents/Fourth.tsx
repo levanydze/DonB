@@ -19,21 +19,27 @@ export default function Fourth() {
 
   return (
     <section className={styles.wrapper}>
-      <h5 className="title3">Instagram</h5>
-      <Link className={styles.imageWrapper} target="_blank" href={instagramUrl}>
-        {images.slice(0, 6).map((img, index) => (
+      <h2 className={styles.title}>Instagram</h2>
+      <div className={styles.imageWrapper}>
+        {images.slice(0, 6).map((img) => (
           <img
-            key={index}
+            key={img}
             className={styles.image}
-            alt={img}
+            alt={`Instagram photo`}
             width={70}
             height={70}
             src={img}
           />
         ))}
-      </Link>
+      </div>
 
-      <Link href={instagramUrl} target="_blank">
+      <Link
+        href={instagramUrl}
+        passHref
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.viewMoreLink}
+      >
         <p>View More Photos</p>
       </Link>
     </section>

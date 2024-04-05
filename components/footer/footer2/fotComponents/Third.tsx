@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Third.module.css";
+import Link from "next/link";
 
 const events = [
   {
@@ -23,16 +24,18 @@ const events = [
 export default function Third() {
   return (
     <section>
-      <h5 className="title3">Events</h5>
-      {events.slice(0, 3).map((event, index) => (
-        <div className={styles.eventWrap} key={index}>
-          <p>{event.date}</p>
-          <h3>{event.title}</h3>
-        </div>
-      ))}
+      <h2 className="title">Events</h2>
+      <ul>
+        {events.slice(0, 3).map((event) => (
+          <li className={styles.eventWrap} key={`${event.date}-${event.title}`}>
+            <p className={styles.eventDate}>{event.date}</p>
+            <h3 className={styles.eventTitle}>{event.title}</h3>
+          </li>
+        ))}
+      </ul>
 
       <div>
-        <p>View All Posts</p>
+        <Link href="/">View All Posts</Link>
       </div>
     </section>
   );

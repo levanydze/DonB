@@ -8,13 +8,13 @@ import { usePathname } from "next/navigation";
 export default function StandartNav() {
   const pathname = usePathname();
   return (
-    <div className={styles.mainNavWrap}>
+    <nav className={styles.mainNavWrap}>
       <ul></ul>
       <ul className={styles.listWrap}>
-        {navItems.map(({ title, homePage, url, button }, index) => (
-          <li key={index}>
+        {navItems.map(({ title, homePage, url, button }) => (
+          <li key={url}>
             <Link
-              key={index}
+              key={url}
               className={`${styles.navLink} ${
                 pathname === url || (pathname.startsWith(url) && !homePage)
                   ? styles.active
@@ -27,6 +27,6 @@ export default function StandartNav() {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

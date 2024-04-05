@@ -7,13 +7,13 @@ import Fourth from "./fotComponents/Fourth";
 
 export default function Footer() {
   return (
-    <div className={styles.footMainWrapper}>
+    <footer className={styles.footMainWrapper}>
       <div className={styles.footWrapper}>
         <First />
         <Second />
         <Third />
         <Fourth />
       </div>
-    </div>
+    </footer>
   );
 }

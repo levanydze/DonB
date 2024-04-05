@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oswald, Gabriela, Great_Vibes } from "next/font/google";
-import "./css/elements.css";
-import "./css/animations.css";
-import "./css/buttons.css";
-import "./css/containers.css";
-import "./css/globals.css";
+import "./globals.css";
 import Header from "../components/header/header3/Header";
 import Footer from "../components/footer/footer2/Footer";
 import LowerFoot from "../components/footer/lowerFooter/LowerFoot";
@@ -30,18 +26,20 @@ const great = Great_Vibes({
   variable: "--font3",
 });
 
-// MUST BE FIXED
+// SEO Metadata and title tags
+import {
+  companyName,
+  companyDescription,
+  companyDomain,
+} from "../controlFolder/control";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://constr-rouge.vercel.app/"),
+  metadataBase: new URL(companyDomain),
   title: {
-    // if i write absolute title it will ignore template title
-    // absolute: "",
-    default: "ChaCha AB Restaurant AB",
-    //  instead of that  --> %s <--  i can write title on any page.  what i write after --> | <-- it will be weiten after title
-    template: "%s | ChaCha AB Restaurant AB",
+    // absolute: "", // If I write absolute title it will ignore template title
+    default: `${companyName}`, // Corrected usage of template literal
+    template: `%s | ${companyName}`, // Corrected usage of template literal
   },
-  description:
-    "We Buid Your Dreams Schools and all constructions that can be done",
+  description: `${companyDescription}`,
 };
 
 export default function RootLayout({
@@ -55,7 +53,7 @@ export default function RootLayout({
         className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}   `}
       >
         <Header />
-        <div className="background">{children}</div>
+        {children}
         <Footer />
         <LowerFoot />
       </body>
