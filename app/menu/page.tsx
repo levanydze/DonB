@@ -4,7 +4,7 @@ import ServerCard from "./components/ServerCard";
 import imagesJson from "../../json/images.json";
 import PageHeadImage from "../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import { sectionOrder } from "../../controlFolder/control";
-export const revalidate = 3600; // revalidate at most every hour
+export const revalidate = 300; // revalidate at most every hour
 
 export const metadata = {
   title: "Menu ",
