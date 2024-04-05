@@ -21,9 +21,9 @@ export default function Fourth() {
     <section className={styles.wrapper}>
       <h2 className={styles.title}>Instagram</h2>
       <div className={styles.imageWrapper}>
-        {images.slice(0, 6).map((img) => (
+        {images.slice(0, 6).map((img, index) => (
           <img
-            key={img}
+            key={index}
             className={styles.image}
             alt={`Instagram photo`}
             width={70}
