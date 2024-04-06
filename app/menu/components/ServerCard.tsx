@@ -30,15 +30,15 @@ export default async function ServerCard({
       </Link>
       <div className={styles.cardInfoDiv}>
         <div className={styles.namePrice}>
-          <h1 className="title1 font1">{name}</h1>
+          <h2 className="title1 font1">{name}</h2>
           <p className={`${styles.dotted}`}></p>
           <h6>{price} sek</h6>
         </div>
-        <h2 className="title0 font1 textMedium">
+        <h3 className="title0 font1 textMedium">
           {ingredients.length > 40
             ? ingredients.substring(0, 40) + "..."
             : ingredients}
-        </h2>
+        </h3>
         <div className={styles.details}>
           {portions && <h5 className="title0 font1">{portions}</h5>}
           {vegan && <p className={`menuTags ${styles.vegan}`}>VEGAN</p>}

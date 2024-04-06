@@ -36,7 +36,7 @@ export default function PhotoText({
           className={`${isIntersecting ? "moveLeft" : ""} ${styles.textDiv}`}
         >
           <h2 className=" signature color1 title9">{title1}</h2>
-          <h1 className="title4">{title2}</h1>
+          <h2 className="title4">{title2}</h2>
           <p className="twoLines"></p>
           <h3 className="text1 textMedium">{text}</h3>
           <h4 className="signature color1 title6">{sign}</h4>

@@ -24,6 +24,7 @@ export default function CutGrass({ absolute }: CutGrassProps) {
             width={200}
             height={200}
             alt="grass cutter"
+            loading="lazy"
             src="https://github.com/levanydze/constructionSupport/blob/main/assets/grass-cutter.png?raw=true"
           ></Image>
         </div>

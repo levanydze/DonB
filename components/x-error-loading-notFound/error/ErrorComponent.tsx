@@ -7,7 +7,7 @@ export default function ErrorDiv() {
   return (
     <div>
       <div className={styles.errorWrapper}>
-        <h1 className="title6 color1 ">Error Occured</h1>
+        <h6 className="title6 color1 ">Error Occured</h6>
         <Link href="./" className="button1">
           Back To Home Page
         </Link>
