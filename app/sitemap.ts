@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { companyDomain } from "../controlFolder/control";
+import { navItems } from "../controlFolder/control";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

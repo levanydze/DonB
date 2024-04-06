@@ -3,8 +3,6 @@ import styles from "./page.module.css";
 import MenuDetails from "./menuDetails/MenuDetails";
 import { fireEachData } from "../functions";
 
-// import { fireData } from "../functions";
-
 import { Metadata } from "next";
 type Props = {
   params: {

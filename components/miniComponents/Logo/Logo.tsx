@@ -12,7 +12,7 @@ export default function Logo({ onClose }: LogoProps) {
   return (
     <div className={styles.logoWrap}>
       <Link href={"/"} onClick={onClose}>
-        <h1 className="title3 color1">{name}</h1>
+        <h2 className="title3 color1">{name}</h2>
         <h3>Restaurant</h3>
       </Link>
     </div>
