@@ -33,6 +33,7 @@ export default async function MenuDetails({ itemId }: MenuDetailsProps) {
             alt={data.name}
             height={500}
             width={500}
+            loading="lazy"
           />
         </div>
         <div className={styles.infoWrapper}>

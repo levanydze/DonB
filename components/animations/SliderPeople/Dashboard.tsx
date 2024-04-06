@@ -4,6 +4,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 import styles from "./Dashboard.module.css";
+import Image from "next/image";
 
 const Dashboard = () => {
   const [people, setPeople] = useState(data);
@@ -52,7 +53,12 @@ const Dashboard = () => {
 
               return (
                 <div className={` ${styles.article} ${position}`} key={id}>
-                  <img src={image} alt={name} className={styles.personImg} />
+                  <Image
+                    src={image}
+                    alt={name}
+                    className={styles.personImg}
+                    loading="lazy"
+                  />
                   <h4 className={`title4 color1 ${styles.name}`}>{name}</h4>
                   <p className={` title3 font1 ${styles.title}`}>{title}</p>
                   <p className={` text1 textMedium ${styles.text}`}>{quote}</p>

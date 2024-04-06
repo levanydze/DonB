@@ -20,7 +20,13 @@ export default async function ServerCard({
   return (
     <div className={styles.cardWrapper}>
       <Link href={`/menu/${id}`}>
-        <Image src={image} width={600} height={600} alt={name}></Image>
+        <Image
+          src={image}
+          width={600}
+          height={600}
+          alt={name}
+          loading="lazy"
+        ></Image>
       </Link>
       <div className={styles.cardInfoDiv}>
         <div className={styles.namePrice}>
