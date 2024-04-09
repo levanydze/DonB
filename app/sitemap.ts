@@ -1,40 +1,33 @@
-import { MetadataRoute } from "next";
 import { companyDomain } from "../controlFolder/control";
+import { fireData } from "./menu/functions";
 import { navItems } from "../controlFolder/control";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${companyDomain}`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: `${companyDomain}/menu`,
-      lastModified: new Date(),
+export default async function sitemap() {
+  const slug = await fireData();
+
+  if (!slug) {
+    return null;
+  }
+
+  // Mapping menu items to their URL objects
+  const slugUrls = slug.flatMap((menus) =>
+    menus.menuItems.map((item) => ({
+      //MUST FIX
+      url: `${companyDomain}/menu/${item.id}`,
+      lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${companyDomain}/about`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
-    },
+      priority: 0.7,
+    }))
+  );
 
-    {
-      url: `${companyDomain}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.2,
-    },
+  // Mapping nav items to their URL objects
+  const navUrls = navItems.map((navItem) => ({
+    url: `${companyDomain}${navItem.url}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: navItem.homePage ? "yearly" : "monthly",
+    priority: navItem.homePage ? 1 : 0.6,
+  }));
 
-    {
-      url: `${companyDomain}/reservation`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.3,
-    },
-  ];
+  const allUrls = [...slugUrls, ...navUrls];
+  return allUrls;
 }

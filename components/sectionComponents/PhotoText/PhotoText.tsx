@@ -10,6 +10,7 @@ interface PhotoTextProps {
   title2: string;
   text: string;
   sign: string;
+  reverse?: boolean;
 }
 
 export default function PhotoText({
@@ -18,22 +19,29 @@ export default function PhotoText({
   title2,
   text,
   sign,
+  reverse,
 }: PhotoTextProps) {
   const { isIntersecting, ref } = useIntersectionObserver({});
 
   return (
     <div className="container2">
       <div ref={ref}></div>
-      <div className={`   ${styles.photoTextWrapper}`}>
+      <div
+        className={` ${reverse ? styles.reverse : ""}  ${
+          styles.photoTextWrapper
+        }`}
+      >
         <Image
           src={image}
           height={1500}
           width={1000}
           alt={image}
-          className={isIntersecting ? "moveRight" : ""}
+          className={isIntersecting && !reverse ? "moveRight" : "moveLeft"}
         />
         <div
-          className={`${isIntersecting ? "moveLeft" : ""} ${styles.textDiv}`}
+          className={`${
+            isIntersecting && !reverse ? "moveLeft" : "moveRight"
+          } ${styles.textDiv}`}
         >
           <h2 className=" signature color1 title9">{title1}</h2>
           <h2 className="title4">{title2}</h2>

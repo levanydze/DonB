@@ -22,6 +22,7 @@ export default function AboutPage() {
         title2="MADE FOR FUTURE"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"
         sign="Levani Levanidze"
+        // reverse
       />
       {/* <FramerSlider /> */}
       <Dashboard />

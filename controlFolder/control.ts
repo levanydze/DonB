@@ -1,6 +1,7 @@
 export const companyName = "Levanidze";
 export const companyDomain = "https://vuvuleo.com/";
 export const companyDescription = "Delicios Georgian food In city of Stockholm";
+export const googleVerification = "google-site-verification=65456789";
 
 // menu list order
 export const sectionOrder = [

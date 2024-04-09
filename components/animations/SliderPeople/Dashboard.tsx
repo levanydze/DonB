@@ -58,6 +58,8 @@ const Dashboard = () => {
                     alt={name}
                     className={styles.personImg}
                     loading="lazy"
+                    width={200}
+                    height={200}
                   />
                   <h4 className={`title4 color1 ${styles.name}`}>{name}</h4>
                   <p className={` title3 font1 ${styles.title}`}>{title}</p>

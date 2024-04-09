@@ -14,19 +14,25 @@ export const generateMetadata = async ({
 }: Props): Promise<Metadata> => {
   try {
     const data = await fireEachData(params.itemId);
-    if (data) {
-      const name = data.name;
+    if (!data)
       return {
-        title: name,
+        title: "Not Found",
+        description: "The page you are looking for does not exists",
+      };
+    {
+      return {
+        title: data.name,
+        description: data.description,
         alternates: {
           canonical: `/menu/${data.name}`,
         },
       };
-    } else {
-      return {};
     }
   } catch (error) {
-    return {};
+    return {
+      title: "Not Found",
+      description: "The page you are looking for does not exists",
+    };
   }
 };
 
@@ -37,7 +43,7 @@ interface MenuDetailsPageProps {
 }
 
 export default function MenuDetailsPage({ params }: MenuDetailsPageProps) {
-  console.log(params.itemId);
+  // console.log(params.itemId);
   return (
     <div className={`fadeOut ${styles.pageDetailWrapper}`}>
       <div className={styles.lowerDiv}>

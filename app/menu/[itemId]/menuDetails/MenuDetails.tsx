@@ -6,18 +6,15 @@ import imageJson from "../../../../json/images.json";
 import PageHeadImage from "../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import Link from "next/link";
+import NotFoundComponent from "../../../../components/x-error-loading-notFound/notFound/NotFoundComponent";
 
-interface MenuDetailsProps {
-  itemId: string;
-}
-
-export default async function MenuDetails({ itemId }: MenuDetailsProps) {
+export default async function MenuDetails({ itemId }: { itemId: string }) {
   const { headImage } = imageJson;
   const data = await fireEachData(itemId);
 
   if (!data) {
     // Handle the case where data is null
-    return <div>Loading...</div>;
+    return <NotFoundComponent />;
   }
   return (
     <>
@@ -33,7 +30,6 @@ export default async function MenuDetails({ itemId }: MenuDetailsProps) {
             alt={data.name}
             height={500}
             width={500}
-            loading="lazy"
           />
         </div>
         <div className={styles.infoWrapper}>

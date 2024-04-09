@@ -16,7 +16,7 @@
 }
 
 .FourBoxMainWrapper div,
-.FourBoxMainWrapper a {
+.FourBoxMainWrapper :nth-child(4) {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -31,8 +31,7 @@
   word-wrap: break-word;
   max-width: 80%;
 }
-.FourBoxMainWrapper div:last-child,
-.FourBoxMainWrapper a:last-child {
+.FourBoxMainWrapper :nth-child(4) {
   border-right: 1px solid var(--gray3);
 }
 
@@ -41,7 +40,7 @@
     flex-wrap: wrap;
   }
   .FourBoxMainWrapper div,
-  .FourBoxMainWrapper a {
+  .FourBoxMainWrapper :nth-child(4) {
     width: 50%;
   }
   .FourBoxMainWrapper div:nth-child(2),

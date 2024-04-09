@@ -31,6 +31,7 @@ import {
   companyName,
   companyDescription,
   companyDomain,
+  googleVerification,
 } from "../controlFolder/control";
 export const metadata: Metadata = {
   metadataBase: new URL(companyDomain),
@@ -40,6 +41,9 @@ export const metadata: Metadata = {
     template: `%s | ${companyName}`, // Corrected usage of template literal
   },
   description: `${companyDescription}`,
+  verification: {
+    google: `${googleVerification}`,
+  },
 };
 
 export default function RootLayout({

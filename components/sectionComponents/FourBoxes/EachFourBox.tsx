@@ -7,6 +7,8 @@ interface EachFourBoxProps {
   alt: string;
   title: string;
   link?: boolean;
+  phone?: boolean;
+  email?: boolean;
 }
 
 export default function EachFourBox({
@@ -14,6 +16,8 @@ export default function EachFourBox({
   alt,
   title,
   link,
+  phone,
+  email,
 }: EachFourBoxProps) {
   return (
     <>
@@ -21,7 +25,17 @@ export default function EachFourBox({
         <div>
           <Image src={image} width={70} height={70} alt={alt} />
           <p className="twoLines"></p>
-          <h4 className="text1 textMedium">{title}</h4>
+          {email ? (
+            <Link href={`mailto:${title}`} className="text1 textMedium">
+              {title}
+            </Link>
+          ) : phone ? (
+            <Link href={`tel:${title}`} className="text1 textMedium">
+              {title}
+            </Link>
+          ) : (
+            <h4 className="text1 textMedium">{title}</h4>
+          )}
         </div>
       ) : (
         <Link href="/contact">
