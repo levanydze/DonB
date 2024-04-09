@@ -28,8 +28,8 @@ export default async function MenuDetails({ itemId }: { itemId: string }) {
             priority
             src={data.image}
             alt={data.name}
-            height={500}
-            width={500}
+            height={400}
+            width={400}
           />
         </div>
         <div className={styles.infoWrapper}>

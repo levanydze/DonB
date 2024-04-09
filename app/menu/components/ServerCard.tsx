@@ -22,8 +22,8 @@ export default async function ServerCard({
       <Link href={`/menu/${id}`}>
         <Image
           src={image}
-          width={600}
-          height={600}
+          width={300}
+          height={300}
           alt={name}
           loading="lazy"
         ></Image>
