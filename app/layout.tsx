@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/header/header3/Header";
 import Footer from "../components/footer/footer2/Footer";
 import LowerFoot from "../components/footer/lowerFooter/LowerFoot";
+import { googleAnalyticsId } from "../controlFolder/control";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ import {
   companyDomain,
   googleVerification,
 } from "../controlFolder/control";
+import Script from "next/script";
 export const metadata: Metadata = {
   metadataBase: new URL(companyDomain),
   title: {
@@ -53,6 +55,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?${googleAnalyticsId}`}
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${googleAnalyticsId}');`}
+        </Script>
+      </head>
       <body
         className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}   `}
       >
