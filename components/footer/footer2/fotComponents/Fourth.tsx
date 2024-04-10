@@ -21,7 +21,7 @@ export default function Fourth() {
     <section className={styles.wrapper}>
       <h2 className={styles.title}>Instagram</h2>
       <div className={styles.imageWrapper}>
-        {/* {images.slice(0, 6).map((img, index) => (
+        {images.slice(0, 6).map((img, index) => (
           <img
             key={index}
             className={styles.image}
@@ -30,7 +30,7 @@ export default function Fourth() {
             height={70}
             src={img}
           />
-        ))} */}
+        ))}
       </div>
 
       <Link

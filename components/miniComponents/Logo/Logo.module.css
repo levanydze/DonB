@@ -6,8 +6,11 @@
 .logoWrap h1 {
   font-size: 18px;
 }
-.logoWrap h3 {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--textLight);
+
+.logoImage {
+  width: 100px;
+  height: 100px;
+}
+.underLogo {
+  letter-spacing: 2px;
 }

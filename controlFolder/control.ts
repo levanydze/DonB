@@ -1,8 +1,11 @@
-export const companyName = "Levanidze";
+export const companyName = "ChaCha";
 export const companyDomain = "https://vuvuleo.com";
 export const companyDescription = "Delicios Georgian food In city of Stockholm";
 export const googleVerification = "google-site-verification=65456789";
 export const googleAnalyticsId = "G-8BH3G37TNG";
+export const companyLogo =
+  "https://github.com/levanydze/constructionSupport/blob/main/KSM.png?raw=true";
+export const underLogo = "GARDENING";
 
 // menu list order
 export const sectionOrder = [
