@@ -1,17 +1,23 @@
-import React from "react";
+import Link from "next/link";
 import styles from "./SocialMedia.module.css";
-import infoJson from "../../../json/info.json";
-
-import EachSocialMedia from "./EachSocialMedia";
+import { socialMediaLinks } from "../../../controlFolder/control";
+import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function SocialMedia() {
-  const { instagramUrl, facebookUrl, linkedinUrl } = infoJson;
-
   return (
-    <div className={styles.mediaWrapper}>
-      <EachSocialMedia media="instagram" url={instagramUrl} />
-      <EachSocialMedia media="facebook" url={facebookUrl} />
-      <EachSocialMedia media="linkedin" url={linkedinUrl} />
+    <div>
+      {socialMediaLinks.map((links, index) => (
+        <div key={index} className={styles.mediaWrapper}>
+          {Object.entries(links).map(([media, url]) => (
+            <Link href={url}>
+              {media === "instagram" ? <FaInstagram /> : null}
+              {media === "facebook" ? <FaFacebook /> : null}
+              {media === "linkedin" ? <FaLinkedin /> : null}
+              {media === "twitter" ? <FaTwitter /> : null}
+            </Link>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }

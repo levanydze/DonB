@@ -38,7 +38,7 @@ export default async function ServerMenu() {
       <div className="container2 ">
         {sortedSections.map((section) => (
           <div key={section.menuCategory} className="text-center capitalize">
-            <h3 className="font2 title4 mt-10 color1">MENU</h3>
+            <h3 className="font3 title4 mt-10 color1">Menu</h3>
             <p className="twoLines my-4"></p>
             <h2 className="text-3xl mb-10 font2">{section.menuCategory}</h2>
 

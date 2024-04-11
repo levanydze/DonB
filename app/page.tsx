@@ -17,11 +17,23 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, olivOilApple, pizzaHands, chef2, chef3 } = imagesJson;
+  const { textIntoPhoto, olivOilApple, pizzaHands, chef2, chef3, headImage } =
+    imagesJson;
   return (
     <main className="fadeOut">
-      <HomePageMain image={pizzaHands} alt="pizza" outline={true} />
-      <CutGrass absolute />
+      <HomePageMain
+        image={headImage}
+        alt="building garden clean garden cutting grass"
+        outline={false}
+        button1Target="/contact"
+        button1Value="Get In Touch"
+        button2Target="/about"
+        button2Value="Who We Are"
+        mainTitle="The Best Gardening Foretag In Stockholm"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias veritatis saepe quibusdam esse, quia repellat non facere expedita sapiente nemo consectetur veniam sint quisquam nulla itaque blanditiis dolorem autem?"
+      />
+
+      <CutGrass absolute={true} />
 
       <PhotoText
         image={chef3}
