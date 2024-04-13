@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import PageHeadImage from "@/components/anyPageHead/PageHeadImage/PageHeadImage";
-import imagesJson from "../../../../json/images.json";
+import imagesJson from "../../../json/images.json";
 import MenuList from "./menuList/MenuList";
-import LoadingComponent from "../../../../components/x-error-loading-notFound/loading/LoadingComponent";
+import LoadingComponent from "../../../components/x-error-loading-notFound/loading/LoadingComponent";
 
 export const metadata = {
   title: "Menu ",
