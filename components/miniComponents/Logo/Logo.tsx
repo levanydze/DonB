@@ -14,7 +14,7 @@ interface LogoProps {
 }
 
 export default function Logo({ onClose }: LogoProps) {
-  const { name } = infoJson;
+  const {} = infoJson;
   return (
     <div className={styles.logoWrap}>
       <Link href={"/"} onClick={onClose}>
@@ -27,10 +27,12 @@ export default function Logo({ onClose }: LogoProps) {
             alt={companyName + "logo"}
           />
         ) : (
-          <h2 className="title3 color1">{name}</h2>
+          <h2 className="title3 font2 color1">{companyName}</h2>
         )}
         {underLogo ? (
-          <h3 className={` color1 title2 ${styles.underLogo}`}>{underLogo}</h3>
+          <h3 className={`title2 textLight ${styles.underLogo}`}>
+            {underLogo}
+          </h3>
         ) : null}
       </Link>
     </div>

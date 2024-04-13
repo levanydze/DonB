@@ -1,0 +1,31 @@
+.navigationWrapper {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  max-width: 1500px;
+  justify-content: space-between;
+}
+
+.navigationWrapper h3 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 10px;
+}
+.navigationWrapper p {
+  font-size: 50px;
+  padding: 0 10px;
+  color: var(--color3);
+  font-weight: 100;
+}
+@media (max-width: 550px) {
+  .navigationWrapper h3 {
+    position: relative;
+    top: 0;
+    margin-top: -10px;
+    line-height: 50px;
+  }
+} /* ---------------------------------------------------------------- */
+
+/* BURGER MENU CLASSES */

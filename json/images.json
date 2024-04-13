@@ -1,5 +1,12 @@
 {
-  "headImage": "https://raw.githubusercontent.com/levanydze/SUP/main/ksm/Images/garden-building-10-april.webp",
+  "headImage": "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/photo%20and%20web%20development%20scene.webp",
+  "notFoundImage": "",
+  "errorImage": "",
+  "contactImage": "",
+  "loadingImage": "",
+  "aboutImage": "",
+  "reservationImage": "",
+  "servicesImage": "",
   "guy": "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/guy.png?raw=true",
   "textIntoPhoto": "https://github.com/levanydze/restaurant2024support/blob/main/highResolution/mainPageBackground.jpg?raw=true",
   "olivOilApple": "https://github.com/levanydze/restaurant2024support/blob/main/highResolution/olivOilandCake.jpg?raw=true",

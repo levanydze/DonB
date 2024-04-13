@@ -1,25 +1,9 @@
-.logoNav {
+.headWrapper {
   display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding: 0 30px;
+  width: 100%;
   height: 80px;
-}
-.logoNav a {
-  margin: auto 0;
-  position: relative;
+  align-items: center;
+  position: absolute;
   z-index: 10;
-}
-
-.navigatioWrapper {
-  display: flex;
-  gap: 15px;
-  margin: auto 0;
-}
-
-@media (max-width: 650px) {
-  .navigatioWrapper {
-    display: none;
-  }
+  margin: 0 auto;
 }

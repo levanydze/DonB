@@ -1,0 +1,175 @@
+.textWrapper {
+  position: relative;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+.sectionWrapper {
+  margin-left: 40px;
+}
+.textWrapper h2 {
+  font-size: 35px;
+  color: var(--color3);
+  padding-top: 15%;
+  width: max-content;
+}
+
+.textWrapper h3 {
+  font-size: 25px;
+  color: var(--textLight);
+  width: max-content;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  margin-left: -40px;
+  width: 20px;
+}
+
+.textWrapper svg {
+  font-size: 20px;
+}
+
+.title1 {
+  animation: slidingText 1s forwards cubic-bezier(0.12, 0.33, 0.17, 1);
+  transform: translateX(100vw);
+  animation-delay: 1s;
+}
+.text1 {
+  animation: appear 2s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.text2 {
+  animation: appear 2s forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+.text3 {
+  animation: appear 2s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.text4 {
+  animation: appear 2s forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
+  color: var(--color1) !important;
+}
+.text5 {
+  animation: appear 2s forwards;
+  animation-delay: 5s;
+  opacity: 0;
+}
+.text6 {
+  animation: appear 2s forwards;
+  animation-delay: 5.5s;
+  opacity: 0;
+}
+
+.text7 {
+  animation: appear 2s forwards;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+.text8 {
+  animation: appear 2s forwards;
+  animation-delay: 6.5s;
+  opacity: 0;
+}
+.title2 {
+  animation: slidingText 1s forwards cubic-bezier(0.12, 0.33, 0.17, 1);
+  transform: translateX(100vw);
+  animation-delay: 8s;
+}
+.text9 {
+  animation: appear 2s forwards;
+  animation-delay: 9.5s;
+  opacity: 0;
+}
+
+.text10 {
+  animation: appear 2s forwards;
+  animation-delay: 10s;
+  opacity: 0;
+}
+.text11 {
+  animation: appear 2s forwards;
+  animation-delay: 10.5s;
+  opacity: 0;
+}
+.text12 {
+  animation: appear 2s forwards;
+  animation-delay: 11s;
+  opacity: 0;
+}
+.title3 {
+  animation: slidingText 1s forwards cubic-bezier(0.12, 0.33, 0.17, 1);
+  transform: translateX(100vw);
+  animation-delay: 12.5s;
+}
+.text13 {
+  animation: appear 2s forwards;
+  animation-delay: 14s;
+  opacity: 0;
+}
+.button {
+  margin-top: 10px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidingText {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@media (max-width: 700px) {
+  .textWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .textWrapper {
+    position: absolute;
+    height: 100vh;
+  }
+  .textWrapper h3 {
+    font-size: 20px;
+  }
+  .textWrapper h2 {
+    font-size: 25px;
+  }
+}

@@ -1,16 +1,20 @@
-export const companyName = "KASAMA";
-export const companyDomain = "https://vuvuleo.com";
+//metadata
+export const mainTitle = "ChaCha Web Agency"; //metadadta Title
 export const companyDescription =
-  "Gardening copany for your BRF celaning snow and many other things"; //metadata title
-export const googleVerification = "google-site-verification=65456789";
+  "out main target is restaurant and construction companies but we also create web sites for various category companies "; //metadata title
+
+//info
+export const companyName = "ChaCha";
+export const underLogo = "WEB AGENCY";
+export const companyDomain = "https://chachaweb.se";
+export const googleVerification = "google-site-verification=65456789"; //MUST BE FIXED
 export const googleAnalyticsId = "";
-export const companyLogo =
-  "https://github.com/levanydze/constructionSupport/blob/main/KSM.png?raw=true";
-export const underLogo = "GARDENING";
+export const companyLogo = "";
 
 // menu list order
 export const sectionOrder = [
-  "example",
+  "example", //keep examole here as it is
+  //set menu categories down here
   // "dinner",
   // "breakfast",
   // "dessert",
@@ -32,11 +36,11 @@ export const socialMediaLinks = [
 import { NavItemProps } from "../components/header/header3/Navigation";
 export const navItems: NavItemProps[] = [
   { title: "HOME", url: "/", homePage: true },
-  { title: "Menu", url: "/menu" },
+  // { title: "Menu", url: "/menu" },
   { title: "SERVICES", url: "/services" },
   { title: "ABOUT", url: "/about" },
   { title: "CONTACT", url: "/contact" },
-  // { title: "RESERVATION", url: "/reservation", button: true },
+  // { title: "BOOK A MEET", url: "/reservation", button: true },
 ];
 
 // firebase iiner menuLink for fetching menu
