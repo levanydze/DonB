@@ -38,7 +38,7 @@ body {
   --color3: rgb(50, 157, 207);
 
   /* used for components background*/
-  --backgroundDark: rgb(20, 20, 20);
+  --backgroundDark: #13141e;
   --backgroundLight: rgb(255, 255, 255);
 
   /* used for photo overlay to write text over */

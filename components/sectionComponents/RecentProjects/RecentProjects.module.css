@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--backgroundDark);
+}
+.mainWrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  color: var(--textLight);
+  padding: 50px 10% 100px 10%;
+}
+.textDiv {
+  padding-bottom: 40px;
+}
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}

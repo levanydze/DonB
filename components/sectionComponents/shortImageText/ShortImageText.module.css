@@ -1,0 +1,64 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gradient);
+  background: url("https://raw.githubusercontent.com/levanydze/SUP/main/Cha/DALL%C2%B7E%202024-04-13%2023.25.00%20-%20Design%20a%20dark%20digital%20abstract%20background%20that%20conveys%20a%20sense%20of%20advanced%20technology%20and%20modernity.%20The%20background%20should%20include%20elements%20such%20as%20ci.webp");
+  background-position: bottom;
+  position: relative;
+  height: 450px;
+  gap: 100px;
+  overflow: hidden;
+}
+.imageWrapper {
+  width: 30%;
+  min-width: 300px;
+  margin: auto 0;
+  z-index: 2;
+  position: relative;
+}
+.imageWrapper img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 400px;
+}
+
+.textWrapper {
+  min-width: 300px;
+  color: var(--textLight);
+  width: 30%;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 2;
+  position: relative;
+}
+.textWrapper h2 {
+  color: var(--color1);
+}
+.textWrapper h6 {
+  margin-top: 10px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--overlay);
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    padding: 50px 0;
+  }
+  .textWrapper {
+    width: 80%;
+  }
+  .imageWrapper {
+    width: 80%;
+  }
+}

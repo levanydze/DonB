@@ -102,7 +102,7 @@
   color: var(--color3);
   cursor: pointer;
   animation: jumpOverAndShake 3s ease-in-out; /* Changed to ease-in-out for smoothness */
-  animation-delay: 22s;
+  animation-delay: 16s;
 }
 
 @keyframes jumpOverAndShake {

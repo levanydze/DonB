@@ -1,0 +1,44 @@
+.mainWrapper {
+  height: 600px;
+  width: 600px;
+  background-color: var(--backgroundLight);
+  color: var(--textDark);
+  position: relative;
+}
+
+.imageDiv {
+  height: 450px;
+}
+
+.imageDiv img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.cardTextDiv {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 40px;
+}
+
+.overlay {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.overlay:hover {
+  border-bottom: 5px solid var(--color1);
+}

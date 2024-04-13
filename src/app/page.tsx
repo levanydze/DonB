@@ -12,6 +12,8 @@ import CutGrass from "../../components/animations/cut-grass/CutGrass";
 import { mainTitle } from "../../controlFolder/control";
 import { companyDescription } from "../../controlFolder/control";
 import Chachaweb from "@/components/Hero/chachaweb/Chachaweb";
+import ShortImageText from "@/components/sectionComponents/shortImageText/ShortImageText";
+import RecentProjects from "@/components/sectionComponents/RecentProjects/RecentProjects";
 export const metadata = {
   title: `${mainTitle}`,
   description: `${companyDescription}`,
@@ -19,22 +21,16 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, olivOilApple, pizzaHands, chef2, chef3, headImage } =
+  const { textIntoPhoto, olivOilApple, chef2, chef3, responsiveScreens } =
     imagesJson;
   return (
     <main className="fadeOut">
       <Chachaweb />
-      {/* <HomePageMain
-        image={headImage}
-        alt="building garden clean garden cutting grass"
-        outline={false}
-        button1Target="/contact"
-        button1Value="Get In Touch"
-        button2Target="/about"
-        button2Value="What Have We Done"
-        mainTitle=" Web Agency For your Restaurant In Stockholm and Worldwide "
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias veritatis saepe quibusdam esse, quia repellat non facere expedita sapiente nemo consectetur veniam sint quisquam nulla itaque blanditiis dolorem autem?"
-      /> */}
+      <ShortImageText
+        image={responsiveScreens}
+        alt="mobile responsive screens laptop phone "
+      />
+      <RecentProjects />
       <PhotoText
         image={chef3}
         title1="Leader's Word"
@@ -61,9 +57,7 @@ export default function Home() {
         text="TEXT 222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
       />
       <Dashboard />
-      <CutGrass absolute />
       <FourBox />
-      <MapTimes />
     </main>
   );
 }
