@@ -9,7 +9,7 @@ export default function SocialMedia() {
       {socialMediaLinks.map((links, index) => (
         <div key={index} className={styles.mediaWrapper}>
           {Object.entries(links).map(([media, url]) => (
-            <Link href={url}>
+            <Link href={url} key={url}>
               {media === "instagram" ? <FaInstagram /> : null}
               {media === "facebook" ? <FaFacebook /> : null}
               {media === "linkedin" ? <FaLinkedin /> : null}

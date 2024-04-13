@@ -20,7 +20,7 @@ const Navigation = () => {
   const navClose = () => {
     setIsNavOpen(false);
   };
-
+  //d
   return (
     <div className={styles.navigationWrapper}>
       <Logo onClose={navClose} />

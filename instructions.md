@@ -1,3 +1,3 @@
-npm instal react icons
+<!-- npm instal react icons
 npm instal firebase
-npm install emailjs
+npm install emailjs -->
