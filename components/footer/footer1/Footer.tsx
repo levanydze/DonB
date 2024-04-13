@@ -5,14 +5,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import SocialMedia from "../../../components/miniComponents/SocialMedia/SocialMedia";
+import { companyName } from "@/controlFolder/control";
 
 export default function Footer() {
-  const { address, phoneNumber, email, name } = infoJson;
+  const { address, phoneNumber, email } = infoJson;
   return (
     <footer>
       <div className={styles.footWrapper}>
         <Link className={`color1 font2 title5 ${styles.logo}`} href="./">
-          {name}
+          {companyName}
         </Link>
         <div className={styles.infoFooter}>
           <p className="text3">
