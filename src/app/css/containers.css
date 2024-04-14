@@ -1,33 +1,14 @@
-/* containers */
-.container1 {
-  /* display: flex; */
-  /* justify-content: center; */
-  padding: 10px;
-  background-color: var(--backgroundLight);
+.container1 section {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
-.container1 div {
-  max-width: 1500px;
-}
+
 .container2 {
-  background-image: url("https://github.com/levanydze/constructionSupport/blob/main/assets/white-graysh.jpeg?raw=true");
-  background-position: 0px 0px;
-  background-size: 16px;
-  padding: 50px;
+  background-color: var(--color2);
 }
-
-@media (max-width: 1000px) {
-  .container2 {
-    padding: 50px;
-  }
-}
-
-@media (max-width: 700px) {
-  .container2 {
-    padding: 30px;
-  }
-}
-@media (max-width: 500px) {
-  .container2 {
-    padding: 20px;
-  }
+.container2 section {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 50px;
 }

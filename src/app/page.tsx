@@ -10,15 +10,15 @@ import Chachaweb from "../../components/Hero/chachaweb/Chachaweb";
 import ShortImageText from "../../components/sectionComponents/shortImageText/ShortImageText";
 import RecentProjects from "../../components/sectionComponents/RecentProjects/RecentProjects";
 import ServiceCards from "@/components/sectionComponents/Services/ServiceCards";
+import ContactForm from "@/components/contactForms/CotactForm2/ContactForm";
 export const metadata = {
   title: `${mainTitle}`,
   description: `${companyDescription}`,
 };
 
 export default function Home() {
-  const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, olivOilApple, chef2, chef3, responsiveScreens } =
-    imagesJson;
+  const { houseIcon } = assetsJson;
+  const { responsiveScreens } = imagesJson;
   return (
     <main className="fadeOut">
       <Chachaweb />
@@ -27,10 +27,12 @@ export default function Home() {
         image={responsiveScreens}
         alt="mobile responsive screens laptop phone "
       />
+      <ServiceCards />
+
       <RecentProjects />
 
-      <SliderPeople />
       <FourBox />
+      <ContactForm />
     </main>
   );
 }

@@ -1,0 +1,12 @@
+.lowerWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  color: var(--textMedium);
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+.lowerWrap a {
+  letter-spacing: 2px;
+}

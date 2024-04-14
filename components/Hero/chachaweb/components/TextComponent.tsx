@@ -13,6 +13,7 @@ import Link from "next/link";
 
 export default function TextComponent() {
   return (
+    // <div className="container1">
     <div className={styles.textMainWrapper}>
       <div className={styles.textWrapper}>
         <div className={styles.sectionWrapper}>
@@ -43,5 +44,6 @@ export default function TextComponent() {
         </div>
       </div>
     </div>
+    // </div>
   );
 }

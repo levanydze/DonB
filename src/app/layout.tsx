@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Roboto_Flex, Gabriela, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/header/header1/Header";
-import Footer from "../../components/footer/footer2/Footer";
-import LowerFoot from "../../components/footer/lowerFooter/LowerFoot";
+import Footer from "../../components/footer/footer3/Footer";
+import LowerFoot from "../../components/footer/lowerFooter2/LowerFoot";
 import { googleAnalyticsId } from "../../controlFolder/control";
 
 //fonts

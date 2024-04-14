@@ -11,12 +11,12 @@ export default function LowerFoot() {
           Created with <FaHeart className={styles.heart} />
           by
         </p>
-        <Link href="https://www.levanidze.com/" target="_blank">
+        <Link href="https://www.chachaweb.se/" target="_blank">
           <p className={`font2 ${styles.lighted}`}>Levani</p>
         </Link>
         <div className={styles.divider}></div>
         <p className={styles.dimmed}>Powered by</p>
-        <Link href="https://www.levanidze.com/" target="_blank">
+        <Link href="https://www.chachaweb.se/" target="_blank">
           <p className={`font2 ${styles.lighted}`}>ChaCha AB</p>
         </Link>
         <div className={styles.divider}></div>

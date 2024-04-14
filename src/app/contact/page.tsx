@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../../components/contactForms/CotactForm/ContactForm";
+import ContactForm from "../../../components/contactForms/CotactForm1/ContactForm";
 import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
 import MapTimes from "../../../components/sectionComponents/map&times/MapTimes";

@@ -5,6 +5,7 @@
   width: 100vw;
   overflow: hidden;
   min-height: 750px;
+  max-height: 1600px;
 }
 
 .rightWrapper {
