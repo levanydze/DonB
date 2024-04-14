@@ -42,3 +42,22 @@
   justify-content: center;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .mainWrapper {
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+  }
+  .leftSide a {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .leftSide {
+    display: none;
+  }
+  .footContact a {
+    display: none;
+  }
+}

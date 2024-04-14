@@ -1,11 +1,11 @@
 .background {
   background: url("https://raw.githubusercontent.com/levanydze/SUP/main/Cha/DALL%C2%B7E%202024-04-13%2023.25.00%20-%20Design%20a%20dark%20digital%20abstract%20background%20that%20conveys%20a%20sense%20of%20advanced%20technology%20and%20modernity.%20The%20background%20should%20include%20elements%20such%20as%20ci.webp");
   background-position: bottom;
+  position: relative;
 }
 .mainWrapper {
   display: flex;
   justify-content: center;
-  position: relative;
   height: 450px;
   gap: 100px;
   overflow: hidden;

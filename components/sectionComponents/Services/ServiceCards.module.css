@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
 }
 .cardWrapper div {
   flex: 0 1 calc((100% - 100px) / 3);
@@ -47,4 +47,18 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 30px;
+}
+
+@media (max-width: 850px) {
+  .cardWrapper div {
+    flex: none;
+  }
+}
+@media (max-width: 850px) {
+  .bussinesInputs {
+    flex-direction: column;
+  }
+  .bussinesInputs input {
+    margin: 5px 0;
+  }
 }

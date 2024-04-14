@@ -6,11 +6,13 @@ import Link from "next/link";
 export default function LowerFoot() {
   return (
     <div className="container2">
-      <section className={styles.lowerWrap}>
-        <Link href={"https://chachaweb.se"}>
-          DESIGNED AND POWERED BY CHACHA.
-        </Link>
-        <p>&copy; All Rights Reserved</p>
+      <section>
+        <div className={styles.lowerWrap}>
+          <Link href={"https://chachaweb.se"}>
+            DESIGNED AND POWERED BY CHACHA.
+          </Link>
+          <p>&copy; All Rights Reserved</p>
+        </div>
       </section>
     </div>
   );
