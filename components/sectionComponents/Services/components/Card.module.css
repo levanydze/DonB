@@ -1,28 +1,28 @@
 .mainWrapper {
-  height: 600px;
-  max-width: 600px;
+  width: 400px;
   background-color: var(--backgroundLight);
   color: var(--textDark);
   position: relative;
+  border: 1px solid var(--gray2);
 }
 
-.imageDiv {
-  /* height: 450px; */
-  height: 70%;
-}
-
-.imageDiv img {
-  object-fit: cover;
-  height: 100%;
+.numeration {
+  font-size: 50px;
+  font-weight: 50;
 }
 
 .cardTextDiv {
-  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 30px;
   position: relative;
+}
+.cardTextDiv h3 {
+  padding: 20px 0;
+}
+.cardTextDiv p {
+  height: 85px;
 }
 
 .arrow {
@@ -30,6 +30,7 @@
   right: 30px;
   top: 30px;
   font-size: 40px;
+  display: none;
 }
 
 .overlay {
@@ -42,19 +43,11 @@
 }
 .overlay:hover {
   border-bottom: 5px solid var(--color1);
+  box-shadow: 0px 0px 15px 5px var(--gray2);
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .mainWrapper {
     height: 500px;
   }
-}
-
-@media (max-width: 750px) {
-  .mainWrapper {
-    width: 100%;
-  }
-  .arrow {
-    top: 10px;
-  }
-}
+} */

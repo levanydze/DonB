@@ -3,10 +3,10 @@ import React, { Fragment, useEffect, useState } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
-import styles from "./Dashboard.module.css";
+import styles from "./SliderPeople.module.css";
 import Image from "next/image";
 
-const Dashboard = () => {
+const SliderPeople = () => {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
@@ -87,4 +87,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default SliderPeople;

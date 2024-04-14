@@ -52,5 +52,38 @@
 }
 .button2:hover {
   background-color: var(--color1);
-  border: 1px solid var(--color2);
 }
+
+/* button3 START */
+.button3 {
+  background-color: var(--color1);
+  width: max-content;
+  padding: 15px 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+  color: var(--textLight);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.button3:hover {
+  background-color: var(--color3);
+}
+.button3Disabled {
+  background-color: var(--textMedium);
+  width: max-content;
+  padding: 10px 15px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+  color: var(--textLight);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+/* button1 END */

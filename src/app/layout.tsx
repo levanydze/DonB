@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Oswald, Gabriela, Great_Vibes } from "next/font/google";
+import { Inter, Roboto_Flex, Gabriela, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/header/header1/Header";
 import Footer from "../../components/footer/footer2/Footer";
@@ -7,9 +7,9 @@ import LowerFoot from "../../components/footer/lowerFooter/LowerFoot";
 import { googleAnalyticsId } from "../../controlFolder/control";
 
 //fonts
-const oswald = Oswald({
+const roboto = Roboto_Flex({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 const inter = Inter({
   subsets: ["latin"],
@@ -69,7 +69,7 @@ export default function LocaleLayout({
         </Script>
       </head>
       <body
-        className={`${gabriela.variable} ${oswald.className} ${inter.variable} ${great.variable}   `}
+        className={`${gabriela.variable} ${roboto.className} ${inter.variable} ${great.variable}   `}
       >
         <Header />
         <div></div>
