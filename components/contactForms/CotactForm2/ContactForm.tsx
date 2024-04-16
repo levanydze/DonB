@@ -98,14 +98,14 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <button
-                value="SENDd"
+                value="SEND"
                 type={
                   nameValue && messageValue && emailValue ? "submit" : "button"
                 }
-                className={`${
+                className={`${styles.buttonSend} ${
                   !buttonDisable ? "button3" : "button3Disabled"
-                } w-full 
-            styles.buttonSend
+                }  
+            
           `}
                 onClick={
                   !nameValue || !messageValue || !emailValue

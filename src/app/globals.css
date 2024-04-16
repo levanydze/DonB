@@ -44,7 +44,7 @@ body {
   /* used for photo overlay to write text over */
   --overlayLight: rgba(0, 0, 0, 0.218);
   --overlay: rgba(0, 0, 0, 0.369);
-  --overlayDark: rgba(0, 0, 0, 0.773);
+  --overlayDark: rgba(0, 0, 0, 0.736);
 
   /* font colors*/
   --textLight: rgb(255, 255, 255);
