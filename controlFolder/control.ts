@@ -5,9 +5,10 @@ export const companyDescription =
 
 //info
 export const companyName = "ChaCha";
-export const underLogo = "WEB AGENCY";
+export const companyFullName = "ChaCha AB";
+export const underLogo = "WEB AGENCY"; //Restaurant or Web agency or...
 export const companyDomain = "https://chachaweb.se";
-export const googleVerification = "google-site-verification=65456789"; //MUST BE FIXED
+export const googleVerification = "";
 export const googleAnalyticsId = "";
 export const companyLogo = "";
 

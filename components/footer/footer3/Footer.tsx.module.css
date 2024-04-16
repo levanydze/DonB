@@ -3,8 +3,7 @@
   background-color: var(--color2);
   color: var(--textLight);
   display: flex;
-  padding: 70px 50px;
-  height: 350px;
+  padding: 50px 100px;
 }
 
 .mainWrapper div {
@@ -43,7 +42,7 @@
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .mainWrapper {
     flex-direction: column;
     padding: 30px;

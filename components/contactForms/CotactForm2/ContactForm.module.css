@@ -34,16 +34,16 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  margin: 0 auto 50px auto;
 }
 .formSent {
   color: var(--green);
   text-align: center;
-  border: 3px solid var(--color1);
-  width: 70%;
+  /* border: 3px solid var(--color1); */
+  width: 80%;
   margin: 50px auto;
   padding: 100px 0px;
   opacity: 1;
+  display: block;
   transition: opacity 1s ease;
 }
 .none {
@@ -53,6 +53,7 @@
 .hide {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .smallInputs {
@@ -104,6 +105,10 @@
   .rightSide {
     width: 100%;
   }
+  .formSent {
+    padding: 10px 10px;
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .form div {
@@ -113,5 +118,8 @@
   .leftSide h2 {
     font-size: 30px;
     padding-bottom: 30px;
+  }
+  .formSent {
+    padding: 10px 10px;
   }
 }

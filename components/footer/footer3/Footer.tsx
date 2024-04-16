@@ -5,7 +5,7 @@ import FotMapping from "./component/FotNavMapping";
 import FotSocialMap from "./component/FotSocialMap";
 export default function footer() {
   return (
-    <footer className="container2">
+    <footer className="container3">
       <section>
         <div className={styles.mainWrapper}>
           <div className={styles.leftSide}>

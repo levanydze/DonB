@@ -78,10 +78,10 @@
     border-radius: 81% 19% 37% 63% / 41% 15% 85% 59%;
   }
   25% {
-    border-radius: 32% 68% 71% 29% / 41% 53% 47% 59%;
+    border-radius: 48% 52% 39% 61% / 77% 11% 89% 23%;
   }
   50% {
-    border-radius: 48% 52% 39% 61% / 77% 11% 89% 23%;
+    border-radius: 32% 68% 71% 29% / 41% 53% 47% 59%;
   }
   75% {
     border-radius: 68% 32% 18% 82% / 35% 21% 79% 65%;
@@ -102,29 +102,63 @@
   color: var(--color3);
   cursor: pointer;
   animation: jumpOverAndShake 3s ease-in-out; /* Changed to ease-in-out for smoothness */
-  animation-delay: 16s;
+  animation-delay: 15s;
 }
 
 @keyframes jumpOverAndShake {
-  0%,
-  100% {
+  0% {
     transform: translate(-50%, -50%) scale(1); /* Ensure it starts and ends centered */
   }
-  10%,
+
+  10% {
+    transform: translate(-50%, -50%) scale(1); /* Initial and midway points at normal size */
+  }
+
+  13% {
+    transform: translate(-50%, calc(-50% - 90px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+
+  14% {
+    transform: translate(-50%, calc(-50% - 100px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+  16% {
+    transform: translate(-50%, calc(-50% - 110px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+  17% {
+    transform: translate(-50%, calc(-50% - 100px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+
+  22% {
+    transform: translate(-50%, calc(-50% - 90px)) scale(1.1); /* Hold the position at the peak of the jump */
+  }
+  25% {
+    transform: translate(-50%, -50%); /* Return to the original position */
+  }
   30% {
     transform: translate(-50%, -50%) scale(1); /* Initial and midway points at normal size */
   }
-  15%,
-  35% {
+  33% {
+    transform: translate(-50%, calc(-50% - 90px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+  34% {
     transform: translate(-50%, calc(-50% - 100px)) scale(1.1); /* Jump up and slightly increase size */
   }
-  20%,
-  40% {
-    transform: translate(-50%, calc(-50% - 100px)) scale(1.1); /* Hold the position at the peak of the jump */
+  36% {
+    transform: translate(-50%, calc(-50% - 110px)) scale(1.1); /* Jump up and slightly increase size */
   }
-  25%,
-  45% {
+  37% {
+    transform: translate(-50%, calc(-50% - 100px)) scale(1.1); /* Jump up and slightly increase size */
+  }
+
+  40% {
+    transform: translate(-50%, calc(-50% - 90px)) scale(1.1); /* Hold the position at the peak of the jump */
+  }
+
+  47% {
     transform: translate(-50%, -50%); /* Return to the original position */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); /* Ensure it starts and ends centered */
   }
 }
 

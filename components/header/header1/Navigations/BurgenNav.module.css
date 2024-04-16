@@ -65,10 +65,9 @@
 }
 .openCloseIconDiv {
   top: 0;
-  display: flex;
 }
 
-@media (min-width: 551px) {
+@media (min-width: 700px) {
   .burgerWrapper {
     display: none;
   }

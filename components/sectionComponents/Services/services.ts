@@ -3,6 +3,26 @@ export const categories = ["Restaurant", "Construction", "Gardening", "Other"];
 export const services = [
   {
     category: ["Restaurant"],
+    title: "Building Websites",
+    text: "Building user-friendly, visually compelling websites for restaurants to attract more customers.",
+  },
+  {
+    category: ["Construction"],
+    title: "Building Websites",
+    text: "Constructing robust websites that showcase the capabilities and past projects of construction firms.",
+  },
+  {
+    category: ["Gardening"],
+    title: "Building Websites",
+    text: "Developing websites for gardening services that highlight portfolio galleries and service offerings.",
+  },
+  {
+    category: ["Other"],
+    title: "Building Websites",
+    text: "Providing versatile website solutions tailored to any industry’s needs.",
+  },
+  {
+    category: ["Restaurant"],
     title: "Photography",
     text: "Capturing the ambiance and dishes of your restaurant with professional photography.",
   },
@@ -41,26 +61,7 @@ export const services = [
     title: "Logo Creation",
     text: "Developing distinctive logos that capture the core identity of diverse businesses.",
   },
-  {
-    category: ["Restaurant"],
-    title: "Building Websites",
-    text: "Building user-friendly, visually compelling websites for restaurants to attract more customers.",
-  },
-  {
-    category: ["Construction"],
-    title: "Building Websites",
-    text: "Constructing robust websites that showcase the capabilities and past projects of construction firms.",
-  },
-  {
-    category: ["Gardening"],
-    title: "Building Websites",
-    text: "Developing websites for gardening services that highlight portfolio galleries and service offerings.",
-  },
-  {
-    category: ["Other"],
-    title: "Building Websites",
-    text: "Providing versatile website solutions tailored to any industry’s needs.",
-  },
+
   {
     category: ["Restaurant"],
     title: "Design For Any Devices",

@@ -16,7 +16,7 @@ export default function Chachaweb() {
   const { isIntersecting, ref } = useIntersectionObserver({});
 
   return (
-    <div className={`darkGradient ${styles.chachawebHeroWrapper}`}>
+    <div className={`container2 ${styles.chachawebHeroWrapper}`}>
       <TextComponent />
       <div className={styles.rightWrapper}>
         <div className={styles.overlay}></div>

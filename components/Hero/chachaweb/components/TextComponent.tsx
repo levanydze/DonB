@@ -1,13 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMobileAlt,
-  faCameraRetro,
-  faClipboardList,
-  faShareAlt,
-  faGlobe,
-  faPenNib,
-  faMapMarkedAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import styles from "./TextComponent.module.css";
 import Link from "next/link";
 

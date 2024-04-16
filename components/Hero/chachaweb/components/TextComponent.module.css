@@ -49,32 +49,39 @@
 .text1 {
   animation: appear 2s forwards;
   animation-delay: 3s;
+  width: auto;
   opacity: 0;
 }
 .text2 {
   animation: appear 2s forwards;
   animation-delay: 3.5s;
+  width: fit-content;
   opacity: 0;
 }
 .text3 {
   animation: appear 2s forwards;
   animation-delay: 4s;
+  width: fit-content;
   opacity: 0;
+  width: auto;
 }
 .text4 {
   animation: appear 2s forwards;
   animation-delay: 4.5s;
   opacity: 0;
+  width: fit-content;
   color: var(--color1) !important;
 }
 .text5 {
   animation: appear 2s forwards;
   animation-delay: 5s;
+  width: fit-content;
   opacity: 0;
 }
 .text6 {
   animation: appear 2s forwards;
   animation-delay: 5.5s;
+  width: fit-content;
   opacity: 0;
 }
 
@@ -86,6 +93,7 @@
 .text7 {
   animation: appear 2s forwards;
   animation-delay: 8.5s;
+  width: fit-content;
   opacity: 0;
 }
 
@@ -93,6 +101,7 @@
   animation: appear 2s forwards;
   animation-delay: 9s;
   opacity: 0;
+  width: fit-content;
 }
 
 .title3 {
@@ -104,6 +113,7 @@
   animation: appear 2s forwards;
   animation-delay: 13s;
   opacity: 0;
+  width: fit-content;
 }
 
 /* .text10 {
@@ -161,6 +171,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    padding: 0;
   }
 }
 

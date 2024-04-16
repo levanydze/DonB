@@ -47,6 +47,11 @@
   box-shadow: 0px 0px 15px 5px var(--gray2);
 }
 
+@media (max-width: 850px) {
+  .mainWrapper {
+    width: 100%;
+  }
+}
 @media (max-width: 650px) {
   .mainWrapper {
     flex-direction: column;
