@@ -1,18 +1,16 @@
 "use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./ServiceCards.module.css";
 import RecProCard from "./components/Card";
-import { services, categories } from "./services";
-import { useState } from "react";
+import { services } from "./services";
+import { ServiceDetailProps } from "./services";
+
 export default function ServiceCards() {
-  const [currentCategory, setCurentCategory] = useState<string>("Restaurant");
-  const handleCategory = (category: string) => {
-    setCurentCategory(category);
-  };
-  const filteredServices = services.filter(
-    (service) =>
-      currentCategory === "" || service.category.includes(currentCategory)
-  );
+  const [currentCategory, setCurrentCategory] = useState<string>("Restaurant");
+
+  const filteredServices = services[currentCategory] as ServiceDetailProps[];
+
   return (
     <div className="container1">
       <section>
@@ -22,15 +20,15 @@ export default function ServiceCards() {
             <h6 className="title8">Services</h6>
           </div>
           <div className={styles.bussinesInputs}>
-            {categories.map((category) => (
+            {Object.keys(services).map((category, index) => (
               <input
-                key={category}
+                key={index}
                 className={
                   currentCategory === category ? styles.activeCategory : ""
                 }
                 type="button"
                 value={category}
-                onClick={() => handleCategory(category)}
+                onClick={() => setCurrentCategory(category)}
               />
             ))}
           </div>
@@ -39,15 +37,16 @@ export default function ServiceCards() {
               <RecProCard
                 key={index}
                 title={service.title}
+                extraTitle={service.extraTitle}
                 text={service.text}
                 index={index + 1}
-                category={currentCategory}
+                important={service.important}
               />
             ))}
           </div>
           <div className={styles.getCoutBut}>
-            <Link className="button3 title3" href={"./contact"}>
-              Get A Coute
+            <Link className="button3 title3" href="./contact">
+              Get A Quote
             </Link>
           </div>
         </div>

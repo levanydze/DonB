@@ -28,6 +28,7 @@
   font-size: 20px;
   font-weight: 100;
   transition: all 0.5s;
+  min-width: 120px;
 }
 .bussinesInputs input:hover {
   background-color: var(--gray8);

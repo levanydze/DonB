@@ -40,7 +40,8 @@
   margin: 0 auto;
 }
 .burgerActiveNav {
-  transform: translateY(420px);
+  transform: translateY(400px);
+  /* margin: 0px; */
 }
 
 .burgerActiveLink {
@@ -67,7 +68,7 @@
   top: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
   .burgerWrapper {
     display: none;
   }

@@ -21,9 +21,14 @@
 }
 .cardTextDiv h3 {
   padding: 20px 0;
+  display: flex;
 }
 .cardTextDiv p {
   height: 85px;
+}
+.extraTitle {
+  color: var(--color1);
+  padding-right: 10px;
 }
 
 .arrow {
