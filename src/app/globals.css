@@ -43,7 +43,7 @@ body {
 
   /* used for photo overlay to write text over */
   --overlayLight: rgba(0, 0, 0, 0.218);
-  --overlay: rgba(0, 0, 0, 0.369);
+  --overlay: rgba(0, 0, 0, 0.526);
   --overlayDark: rgba(0, 0, 0, 0.736);
 
   /* font colors*/

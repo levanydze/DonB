@@ -18,7 +18,6 @@ export default function Reservation() {
         short={false}
       />
       <ReservationContactForm />
-      <MapTimes />
     </div>
   );
 }

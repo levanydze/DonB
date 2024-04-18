@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../../components/contactForms/CotactForm1/ContactForm";
+import ContactForm from "../../../components/contactForms/CotactForm4/ContactForm";
 import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
 import MapTimes from "../../../components/sectionComponents/map&times/MapTimes";
@@ -12,7 +12,6 @@ export default function ContactPage() {
     <div className="fadeOut">
       <PageHeadImage value="CONTSCT US" image={pizza2High} short={true} />
       <ContactForm />
-      <MapTimes />
     </div>
   );
 }

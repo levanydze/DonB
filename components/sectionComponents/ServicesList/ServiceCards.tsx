@@ -19,7 +19,7 @@ export default function ServiceCards() {
             <h5 className="text1">TECH</h5>
             <h6 className="title8">Services</h6>
           </div>
-          <div className={styles.bussinesInputs}>
+          <div className={styles.caregory}>
             {Object.keys(services).map((category, index) => (
               <input
                 key={index}
@@ -46,7 +46,7 @@ export default function ServiceCards() {
           </div>
           <div className={styles.getCoutBut}>
             <Link className="button3 title3" href="./contact">
-              Get A Quote
+              Book Online Meeting
             </Link>
           </div>
         </div>

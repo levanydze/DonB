@@ -11,7 +11,7 @@
 .textDiv {
   padding-bottom: 40px;
 }
-.bussinesInputs {
+.caregory {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -20,7 +20,7 @@
   background-color: var(--gray8);
   color: var(--gray2);
 }
-.bussinesInputs input {
+.caregory input {
   margin: 0 10px;
   border: 1px solid var(--gray2);
   padding: 6px 15px;
@@ -28,9 +28,9 @@
   font-size: 20px;
   font-weight: 100;
   transition: all 0.5s;
-  min-width: 120px;
+  min-width: 140px;
 }
-.bussinesInputs input:hover {
+.caregory input:hover {
   background-color: var(--gray8);
   color: var(--gray2);
 }
@@ -56,10 +56,10 @@
   }
 }
 @media (max-width: 850px) {
-  .bussinesInputs {
+  .caregory {
     flex-direction: column;
   }
-  .bussinesInputs input {
+  .caregory input {
     margin: 5px 0;
   }
 }

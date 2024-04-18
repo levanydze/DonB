@@ -10,6 +10,14 @@
   gap: 100px;
   overflow: hidden;
 }
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverseButton {
+  display: flex;
+  justify-content: end;
+}
+
 .imageWrapper {
   width: 30%;
   min-width: 300px;
@@ -37,7 +45,7 @@
 .textWrapper h2 {
   color: var(--color1);
 }
-.textWrapper h6 {
+.textWrapper a {
   margin-top: 10px;
 }
 

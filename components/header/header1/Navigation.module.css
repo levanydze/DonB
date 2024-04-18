@@ -1,5 +1,6 @@
 .mainWrap {
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 .navigationWrapper {
   margin: 0 auto;
@@ -9,17 +10,12 @@
   max-width: 1500px;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
 }
 .scrolledFix {
   backdrop-filter: blur(10px);
   position: fixed;
   background-color: var(--overlayDark);
-  transition: all 1s;
   top: 0;
-}
-.NoScrolledFix {
-  transition: all 1s;
 }
 
 .navigationWrapper h3 {

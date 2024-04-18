@@ -23,7 +23,7 @@ const ContactForm: React.FC = () => {
     if (!nameValue) {
       setNameError(true);
     }
-    if (!emailValue) {
+    if (!emailValue || !emailValue.includes("@")) {
       setEmailError(true);
     }
     if (!messageValue) {
@@ -63,11 +63,11 @@ const ContactForm: React.FC = () => {
 
           <input
             className={`${styles.input} ${styles.miniInput}
-             ${emailError ? styles.inputRed : ""}
+             ${emailError ? `${styles.inputRed}  ${styles.emailInput}` : ""}
            `}
             type="email"
             name="user_email"
-            placeholder="Email"
+            placeholder="Enter your email address"
             value={emailValue}
             onChange={(e) => setEmailValue(e.target.value)}
           />
@@ -82,13 +82,13 @@ const ContactForm: React.FC = () => {
           onChange={(e) => setMessageValue(e.target.value)}
         />
         <button
-          value="SENDd"
+          value="SEND"
           type={nameValue && messageValue && emailValue ? "submit" : "button"}
           className={`${!buttonDisable ? "button1" : "button1Disabled"} w-full 
             styles.buttonSend
           `}
           onClick={
-            !nameValue || !messageValue || !emailValue
+            !nameValue || !messageValue || !emailValue.includes("@")
               ? handleErrors
               : () => setButtonDisable(true)
           }

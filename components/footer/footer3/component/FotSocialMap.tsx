@@ -6,13 +6,15 @@ export default function FotSocialMap() {
   return (
     <ul className={styles.ftMap}>
       {socialMediaLinks.map((links, index) => (
-        <li key={index} className={styles.socialMedia}>
+        <ul key={index} className={styles.socialMedia}>
           {Object.entries(links).map(([media, url]) => (
-            <Link href={url} key={url} target="_blank">
-              {media}
-            </Link>
+            <li key={url}>
+              <Link href={url} target="_blank">
+                {media}
+              </Link>
+            </li>
           ))}
-        </li>
+        </ul>
       ))}
     </ul>
   );

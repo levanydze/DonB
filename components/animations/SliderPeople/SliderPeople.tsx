@@ -31,55 +31,59 @@ const SliderPeople = () => {
 
   return (
     <Fragment>
-      <div className="container2">
-        <section className={styles.section}>
-          <div className={styles.title}>
-            <h2 className="title4">The Crew</h2>
-          </div>
-          <div className={styles.sectionCenter}>
-            {people.map((person, personIndex) => {
-              const { id, image, name, title, quote } = person;
-              let position = styles.nextSlide;
-              if (personIndex === index) {
-                position = styles.activeSlide;
-              }
+      <div className="container1">
+        <section>
+          <div className={styles.wrapper}>
+            <div className={styles.title}>
+              <h2 className="title4">The Crew</h2>
+            </div>
+            <div className={styles.sectionCenter}>
+              {people.map((person, personIndex) => {
+                const { id, image, name, title, quote } = person;
+                let position = styles.nextSlide;
+                if (personIndex === index) {
+                  position = styles.activeSlide;
+                }
 
-              if (
-                personIndex === index - 1 ||
-                (index === 0 && personIndex === people.length - 1)
-              ) {
-                position = styles.lastSlide;
-              }
+                if (
+                  personIndex === index - 1 ||
+                  (index === 0 && personIndex === people.length - 1)
+                ) {
+                  position = styles.lastSlide;
+                }
 
-              return (
-                <div className={` ${styles.article} ${position}`} key={id}>
-                  <Image
-                    src={image}
-                    alt={name}
-                    className={styles.personImg}
-                    loading="lazy"
-                    width={200}
-                    height={200}
-                  />
-                  <h4 className={`title4 color1 ${styles.name}`}>{name}</h4>
-                  <p className={` title3 font1 ${styles.title}`}>{title}</p>
-                  <p className={` text1 textMedium ${styles.text}`}>{quote}</p>
-                  <FaQuoteRight className={` title5 color1 ${styles.icon}`} />
-                </div>
-              );
-            })}
-            <button
-              className={`textMedium ${styles.prev}`}
-              onClick={() => setIndex(index - 1)}
-            >
-              <FiChevronLeft />
-            </button>
-            <button
-              className={`textMedium ${styles.next}`}
-              onClick={() => setIndex(index + 1)}
-            >
-              <FiChevronRight />
-            </button>
+                return (
+                  <div className={` ${styles.article} ${position}`} key={id}>
+                    <Image
+                      src={image}
+                      alt={name}
+                      className={styles.personImg}
+                      loading="lazy"
+                      width={200}
+                      height={200}
+                    />
+                    <h4 className={`title4 color1 ${styles.name}`}>{name}</h4>
+                    <p className={` title3 font1 ${styles.title}`}>{title}</p>
+                    <p className={` text1 textMedium ${styles.text}`}>
+                      {quote}
+                    </p>
+                    <FaQuoteRight className={` title5 color1 ${styles.icon}`} />
+                  </div>
+                );
+              })}
+              <button
+                className={`textMedium ${styles.prev}`}
+                onClick={() => setIndex(index - 1)}
+              >
+                <FiChevronLeft />
+              </button>
+              <button
+                className={`textMedium ${styles.next}`}
+                onClick={() => setIndex(index + 1)}
+              >
+                <FiChevronRight />
+              </button>
+            </div>
           </div>
         </section>
       </div>

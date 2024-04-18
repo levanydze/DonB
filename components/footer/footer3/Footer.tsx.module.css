@@ -48,7 +48,7 @@
     padding: 30px;
     height: auto;
   }
-  .leftSide a {
+  .leftSide {
     display: none;
   }
 }
@@ -56,7 +56,14 @@
   .leftSide {
     display: none;
   }
-  .footContact a {
+  .footContact {
     display: none;
+  }
+  .mainWrapper ul {
+    padding: 0;
+  }
+  .rightSide {
+    display: flex;
+    justify-content: space-evenly;
   }
 }

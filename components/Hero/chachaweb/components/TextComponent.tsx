@@ -8,7 +8,7 @@ export default function TextComponent() {
       <div className={styles.textWrapper}>
         <div className={styles.sectionWrapper}>
           <h2 className={styles.title1}>What We Do?</h2>
-          <h3 className={styles.text1}>We build websites</h3>
+          <h1 className={styles.text1}>We build websites</h1>
           <h3 className={styles.text2}>We create logo</h3>
           <h3 className={styles.text3}>We make responsive design</h3>
           <h3 className={`${styles.text4} ${styles.photographer}`}>

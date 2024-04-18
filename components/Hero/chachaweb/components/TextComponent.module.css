@@ -28,7 +28,8 @@
   padding-top: 7%;
 }
 
-.textWrapper h3 {
+.textWrapper h3,
+.textWrapper h1 {
   font-size: 25px;
   color: var(--textLight);
   width: max-content;
@@ -180,7 +181,8 @@
     position: absolute;
     height: 100vh;
   }
-  .textWrapper h3 {
+  .textWrapper h3,
+  .textWrapper h1 {
     font-size: 20px;
   }
   .textWrapper h2 {

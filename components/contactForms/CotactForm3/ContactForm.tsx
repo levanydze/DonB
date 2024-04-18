@@ -41,15 +41,6 @@ const ContactForm: React.FC = () => {
     <div className="container2">
       <section>
         <div className={styles.contactWrapper}>
-          <div className={styles.leftSide}>
-            <h2 className="title8">Want to grow your business with us?</h2>
-            <p>
-              Sollicitudin arcu accumsan nisi sit malesuada fermentum id libero,
-              feugiat. Ullamcorper placerat mattis quis non in adipiscing cursus
-              odio nibh.
-            </p>
-          </div>
-
           <div className={styles.rightSide}>
             <form
               className={`${styles.form} ${emailSent ? styles.none : ""}`}

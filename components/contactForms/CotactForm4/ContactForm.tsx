@@ -9,8 +9,10 @@ const ContactForm: React.FC = () => {
   const [buttonDisable, setButtonDisable] = useState<boolean>(false);
 
   const [nameValue, setNameValue] = useState<string>("");
+  const [budgetValue, setBudgetValue] = useState<string>("");
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailValue, setEmailValue] = useState<string>("");
+  const [phoneValue, setPhoneValue] = useState<string>("");
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageValue, setMessageValue] = useState<string>("");
   const [messageError, setMessageError] = useState<boolean>(false);
@@ -41,21 +43,14 @@ const ContactForm: React.FC = () => {
     <div className="container2">
       <section>
         <div className={styles.contactWrapper}>
-          <div className={styles.leftSide}>
-            <h2 className="title8">Want to grow your business with us?</h2>
-            <p>
-              Sollicitudin arcu accumsan nisi sit malesuada fermentum id libero,
-              feugiat. Ullamcorper placerat mattis quis non in adipiscing cursus
-              odio nibh.
-            </p>
-          </div>
-
-          <div className={styles.rightSide}>
+          <div className={styles.innerWrapper}>
             <form
               className={`${styles.form} ${emailSent ? styles.none : ""}`}
               ref={form}
               onSubmit={onSubmit}
             >
+              <p>Contact</p>
+              <h5 className="title6">Get in touch</h5>
               <div className={styles.smallInputs}>
                 <div className={styles.inputDiv}>
                   <p>Name</p>
@@ -82,6 +77,31 @@ const ContactForm: React.FC = () => {
                     placeholder="Enter your email address"
                     value={emailValue}
                     onChange={(e) => setEmailValue(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className={styles.smallInputs}>
+                <div className={styles.inputDiv}>
+                  <p>Budget</p>
+                  <input
+                    className={`${styles.input}`}
+                    type="text"
+                    name="budget"
+                    placeholder="40 000sek"
+                    value={budgetValue}
+                    onChange={(e) => setBudgetValue(e.target.value)}
+                  />
+                </div>
+
+                <div className={styles.inputDiv}>
+                  <p>Phone number</p>
+                  <input
+                    className={`${styles.input}`}
+                    type="tel"
+                    name="user_phone"
+                    placeholder="+46 707 707 707"
+                    value={phoneValue}
+                    onChange={(e) => setPhoneValue(e.target.value)}
                   />
                 </div>
               </div>

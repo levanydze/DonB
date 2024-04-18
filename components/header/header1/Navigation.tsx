@@ -26,9 +26,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
 
   return (
     <div
-      className={`${styles.mainWrap} ${
-        isScrolled ? styles.scrolledFix : styles.NoScrolledFix
-      }`}
+      className={`${styles.mainWrap} ${isScrolled ? styles.scrolledFix : ""}`}
     >
       <div className={`${styles.navigationWrapper}`}>
         <Link href={"./"}>

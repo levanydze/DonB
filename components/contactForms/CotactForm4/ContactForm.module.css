@@ -4,25 +4,24 @@
   justify-content: space-evenly;
   gap: 2%;
 }
-.leftSide {
-  width: 45%;
-  color: var(--textLight);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding-bottom: 70px;
+
+.innerWrapper {
+  width: 80%;
+  background-color: var(--backgroundLight);
+  padding: 100px 50px 100px 50px;
 }
-.rightSide {
-  width: 45%;
+
+.innerWrapper h5 {
+  padding-top: 20px;
 }
 .form input,
 .form textarea {
-  background-color: var(--color2);
-  border-bottom: 1px solid var(--textMedium);
+  background-color: var(--backgroundLight);
+  border-bottom: 1px solid var(--textDark);
   width: 100%;
 }
 .form p {
-  color: var(--textLight);
+  color: var(--textDark);
   font-size: 17px;
 }
 
@@ -59,13 +58,14 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  padding-top: 50px;
 }
 
 .input {
   height: 50px;
   letter-spacing: 1px;
   width: 100%;
-  color: var(--textLight);
+  color: var(--textDark);
 }
 
 .input:focus {
@@ -100,10 +100,9 @@
 @media (max-width: 1100px) {
   .contactWrapper {
     flex-direction: column;
-    padding-top: 0;
   }
-  .leftSide,
-  .rightSide {
+
+  .innerWrapper {
     width: 100%;
   }
   .formSent {
@@ -116,11 +115,24 @@
     flex-direction: column;
     gap: 5px;
   }
-  .leftSide h2 {
-    font-size: 30px;
-    padding-bottom: 30px;
+  .smallInputs {
+    padding: 0;
   }
+  .smallInputs div {
+    padding: 20px 0;
+  }
+
   .formSent {
     padding: 10px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactWrapper {
+    padding: 40px 20px;
+  }
+  .innerWrapper {
+    padding: 30px;
+    width: 100%;
   }
 }

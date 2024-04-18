@@ -1,11 +1,10 @@
 import React from "react";
 import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
-import Dashboard from "../../../components/animations/SliderPeople/SliderPeople";
-import MapTimes from "../../../components/sectionComponents/map&times/MapTimes";
-import TwoTextAbout from "../../../components/sectionComponents/TwoTextAbout/TwoTextAbout";
-import PhotoText from "../../../components/sectionComponents/PhotoText/PhotoText";
-
+import RecentProjects from "../../../components/sectionComponents/RecentProjects/RecentProjects";
+import ThreeReviews from "../../../components/sectionComponents/ThreeReviews/ThreeReviews";
+import ServerCard from "../../../components/sectionComponents/ServicesList/ServiceCards";
+import ContactForm from "../../../components/contactForms/CotactForm2/ContactForm";
 export const metadata = {
   title: "About",
 };
@@ -14,19 +13,11 @@ export default function AboutPage() {
   const { headImage, pizza1High, chef } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="ABOUT US" image={pizza1High} short={true} />
-      <TwoTextAbout />
-      <PhotoText
-        image={chef}
-        title1="Leader's Word"
-        title2="MADE FOR FUTURE"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"
-        sign="Levani Levanidze"
-        // reverse
-      />
-      {/* <FramerSlider /> */}
-      <Dashboard />
-      <MapTimes />
+      <PageHeadImage value="OUR WORK" image={pizza1High} short={true} />
+      <RecentProjects arrayNumber={99} headTitle="Recent Projects" />
+      <ServerCard />
+      <ThreeReviews />
+      <ContactForm />
     </div>
   );
 }

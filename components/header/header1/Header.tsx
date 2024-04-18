@@ -9,7 +9,7 @@ export default function Header3() {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
-      setIsScrolled(position > 2300); // Set to true if scrolled more than 50px
+      setIsScrolled(position > 1200); // Set to true if scrolled more than 50px
     };
 
     // Add scroll event listener

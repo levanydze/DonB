@@ -38,12 +38,12 @@ import { NavItemProps } from "../components/header/header3/Navigation";
 export const navItems: NavItemProps[] = [
   { title: "HOME", url: "/", homePage: true },
   // { title: "Menu", url: "/menu" },
-  { title: "SERVICES", url: "/services" },
+  { title: "WEBSITES", url: "/websites" },
   { title: "WORK", url: "/work" },
   { title: "CONTACT", url: "/contact" },
   // { title: "BOOK A MEET", url: "/reservation", button: true },
 ];
 
-// firebase iiner menuLink for fetching menu
+// firebase iner menuLink for fetching menu for specific restaurant
 // for example: export const firebaseMenuLink = "chachaab/menu";
 export const firebaseMenuLink = "chachaab/menu";

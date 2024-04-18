@@ -1,30 +1,44 @@
 import Image from "next/image";
 import styles from "./ShortImageText.module.css";
+import Link from "next/link";
 
 interface compProps {
+  title: string;
+  text: string;
+  button: string;
+  target: string;
   image: string;
   alt: string;
+  reverse?: boolean;
 }
 
-export default function ShortImageText({ image, alt }: compProps) {
+export default function ShortImageText({
+  image,
+  alt,
+  title,
+  text,
+  button,
+  target,
+  reverse,
+}: compProps) {
   return (
     <div className={` container1 ${styles.background} `}>
       <section>
-        <div className={styles.mainWrapper}>
-          <div className={styles.imageWrapper}>
+        <div
+          className={`${styles.mainWrapper} ${reverse ? styles.reverse : ""}`}
+        >
+          <div className={`${styles.imageWrapper} `}>
             <Image src={image} alt={alt} width={500} height={300}></Image>
           </div>
           <div className={styles.textWrapper}>
-            <h2 className="title4">
-              Websites That Provides Best Practice in Any Devices
-            </h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-              minus eveniet, iste id officia, voluptates expedita aliquid sit
-              laudantium nisi illum recusandae eligendi molestias aut dolor
-              vitae deleniti dolorum ea.
-            </p>
-            <h6 className="button3">Wanna Have One?</h6>
+            <h2 className="title4">{title}</h2>
+            <p>{text}</p>
+
+            <div className={`${reverse ? styles.reverseButton : ""}`}>
+              <Link href={target} className="button3">
+                {button}
+              </Link>
+            </div>
           </div>
           <div className={styles.overlay}></div>
         </div>

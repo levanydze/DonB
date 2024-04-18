@@ -15,7 +15,8 @@ export default function RecProCard({
 }: cardProps) {
   return (
     <div className={styles.mainWrapper}>
-      <Link href={"/"} className={styles.overlay}></Link>
+      {/* <Link href={"/"} className={styles.overlay}></Link> */}
+      <p className={styles.overlay}></p>
 
       <div className={styles.cardTextDiv}>
         <p className={`textMedium ${styles.numeration}`}>0{index}</p>

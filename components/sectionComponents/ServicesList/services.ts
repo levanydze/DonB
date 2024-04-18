@@ -19,7 +19,7 @@ export const services: Services = {
       text: "Capturing the ambiance and dishes of your restaurant with professional photography.",
     },
     {
-      title: "Menu Control Panel",
+      title: "QR Menu + Control Panel",
       important: true,
       text: "Quickly control of your menu: add, delete, edit, or toggle items. from your mobile phone or computer",
     },
@@ -90,7 +90,7 @@ export const services: Services = {
   ],
   Art: [
     {
-      title: "Website Design for Artists",
+      title: "Building website",
       text: "Creating stunning visual website that showcase artists' portfolios beautifully.",
     },
     {
@@ -101,13 +101,14 @@ export const services: Services = {
       title: "Logo Creation",
       text: "Designing distinctive logos that capture the unique identity of art businesses.",
     },
-    {
-      title: "SEO Optimisation",
-      text: "Enhancing online visibility for artists and galleries to attract more patrons.",
-    },
+
     {
       title: "Design For Any Devices",
       text: "Ensuring your restaurant’s website is perfectly operational across all devices.",
+    },
+    {
+      title: "SEO Optimisation",
+      text: "Enhancing online visibility for artists and galleries to attract more patrons.",
     },
     {
       title: "Google Map Setup",
