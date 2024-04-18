@@ -46,7 +46,7 @@ export default function ServiceCards() {
           </div>
           <div className={styles.getCoutBut}>
             <Link className="button3 title3" href="./contact">
-              Book Online Meeting
+              Get in touch
             </Link>
           </div>
         </div>

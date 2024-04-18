@@ -4,6 +4,7 @@ import styles from "./Navigation.module.css";
 import BurgerNav from "./Navigations/BurgerNav";
 import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
+import { companyName } from "@/controlFolder/control";
 
 export interface NavItemProps {
   title: string;
@@ -30,9 +31,10 @@ const Navigation = ({ isScrolled }: NavProps) => {
     >
       <div className={`${styles.navigationWrapper}`}>
         <Link href={"./"}>
-          <h3 className="color1 title5" onClick={navClose}>
+          <h3 className="color1 title5 font2" onClick={navClose}>
             <p>{"<"}</p>
-            ChaCha
+            Cha
+            {/* {companyName} */}
             <p>{"/>"}</p>
           </h3>
         </Link>
