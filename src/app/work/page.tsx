@@ -6,7 +6,7 @@ import ThreeReviews from "../../../components/sectionComponents/ThreeReviews/Thr
 import ServerCard from "../../../components/sectionComponents/ServicesList/ServiceCards";
 import ContactForm from "../../../components/contactForms/CotactForm2/ContactForm";
 export const metadata = {
-  title: "About",
+  title: "Work",
 };
 
 export default function AboutPage() {

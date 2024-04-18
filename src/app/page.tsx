@@ -9,6 +9,7 @@ import ServiceCards from "../../components/sectionComponents/ServicesList/Servic
 import ContactForm from "../../components/contactForms/CotactForm2/ContactForm";
 import ThreePictures from "../../components/sectionComponents/ThreePictures/ThreePictures";
 import ThreeReviews from "../../components/sectionComponents/ThreeReviews/ThreeReviews";
+import TitleThree from "../../components/sectionComponents/TitleThree/TitleThree";
 export const metadata = {
   title: `${mainTitle}`,
   description: `${companyDescription}`,
@@ -16,7 +17,8 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon } = assetsJson;
-  const { responsiveScreens, guy, developerpng } = imagesJson;
+  const { responsiveScreens, responsiveTall, photoSceneWithout, webBuilding } =
+    imagesJson;
   return (
     <main className="fadeOut">
       <Chachaweb />
@@ -33,13 +35,26 @@ export default function Home() {
       <RecentProjects arrayNumber={2} headTitle="Recent Projects" />
 
       <ThreePictures
-        image1={responsiveScreens}
-        image2={responsiveScreens}
-        image3={responsiveScreens}
+        image1={photoSceneWithout}
+        image2={responsiveTall}
+        image3={webBuilding}
         alt1={"blabla"}
         alt2={"blabla"}
         alt3={"blabla"}
       />
+      <TitleThree
+        mainTitle={"What we do?"}
+        image1={photoSceneWithout}
+        image2={webBuilding}
+        image3={responsiveTall}
+        alt1={"blabla"}
+        alt2={"blabla"}
+        alt3={"blabla"}
+        title1={"Photography"}
+        title2={"Web Development"}
+        title3={"Result"}
+      />
+
       <ThreeReviews />
       <ContactForm />
     </main>

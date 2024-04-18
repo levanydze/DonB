@@ -100,7 +100,7 @@
 @media (max-width: 1100px) {
   .contactWrapper {
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 50px;
   }
   .leftSide,
   .rightSide {
@@ -115,6 +115,9 @@
   .form div {
     flex-direction: column;
     gap: 5px;
+  }
+  .leftSide {
+    gap: 0;
   }
   .leftSide h2 {
     font-size: 30px;
