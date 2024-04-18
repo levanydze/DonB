@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
                     type="text"
                     name="budget"
                     placeholder="40 000sek"
-                    value={budgetValue}
+                    value={budgetValue} //
                     onChange={(e) => setBudgetValue(e.target.value)}
                   />
                 </div>
