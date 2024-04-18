@@ -33,8 +33,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
         <Link href={"./"}>
           <h3 className="color1 title5 font2" onClick={navClose}>
             <p>{"<"}</p>
-            Cha
-            {/* {companyName} */}
+            {companyName}
             <p>{"/>"}</p>
           </h3>
         </Link>
