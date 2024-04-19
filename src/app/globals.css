@@ -145,6 +145,11 @@ body {
   font-family: var(--font3);
 }
 
+.text2 {
+  font-family: var(--font1);
+  font-size: 17px;
+}
+
 .text1 {
   font-size: 15px;
   font-family: var(--font1);
@@ -154,10 +159,16 @@ body {
   .text1 {
     font-size: 14px;
   }
+  .text2 {
+    font-size: 15px;
+  }
 }
 @media (max-width: 600px) {
   .text1 {
     font-size: 13px;
+  }
+  .text2 {
+    font-size: 14px;
   }
 }
 

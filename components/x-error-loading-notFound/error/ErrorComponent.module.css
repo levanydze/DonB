@@ -8,6 +8,9 @@
   width: 100%;
 }
 
-.errorWrapper h5 {
+.errorWrapper h5,
+.errorWrapper a {
   text-align: center;
+  margin: 0 auto;
+  margin-top: 150px;
 }

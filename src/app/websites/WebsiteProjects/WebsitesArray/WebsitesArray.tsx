@@ -1,6 +1,6 @@
 import styles from "./WebsitesArray.module.css";
 import { MdArrowOutward } from "react-icons/md";
-import { projects } from "./projects";
+import { projects } from "../projects";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,18 +8,20 @@ interface RecentProjectsProps {
   //arrayNumbers means list of array
   arrayNumber: number;
   headTitle: string;
+  upperTitle: string;
 }
 
 export default function WebsitesArray({
   arrayNumber,
   headTitle,
+  upperTitle,
 }: RecentProjectsProps) {
   return (
     <div className="container2">
       <section>
         <div className={styles.mainWrapper}>
           <div className={styles.textDiv}>
-            <h5 className="text1">OUR WORK</h5>
+            <h5 className="text1">{upperTitle}</h5>
             <h6 className="title8 font1">{headTitle}</h6>
           </div>
           <div className={styles.cardsWrapper}>
@@ -27,7 +29,10 @@ export default function WebsitesArray({
               .slice(0, arrayNumber) // Only take the first two [key, value] pairs
               .map(([key, project], index) => (
                 <div className={styles.card} key={index}>
-                  <Link href={project.link} className={styles.overlay}></Link>
+                  <Link
+                    href={`/websites/${key}`}
+                    className={`${styles.overlay}`}
+                  ></Link>
                   <div className={styles.imageDiv}>
                     <Image
                       src={project.image}
@@ -46,7 +51,7 @@ export default function WebsitesArray({
           </div>
           {arrayNumber !== 99 ? (
             <div className={styles.viewAll}>
-              <Link className=" button1 " href={"/work"}>
+              <Link className=" button1 " href={"/"}>
                 View All Projects
               </Link>
             </div>

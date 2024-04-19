@@ -1,0 +1,55 @@
+.mainWrapper {
+  padding: 50px 30px;
+}
+.innerWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.imageDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imageDiv img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.textDiv {
+  width: 50%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.textDiv h3 {
+  padding-top: 10px;
+}
+
+.textDiv p {
+  padding-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .innerWrapper {
+    flex-direction: column-reverse;
+  }
+  .textDiv {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .imageDiv {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .textDiv {
+    padding: 0 0 50px 0;
+  }
+}

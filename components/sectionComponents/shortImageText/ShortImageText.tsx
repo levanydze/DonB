@@ -5,8 +5,6 @@ import Link from "next/link";
 interface compProps {
   title: string;
   text: string;
-  button: string;
-  target: string;
   image: string;
   alt: string;
   reverse?: boolean;
@@ -17,8 +15,6 @@ export default function ShortImageText({
   alt,
   title,
   text,
-  button,
-  target,
   reverse,
 }: compProps) {
   return (
@@ -33,12 +29,6 @@ export default function ShortImageText({
           <div className={styles.textWrapper}>
             <h2 className="title4">{title}</h2>
             <p>{text}</p>
-
-            <div className={`${reverse ? styles.reverseButton : ""}`}>
-              <Link href={target} className="button3">
-                {button}
-              </Link>
-            </div>
           </div>
           <div className={styles.overlay}></div>
         </div>

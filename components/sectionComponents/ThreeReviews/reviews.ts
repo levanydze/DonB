@@ -11,10 +11,10 @@ interface ReviewProps {
 export const reviews: ReviewProps = {
   acme: {
     text: `"ChaCha's team transformed our online presence with a stunning website that not only looks great but also performs exceptionally on all devices. Their attention to detail and innovative approach have significantly boosted our business."`,
-    name: "Roger DeNiro",
+    name: "Gabriella Johnsson",
     title: "Co-founder at KSM",
     image:
-      "https://github.com/levanydze/portfoliosupport/blob/main/me.png?raw=true",
+      "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/random%20people/gingerGirl.webp",
     alt: "Roger DeNiro smiling",
   },
   acme2: {
@@ -22,15 +22,15 @@ export const reviews: ReviewProps = {
     name: "Julia Morison",
     title: "Marketing Director at BSP",
     image:
-      "https://github.com/levanydze/portfoliosupport/blob/main/me.png?raw=true",
+      "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/random%20people/blonde%20girl.webp",
     alt: "Julia Morison at a conference",
   },
   acme3: {
     text: `"ChaCha's commitment to excellence is evident in every project they undertake. Their bespoke solutions and proactive service have made them an indispensable part of our operations."`,
-    name: "Alex Johnson",
+    name: "Alex Hansson",
     title: "Operations Manager at TTL",
     image:
-      "https://github.com/levanydze/portfoliosupport/blob/main/me.png?raw=true",
+      "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/random%20people/manWithBeard.webp",
     alt: "Alex Johnson overseeing work",
   },
 };
