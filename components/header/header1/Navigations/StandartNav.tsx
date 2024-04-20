@@ -4,12 +4,17 @@ import styles from "./StandartNav.module.css";
 // import { navItems } from "../NavArray";
 import { navItems } from "../../../../controlFolder/control";
 import { usePathname } from "next/navigation";
+import { NavProps } from "../Navigation";
 
-export default function StandartNav() {
+export default function StandartNav({ isScrolled }: NavProps) {
   const pathname = usePathname();
   return (
     <nav className={styles.mainNavWrap}>
-      <ul className={styles.listWrap}>
+      <ul
+        className={`${!isScrolled ? styles.menuBorder : styles.noMenuBorder} ${
+          styles.listWrap
+        }`}
+      >
         {navItems.map(({ title, homePage, url, button }) => (
           <li key={url}>
             <Link

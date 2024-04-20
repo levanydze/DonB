@@ -17,7 +17,7 @@ export default function PhotoText({
   // Access the category array and then the specific item
   const categoryItems = PhotoTextData[servicesCat];
   const item = categoryItems && categoryItems[number];
-  const { image, upperTitle, title, text } = item;
+  const { image, upperTitle, title, text1, text2, text3, text4 } = item;
 
   return (
     <div className="container1">
@@ -32,9 +32,16 @@ export default function PhotoText({
               <Image src={image} alt={title} width={400} height={700} />
             </div>
             <div className={styles.textDiv}>
-              {upperTitle && <span className="text1">{upperTitle}</span>}
+              {upperTitle && (
+                <span className="text1 textMedium">{upperTitle}</span>
+              )}
               <h3 className="title6">{title}</h3>
-              <p className="text2">{text}</p>
+              <ul className={styles.textsDiv}>
+                <li className="text2">{text1}</li>
+                {text2 ? <li className="text2">{text2}</li> : null}
+                {text3 ? <li className="text2">{text3}</li> : null}
+                {text4 ? <li className="text2">{text4}</li> : null}
+              </ul>
             </div>
           </div>
         </div>

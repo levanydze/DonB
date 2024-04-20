@@ -5,7 +5,7 @@ import ContactForm from "../../../components/contactForms/CotactForm2/ContactFor
 import ServicesWrapper from "./components/ServicesWrapper";
 import WebsitesArray from "../websites/WebsiteProjects/WebsitesArray/WebsitesArray";
 export const metadata = {
-  title: "Work",
+  title: "Services",
 };
 
 export default function AboutPage() {

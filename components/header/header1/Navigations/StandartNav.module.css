@@ -9,9 +9,16 @@
   display: flex;
   gap: 30px;
   align-items: center;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   text-transform: uppercase;
 }
+.menuBorder {
+  border: 1px solid var(--color1);
+  background-color: var(--overlay);
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
 .navLink {
   color: var(--textLight);
   font-weight: 400;
@@ -24,9 +31,6 @@
 .active {
   color: var(--color1);
 }
-
-/* @media (max-width: 720) {
-} */
 
 @media (max-width: 650px) {
   .listWrap {

@@ -20,6 +20,14 @@
   margin: 0 auto;
 }
 
+.container4 {
+  background-color: var(--color2);
+}
+.container4 section {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 @media (max-width: 700px) {
   .container1 section,
   .container2 section {

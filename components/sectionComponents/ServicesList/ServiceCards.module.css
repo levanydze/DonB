@@ -37,21 +37,15 @@
 
 .cardWrapper {
   display: flex;
-  justify-content: space-between;
+
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2%;
 }
 
 .getCoutBut {
   display: flex;
   justify-content: flex-end;
   padding-top: 30px;
-}
-
-@media (max-width: 1100px) {
-  .cardWrapper {
-    justify-content: center;
-  }
 }
 
 @media (max-width: 850px) {

@@ -4,19 +4,21 @@ interface TitleProps {
 }
 export default function TitleCatrgory({ servicesCat }: TitleProps) {
   return (
-    <>
-      {servicesCat === "Restaurant" && (
-        <h3 className={`title6 ${styles.title}`}>Restaurant Digital Front</h3>
-      )}
-      {servicesCat === "Construction" && (
-        <h3 className={`title6 ${styles.title}`}>Construction Web Mastery</h3>
-      )}
-      {servicesCat === "Gardening" && (
-        <h3 className={`title6 ${styles.title}`}>Gardening Online Growth</h3>
-      )}
-      {servicesCat === "Other" && (
-        <h3 className={`title6 ${styles.title}`}>The Way We Work</h3>
-      )}
-    </>
+    <div className="container1">
+      <section>
+        {servicesCat === "Restaurant" && (
+          <h3 className={`title8 ${styles.title}`}>Restaurant</h3>
+        )}
+        {servicesCat === "Construction" && (
+          <h3 className={`title8 ${styles.title}`}>Construction</h3>
+        )}
+        {servicesCat === "Gardening" && (
+          <h3 className={`title8 ${styles.title}`}>Gardening </h3>
+        )}
+        {servicesCat === "Other" && (
+          <h3 className={`title8 ${styles.title}`}>The Way We Work</h3>
+        )}
+      </section>
+    </div>
   );
 }

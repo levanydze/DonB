@@ -58,7 +58,7 @@ export default function ServiceCards({
             ))}
           </div>
           <div className={styles.getCoutBut}>
-            {arrayEmaunt < 6 ? (
+            {arrayEmaunt < 4 ? (
               <Link className="button3 title3" href="./services">
                 View All Services
               </Link>

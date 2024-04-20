@@ -29,6 +29,9 @@ export default function ServicesWrapper() {
       <PhotoText servicesCat={servicesCat} number={0} />
       <PhotoText servicesCat={servicesCat} number={1} reverse />
       <PhotoText servicesCat={servicesCat} number={2} />
+      <PhotoText servicesCat={servicesCat} number={3} reverse />
+      <PhotoText servicesCat={servicesCat} number={4} />
+      <PhotoText servicesCat={servicesCat} number={5} reverse />
     </>
   );
 }

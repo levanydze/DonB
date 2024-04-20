@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
   const onSubmit = sendEmail(form, handleEmailSent);
 
   return (
-    <div className="container2">
+    <div className="container1">
       <section>
         <div className={styles.contactWrapper}>
           <div className={styles.innerWrapper}>

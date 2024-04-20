@@ -12,7 +12,7 @@ export interface NavItemProps {
   homePage?: boolean;
   button?: boolean;
 }
-interface NavProps {
+export interface NavProps {
   isScrolled: boolean;
 }
 
@@ -30,14 +30,14 @@ const Navigation = ({ isScrolled }: NavProps) => {
       className={`${styles.mainWrap} ${isScrolled ? styles.scrolledFix : ""}`}
     >
       <div className={`${styles.navigationWrapper}`}>
-        <Link href={"./"}>
+        <Link href={"./"} className={styles.logo}>
           <h3 className="color1 title5 font2" onClick={navClose}>
             <p>{"<"}</p>
             {companyName}
             <p>{"/>"}</p>
           </h3>
         </Link>
-        <StandartNav />
+        <StandartNav isScrolled={isScrolled} />
         <BurgerNav
           navClose={navClose}
           navToggler={navToggler}

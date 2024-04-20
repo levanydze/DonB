@@ -16,25 +16,29 @@ export default function Chachaweb() {
   const { isIntersecting, ref } = useIntersectionObserver({});
 
   return (
-    <div className={`container2 ${styles.chachawebHeroWrapper}`}>
-      <TextComponent />
-      <div className={styles.rightWrapper}>
-        <div className={styles.overlay}></div>
-        <div className={styles.blueBox}></div>
-        <div className={styles.greenBox}></div>
-        <div className={styles.orangeBox}></div>
-        <div className={`darkGradient2 ${styles.shapeOfBox}`}>
-          <Link
-            href={"./contact"}
-            ref={ref}
-            className={`${styles.startButton} ${
-              isIntersecting ? styles.activate : ""
-            }`}
-          >
-            START NOW
-          </Link>
+    <div className="container4 ">
+      <section>
+        <div className={styles.chachawebHeroWrapper}>
+          <TextComponent />
+          <div className={styles.boxesWrapper}>
+            <div className={styles.overlay}></div>
+            <div className={styles.blueBox}></div>
+            <div className={styles.greenBox}></div>
+            <div className={styles.orangeBox}></div>
+            <div className={`darkGradient2 ${styles.shapeOfBox}`}>
+              <Link
+                href={"./contact"}
+                ref={ref}
+                className={`${styles.startButton} ${
+                  isIntersecting ? styles.activate : ""
+                }`}
+              >
+                START NOW
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
