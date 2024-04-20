@@ -3,9 +3,10 @@ import React, { Suspense } from "react";
 import imagesJson from "../../../../json/images.json";
 import PageHeadImage from "../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import { ProjectDetProps, projects } from "../WebsiteProjects/projects";
-import ContactForm from "@/components/contactForms/CotactForm2/ContactForm";
-import FourBox from "@/components/sectionComponents/FourBoxes/FourBox";
+import ContactForm from "../../../../components/contactForms/CotactForm2/ContactForm";
+import FourBox from "../../../../components/sectionComponents/FourBoxes/FourBox";
 import ItemDetailPage from "./components/ItemDetailPage";
+import ThreePictures from "../../../../components/sectionComponents/ThreePictures/ThreePictures";
 
 export const generateMetadata = ({ params }: SlugPageProps) => {
   try {
@@ -51,7 +52,13 @@ interface SlugPageProps {
 export default function SlugPage({ params }: SlugPageProps) {
   const projectId = params.projectId;
   const project: ProjectDetProps | undefined = projects[projectId];
-  const { headImage, responsiveScreens } = imagesJson;
+  const {
+    headImage,
+    responsiveScreens,
+    QrMenu,
+    webBuilding,
+    photoSceneWithout,
+  } = imagesJson;
 
   // console.log(params.projectId);
   // console.log(Object.keys(projects));
@@ -66,7 +73,14 @@ export default function SlugPage({ params }: SlugPageProps) {
         alt={project.alt}
         describtion={project.describtion}
       />
-
+      <ThreePictures
+        image1={photoSceneWithout}
+        image2={responsiveScreens}
+        image3={webBuilding}
+        alt1=""
+        alt2=""
+        alt3=""
+      />
       <FourBox />
       <ContactForm />
     </div>

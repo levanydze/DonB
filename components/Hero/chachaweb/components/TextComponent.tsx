@@ -29,7 +29,7 @@ export default function TextComponent() {
             href={"/contact"}
             className={`button1 ${styles.button} ${styles.text9}`}
           >
-            Became a client
+            Became a Client
           </Link>
         </div>
       </div>

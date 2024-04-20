@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <main className="fadeOut">
       <Chachaweb />
-      <ServiceCards />
+      <ServiceCards serviceCat={"Other"} arrayEmaunt={3} />
       <ShortImageText
         image={responsiveScreens}
         alt="mobile responsive screens laptop phone "

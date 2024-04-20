@@ -9,7 +9,7 @@ export default function ThreeReviews() {
         <div className={styles.reviewsWrapper}>
           <div>
             <p className="text1 textMedium">TESTIMONALS</p>
-            <h6 className="title7">Clients Review</h6>
+            <h6 className="title7">Client Reviews</h6>
           </div>
           <div className={styles.cardsWrapper}>
             {Object.entries(reviews).map(([key, review], index) => (

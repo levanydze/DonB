@@ -21,7 +21,7 @@ export default function ItemDetailPage({
               href={link}
               className={`title6 textLight ${styles.imgOverlay}`}
             >
-              <p>View Live WebSite</p>
+              <p>View Live Website</p>
             </Link>
             <Image src={image} width={2000} height={1500} alt={alt} />
           </div>
@@ -29,6 +29,9 @@ export default function ItemDetailPage({
             <h3 className="title6">{title}</h3>
             <p className="text1 ">{describtion}</p>
           </div>
+          <Link className="button3" href="/contact">
+            Became a Client
+          </Link>
         </div>
       </section>
     </div>

@@ -39,7 +39,7 @@ export const navItems: NavItemProps[] = [
   { title: "HOME", url: "/", homePage: true },
   // { title: "Menu", url: "/menu" },
   { title: "WEBSITES", url: "/websites" },
-  { title: "WORK", url: "/work" },
+  { title: "SERVICES", url: "/services" },
   { title: "CONTACT", url: "/contact" },
   // { title: "BOOK A MEET", url: "/reservation", button: true },
 ];

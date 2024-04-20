@@ -6,10 +6,21 @@ import RecProCard from "./components/Card";
 import { services } from "./services";
 import { ServiceDetailProps } from "./services";
 
-export default function ServiceCards() {
-  const [currentCategory, setCurrentCategory] = useState<string>("Restaurant");
+interface ServiceCardsProps {
+  serviceCat?: string | null;
+  arrayEmaunt: number;
+}
 
-  const filteredServices = services[currentCategory] as ServiceDetailProps[];
+export default function ServiceCards({
+  serviceCat,
+  arrayEmaunt,
+}: ServiceCardsProps) {
+  // const [currentCategory, setCurrentCategory] = useState<string>("Restaurant");
+
+  // const filteredServices = services[serviceCat] as ServiceDetailProps[];
+  const filteredServices = serviceCat
+    ? (services[serviceCat] as ServiceDetailProps[])
+    : [];
 
   return (
     <div className="container1">
@@ -17,9 +28,11 @@ export default function ServiceCards() {
         <div className={styles.mainWrapper}>
           <div className={styles.textDiv}>
             <h5 className="text1">TECH</h5>
-            <h6 className="title8">Services</h6>
+            <h6 className="title8">
+              {serviceCat !== "Other" ? serviceCat : ""} Services
+            </h6>
           </div>
-          <div className={styles.caregory}>
+          {/* <div className={styles.caregory}>
             {Object.keys(services).map((category, index) => (
               <input
                 key={index}
@@ -31,9 +44,9 @@ export default function ServiceCards() {
                 onClick={() => setCurrentCategory(category)}
               />
             ))}
-          </div>
+          </div> */}
           <div className={styles.cardWrapper}>
-            {filteredServices.map((service, index) => (
+            {filteredServices.slice(0, arrayEmaunt).map((service, index) => (
               <RecProCard
                 key={index}
                 title={service.title}
@@ -45,9 +58,15 @@ export default function ServiceCards() {
             ))}
           </div>
           <div className={styles.getCoutBut}>
-            <Link className="button3 title3" href="./contact">
-              Get in touch
-            </Link>
+            {arrayEmaunt < 6 ? (
+              <Link className="button3 title3" href="./services">
+                View All Services
+              </Link>
+            ) : (
+              <Link className="button3 title3" href="./contact">
+                Get in touch
+              </Link>
+            )}
           </div>
         </div>
       </section>

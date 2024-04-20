@@ -88,33 +88,7 @@ export const services: Services = {
       text: "Embedding Google Maps to help clients locate your gardening centers or project sites easily.",
     },
   ],
-  Art: [
-    {
-      title: "Building website",
-      text: "Creating stunning visual website that showcase artists' portfolios beautifully.",
-    },
-    {
-      title: "Photography",
-      text: "Professional photography services tailored to capture and enhance artists' works.",
-    },
-    {
-      title: "Logo Creation",
-      text: "Designing distinctive logos that capture the unique identity of art businesses.",
-    },
 
-    {
-      title: "Design For Any Devices",
-      text: "Ensuring your restaurant’s website is perfectly operational across all devices.",
-    },
-    {
-      title: "SEO Optimisation",
-      text: "Enhancing online visibility for artists and galleries to attract more patrons.",
-    },
-    {
-      title: "Google Map Setup",
-      text: "Implementing Google Maps to enhance the geographical accessibility of art exhibitions and galleries.",
-    },
-  ],
   Other: [
     {
       title: "Building website",
@@ -125,6 +99,10 @@ export const services: Services = {
       text: "Adapting our photography services to a wide range of client needs and sectors.",
     },
     {
+      title: "SEO Optimisation",
+      text: "Custom SEO strategies that elevate your business's visibility across various search engines.",
+    },
+    {
       title: "Logo Creation",
       text: "Developing distinctive logos that capture the core identity of diverse businesses.",
     },
@@ -132,10 +110,7 @@ export const services: Services = {
       title: "Design For Any Devices",
       text: "Ensuring optimal functionality and design across all devices for any type of business.",
     },
-    {
-      title: "SEO Optimisation",
-      text: "Custom SEO strategies that elevate your business's visibility across various search engines.",
-    },
+
     {
       title: "Google Map Setup",
       text: "Implementing Google Maps to enhance the geographical accessibility of diverse businesses.",

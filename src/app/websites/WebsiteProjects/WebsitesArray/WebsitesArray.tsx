@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface RecentProjectsProps {
-  //arrayNumbers means list of array
+  //arrayNumbers means amount of  array
   arrayNumber: number;
   headTitle: string;
   upperTitle: string;
