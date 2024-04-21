@@ -40,17 +40,15 @@
   .innerWrapper {
     flex-direction: column-reverse;
   }
+
+  .textDiv p {
+    padding-top: 10px;
+  }
   .textDiv {
     width: 100%;
-    padding-bottom: 50px;
+    padding: 0 0 20px 0;
   }
   .imageDiv {
     width: 100%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .textDiv {
-    padding: 0 0 50px 0;
   }
 }

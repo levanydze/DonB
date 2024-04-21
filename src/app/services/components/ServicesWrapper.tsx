@@ -26,12 +26,12 @@ export default function ServicesWrapper() {
       </div>
       <ServerCard serviceCat={servicesCat} arrayEmaunt={6} />
       <TitleCatrgory servicesCat={servicesCat} />
-      <PhotoText servicesCat={servicesCat} number={0} />
-      <PhotoText servicesCat={servicesCat} number={1} reverse />
-      <PhotoText servicesCat={servicesCat} number={2} />
-      <PhotoText servicesCat={servicesCat} number={3} reverse />
-      <PhotoText servicesCat={servicesCat} number={4} />
-      <PhotoText servicesCat={servicesCat} number={5} reverse />
+      <PhotoText servicesCat={servicesCat} number={0} reverse />
+      <PhotoText servicesCat={servicesCat} number={1} />
+      <PhotoText servicesCat={servicesCat} number={2} reverse />
+      <PhotoText servicesCat={servicesCat} number={3} />
+      <PhotoText servicesCat={servicesCat} number={4} reverse />
+      <PhotoText servicesCat={servicesCat} number={5} />
     </>
   );
 }

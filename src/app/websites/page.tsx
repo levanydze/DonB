@@ -9,10 +9,14 @@ export const metadata = {
 };
 
 export default function servicesPage() {
-  const { headImage, responsiveScreens } = imagesJson;
+  const { responsiveScreens, websitePage } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="Website Templates" image={headImage} short={true} />
+      <PageHeadImage
+        value="Website Templates"
+        image={websitePage}
+        short={true}
+      />
       <WebsitesArray
         arrayNumber={99}
         headTitle="Website Samples"

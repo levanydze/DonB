@@ -12,6 +12,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.marginNull {
+  margin-top: 0;
+}
 .scrolledFix {
   backdrop-filter: blur(10px);
   position: fixed;
@@ -20,11 +23,12 @@
 }
 .logo {
   position: absolute;
+  z-index: 20;
 }
 .navigationWrapper h3 {
   display: flex;
   align-items: center;
-  z-index: 99;
+  z-index: 5;
   line-height: 60px;
 }
 .navigationWrapper p {

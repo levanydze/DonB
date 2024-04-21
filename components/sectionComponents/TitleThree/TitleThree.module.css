@@ -15,7 +15,6 @@
 .eachDiv {
   width: 34%;
   overflow: hidden;
-  color: var(--textLight);
 }
 .threeWrapper img {
   object-fit: cover;

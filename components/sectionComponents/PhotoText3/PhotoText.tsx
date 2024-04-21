@@ -20,7 +20,7 @@ export default function PhotoText({
   const { image, upperTitle, title, text1, text2, text3, text4 } = item;
 
   return (
-    <div className="container1">
+    <div className={reverse ? "container2" : "container1"}>
       <section>
         <div className={styles.mainWrapper}>
           <div

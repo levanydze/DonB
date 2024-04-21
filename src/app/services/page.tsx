@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  const { headImage, pizza1High, chef } = imagesJson;
+  const { servicesPage, pizza1High, chef } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="OUR WORK" image={pizza1High} short={true} />
+      <PageHeadImage value="Our Work" image={servicesPage} short={true} />
       <ServicesWrapper />
       <WebsitesArray
         arrayNumber={2}

@@ -4,10 +4,10 @@ import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHea
 import imagesJson from "../../../json/images.json";
 
 function NotFoundComponent() {
-  const { notFoundHeadImage } = imagesJson;
+  const { notFoundPage } = imagesJson;
   return (
     <div>
-      <PageHeadImage value="Not Found" short={true} image={notFoundHeadImage} />
+      <PageHeadImage value="Not Found" short={true} image={notFoundPage} />
       <div className={styles.notFound}>
         <h6 className="title5">404</h6>
         <h1 className="title3">

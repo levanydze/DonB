@@ -18,7 +18,7 @@ export default function PhotoText({
   text,
 }: PhotoTextProps) {
   return (
-    <div className="container1">
+    <div className={reverse ? "container2" : "container1"}>
       <section>
         <div className={styles.mainWrapper}>
           <div

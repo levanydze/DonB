@@ -29,7 +29,11 @@ const Navigation = ({ isScrolled }: NavProps) => {
     <div
       className={`${styles.mainWrap} ${isScrolled ? styles.scrolledFix : ""}`}
     >
-      <div className={`${styles.navigationWrapper}`}>
+      <div
+        className={`${styles.navigationWrapper} ${
+          isScrolled ? styles.marginNull : ""
+        } `}
+      >
         <Link href={"./"} className={styles.logo}>
           <h3 className="color1 title5 font2" onClick={navClose}>
             <p>{"<"}</p>

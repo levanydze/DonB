@@ -26,10 +26,10 @@ export default function TitleThree({
   title3,
 }: TitleThreeProps) {
   return (
-    <div className="container2">
+    <div className="container1">
       <section>
         <div className={styles.mainWrapper}>
-          <h2 className="title6 textLight">Our Mission</h2>
+          <h2 className="title6">Our Mission</h2>
           <div className={styles.threeWrapper}>
             <div className={styles.eachDiv}>
               <h3 className="title3">{title1}</h3>
