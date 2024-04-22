@@ -203,7 +203,7 @@ export const PhotoTextData: ArrayProps = {
   Other: [
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/web%20building6.webp",
       upperTitle: "Website Building",
       title: "Dynamic Web Presence",
       text1:
@@ -213,7 +213,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
       upperTitle: "Photography",
       title: "Captivating Visuals",
       text1:
@@ -223,7 +223,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/phone%20qr%20code%20.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/logo%20making%20for%20gardening.webp",
       upperTitle: "Logo Creation",
       title: "Distinctive Brand Identity",
       text1:
@@ -233,7 +233,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/responsive2.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/responsive3.webp",
       upperTitle: "Responsive Design",
       title: "Optimized User Experience",
       text1:
@@ -253,7 +253,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/restaurantMenuUpdating.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/google%20map.webp",
       upperTitle: "Google Map Setup",
       title: "Location Highlighting",
       text1:
