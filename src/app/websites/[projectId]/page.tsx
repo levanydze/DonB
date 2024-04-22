@@ -57,6 +57,7 @@ export default function SlugPage({ params }: SlugPageProps) {
     responsiveScreens,
     QrMenu,
     webBuilding,
+    websitePage,
     photoSceneWithout,
   } = imagesJson;
 
@@ -64,7 +65,12 @@ export default function SlugPage({ params }: SlugPageProps) {
   // console.log(Object.keys(projects));
   return (
     <div className={`fadeOut `}>
-      <PageHeadImage short image={project.image} value={project.title} />
+      <PageHeadImage
+        short
+        image={websitePage}
+        alt={"web site building digitalised "}
+        value={project.title}
+      />
       <ItemDetailPage
         text={project.text}
         title={project.title}

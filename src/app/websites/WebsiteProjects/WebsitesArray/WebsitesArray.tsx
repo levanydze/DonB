@@ -43,8 +43,8 @@ export default function WebsitesArray({
                   </div>
                   <div className={styles.cardTextDiv}>
                     <MdArrowOutward className={styles.arrow} />
-                    <p className="text1">{project.title}</p>
-                    <h3 className="title4">{project.text}</h3>
+                    <p className="text1">{project.text}</p>
+                    <h3 className="title4">{project.title}</h3>
                   </div>
                 </div>
               ))}

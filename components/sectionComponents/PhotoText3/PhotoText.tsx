@@ -29,7 +29,7 @@ export default function PhotoText({
             }`}
           >
             <div className={styles.imageDiv}>
-              <Image src={image} alt={title} width={400} height={700} />
+              <Image src={image} alt={title} width={800} height={600} />
             </div>
             <div className={styles.textDiv}>
               {upperTitle && (

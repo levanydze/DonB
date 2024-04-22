@@ -20,7 +20,7 @@ export const PhotoTextData: ArrayProps = {
       text1:
         "Custom websites that reflect your restaurant's unique style and ambiance, showcasing its excellence, website that speaks for you.",
       text2:
-        "This will attract more online visitors and enhance the onsite experience, crucial for advancing your business.",
+        "This will attract more online visitors and improve onsite experience, crucial for advancing your business.",
     },
     {
       image:
@@ -32,7 +32,7 @@ export const PhotoTextData: ArrayProps = {
       text2:
         "Menu images that help your customers make the right and easy choices, giving them a taste of what to order today and what they might try next, ensuring a great dining experience.",
       text3:
-        "Custom photography of your interior and menu will attract more people online.",
+        "Above mentioned two will costumise your website and attract more people online.",
     },
 
     {
@@ -45,14 +45,14 @@ export const PhotoTextData: ArrayProps = {
       text2:
         "It allows your customers to access the menu on their phones and easily navigate between sections.",
       text3:
-        "makes it easy to translate  and  know more what are they ordering for international people",
+        "This feature makes it easy to translate menu items, helping international guests understand and explore what they’re ordering.",
     },
 
     {
       image:
         "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/restaurantMenuUpdating.webp",
       upperTitle: "Menu Control Panel",
-      title: "Updated Menus",
+      title: "Updated Menu",
       text1:
         "The control panel allows restaurant managers to easily update all menu items from a phone or any device in just seconds.",
       text2:
@@ -73,172 +73,193 @@ export const PhotoTextData: ArrayProps = {
         "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/googleSearchRestaurant.webp",
       upperTitle: "SEO Optimisation",
       title: "Rank Higher, Reach Further",
-      text1:
-        "Boost your online visibility with our tailored SEO strategies. Increase your search rankings and attract more customers by optimizing content and enhancing user engagement.",
+      text1: `Boost your online visibility with our SEO (Search Engine Optimization) strategies. Increase your search rankings and attract more customers by appearing at the top position in search results.`,
     },
   ],
   Construction: [
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Building website",
-      title: "Building website",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/web%20building6.webp",
+      upperTitle: "Building Construction Website",
+      title: "Professional Website Design for Construction Firms",
       text1:
-        "Constructing robust website that showcase the capabilities and pastBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customers projects of construction firms.",
+        "Build custom websites that highlight construction firms' capabilities and completed projects.",
+      text2: "",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/construction%20capturing.webp",
       upperTitle: "Photography",
-      title: "Photography",
+      title: "Professional Construction Photography",
       text1:
-        "Documenting the progression and detail of construction projects through professional photogBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersraphy.",
+        "Capture the progression and detail of construction projects with professional photography.",
+      text2:
+        "Showcase the transformation before and after your construction team's work, impressing your customers.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/logo%20creation.webp",
       upperTitle: "Logo Creation",
-      title: "Logo Creation",
+      title: "Strong Branding",
       text1:
-        "Creating strong, impactful logos that embody the essence of your conBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersstruction business.",
+        "Creating powerful logos that represent your construction business.",
+      text2:
+        "Stand out in the industry with a unique and memorable brand identity that connects with your target audience.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Design For Any Devices",
-      title: "Design For Any Devices",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/construction%20resp%204.webp",
+      upperTitle: "Responsive Design",
+      title: "Mobile Friendly Website Design",
       text1:
-        "Creating responsive website that work flawlessly for construction industry professionals oBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersn any device.",
+        "Responsive website designs ensuring optimal performance on any device.",
+      text2:
+        "Increase satisfaction and building trust with seamless access across devices.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/googleSearchRestaurant.webp",
       upperTitle: "SEO Optimisation",
-      title: "SEO Optimisation",
+      title: "Improved Search Rankings",
       text1:
-        "Boosting the search engine rankings of constrBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersuction companies to attract more business opportunities.",
+        "Boosting the search engine rankings of construction companies to attract more business opportunities.",
+      text2:
+        "Increase online visibility and attract more organic traffic by optimizing your website for search engines.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/google%20map.webp",
       upperTitle: "Google Map Setup",
-      title: "Google Map Setup",
+      title: "Showcase Locations",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Utilizing Google Maps to showcase construction sites and office locations effectively.",
+      text2:
+        "Make it easy for potential clients to find and visit your locations, improve your online presence and credibility.",
     },
   ],
   Gardening: [
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Building website",
-      title: "Building website",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
+      upperTitle: "Bulding Gardening Website",
+      title: "Beautiful Web Presence",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Create stunning websites that highlight the beauty and expertise of your gardening services.",
+      text2:
+        "Attract more clients and showcase your portfolio of beautiful gardens and landscaping projects.",
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
-
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/shooting%20of%20cutting%20grass.webp",
       upperTitle: "Photography",
-      title: "Photography",
+      title: "Capturing Your Team and Work",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
-    },
-    {
-      image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "Logo Creation",
-      title: "Logo Creation",
-      text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Capture the stunning beauty of gardens and landscapes with our professional photography services. Our photos highlight the vibrant colors and intricate details that make your work stand out.",
+      text2:
+        "Display your gardening projects through high-resolution images that not only inspire but also draw in potential clients. Let your craftsmanship shine in every photo.",
     },
     {
       image:
         "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/responsive2.webp",
-
-      upperTitle: "Design For Any Devices",
-      title: "Design For Any Devices",
+      upperTitle: "Responsive Design",
+      title: "Mobile Friendly Experience",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Responsive website designs that provide an optimal viewing experience on all devices.",
+      text2:
+        "Ensure your website looks great and functions seamlessly on smartphones, tablets, and desktops, attracting more clients.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/googleSearchRestaurant.webp",
       upperTitle: "SEO Optimisation",
-      title: "SEO Optimisation",
+      title: "Increased Online Search Visibility",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Improve the search engine rankings of your gardening business to attract more potential clients.",
+      text2:
+        "Enhance your online presence and attract organic traffic by optimizing your website for search engines.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "Google Map Setup",
-      title: "Google Map Setup",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/logo%20making%20for%20gardening.webp",
+      upperTitle: "Logo Creation",
+      title: "Effective Branding",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Design unique logos that reflect the essence of your gardening business.",
+      text2:
+        "Create a strong brand identity that sets you apart from competitors and resonates with your target audience.",
+    },
+
+    {
+      image:
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/google%20map.webp",
+      upperTitle: "Google Map Setup",
+      title: "Location Showcasing",
+      text1:
+        "Utilize Google Maps to showcase the beautiful gardens and landscapes you've created.",
+      text2:
+        "Make it easy for potential clients to find and visit your locations, increasing your visibility and credibility.",
     },
   ],
   Other: [
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "Building website",
-      title: "Building website",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
+      upperTitle: "Website Building",
+      title: "Dynamic Web Presence",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
-    },
-    {
-      image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "Photography",
-      title: "Photography",
-      text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more ",
+        "Create dynamic websites that effectively showcase the unique offerings of your business.",
       text2:
-        "customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Attract more clients and highlight the diverse range of services you provide.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "SEO Optimisation",
-      title: "SEO Optimisation",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
+      upperTitle: "Photography",
+      title: "Captivating Visuals",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Professional photography that captures the essence of your business and services.",
+      text2:
+        "Attract potential clients with captivating images that showcase your offerings in the best light.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/phone%20qr%20code%20.webp",
       upperTitle: "Logo Creation",
-      title: "Logo Creation",
+      title: "Distinctive Brand Identity",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Design unique logos that represent the essence of your business and set you apart from competitors.",
+      text2:
+        "Create a strong brand identity that resonates with your target audience and leaves a lasting impression.",
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
-      upperTitle: "Design For Any Devices",
-      title: "Design For Any Devices",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/responsive2.webp",
+      upperTitle: "Responsive Design",
+      title: "Optimized User Experience",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Responsive website designs that provide an optimized user experience on all devices.",
+      text2:
+        "Ensure your website looks great and functions seamlessly across smartphones, tablets, and desktops, maximizing engagement and conversions.",
     },
-
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/googleSearchRestaurant.webp",
+      upperTitle: "SEO Optimisation",
+      title: "Improve Online Searchabelity",
+      text1:
+        "Improve the online visibility of your business and attract more potential clients.",
+      text2:
+        "Boost search engine rankings and attract organic traffic by optimizing your website for search engines.",
+    },
+    {
+      image:
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/restaurantMenuUpdating.webp",
       upperTitle: "Google Map Setup",
-      title: "Google Map Setup",
+      title: "Location Highlighting",
       text1:
-        "Utilizing Google Maps to showcase construction sites and office locatBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Utilize Google Maps to highlight the locations and areas you serve.",
+      text2:
+        "Make it easy for potential clients to find and connect with your business, increasing your reach and credibility.",
     },
   ],
 };

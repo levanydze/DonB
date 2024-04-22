@@ -11,9 +11,9 @@ export interface ProjectProps {
 }
 export const projects: ProjectProps = {
   acme: {
-    text: "Build Everything From Scratch",
+    text: "Restaurant Webpage",
     link: "/",
-    title: "Restaurant Webpage",
+    title: "Build Everything From Scratch",
     image:
       "https://github.com/levanydze/portfoliosupport/blob/main/constr.png?raw=true",
     alt: "Acme's custom logo design",

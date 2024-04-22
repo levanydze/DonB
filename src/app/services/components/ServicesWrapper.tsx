@@ -10,7 +10,7 @@ import TitleCatrgory from "./TitleCatrgory/TitleCatrgory";
 export default function ServicesWrapper() {
   const [servicesCat, setServicesCat] = useState<string>("Restaurant");
 
-  const { headImage, pizza1High, chef } = imagesJson;
+  const { headImage, chef } = imagesJson;
   return (
     <>
       <div className={styles.caregory}>

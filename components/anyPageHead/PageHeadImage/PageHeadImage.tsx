@@ -6,10 +6,12 @@ interface PageHeadImageProps {
   image: string;
   value: string;
   short: boolean;
+  alt: string;
 }
 
 export default function PageHeadImage({
   image,
+  alt,
   value,
   short,
 }: PageHeadImageProps) {
@@ -22,9 +24,9 @@ export default function PageHeadImage({
       <Image
         className={` ${styles.mainImage} ${short ? styles.short : ""}`}
         src={image}
-        alt={image}
-        width={1000}
-        height={700}
+        alt={alt}
+        width={2500}
+        height={1500}
         priority
       />
     </div>

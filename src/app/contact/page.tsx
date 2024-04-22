@@ -9,7 +9,12 @@ export default function ContactPage() {
   const { contactPage } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="" image={contactPage} short={true} />
+      <PageHeadImage
+        value=""
+        image={contactPage}
+        short={true}
+        alt="shake a hand bussiness"
+      />
       <ContactForm />
     </div>
   );

@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 import { MdArrowOutward } from "react-icons/md";
-import Link from "next/link";
+// import Link from "next/link";
 import { ServiceDetailProps } from "../services";
 
 interface cardProps extends ServiceDetailProps {

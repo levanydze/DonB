@@ -35,9 +35,22 @@ export default function Home() {
         title="Websites That Provides Best Practice in Any Devices"
         text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, minus eveniet, iste id officia, voluptates expedita aliquid sit laudantium nisi illum recusandae eligendi molestias aut dolor vitae deleniti dolorum ea."
       />
+      <TitleThree
+        mainTitle={"What we do?"}
+        image1={photoSceneWithout}
+        image2={webBuilding}
+        image3={responsiveTall}
+        alt1={"blabla"}
+        alt2={"blabla"}
+        alt3={"blabla"}
+        title1={"Photography"}
+        title2={"Web Development"}
+        title3={"Result"}
+      />
       <PhotoText
         image={photoSceneWithout}
         alt="blabla"
+        reverse
         title1="PHOTOSHOOTING"
         title2="Createing Restaurant Menu From Scratch"
         text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -51,7 +64,6 @@ export default function Home() {
       />
       <PhotoText
         image={QrMenu}
-        reverse
         alt="blabla"
         title1="FOR RESTAURANTS"
         title2="How Does QR Menu Work"
@@ -64,18 +76,7 @@ export default function Home() {
                 eveniet, sed libero suscipit sequi laborum quis explicabo
                 officia ut enim laudantium nobis quos."
       />
-      <TitleThree
-        mainTitle={"What we do?"}
-        image1={photoSceneWithout}
-        image2={webBuilding}
-        image3={responsiveTall}
-        alt1={"blabla"}
-        alt2={"blabla"}
-        alt3={"blabla"}
-        title1={"Photography"}
-        title2={"Web Development"}
-        title3={"Result"}
-      />
+
       <WebsitesArray
         arrayNumber={2}
         headTitle="Most Recent Web Projects"

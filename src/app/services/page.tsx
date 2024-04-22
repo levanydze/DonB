@@ -12,7 +12,12 @@ export default function AboutPage() {
   const { servicesPage, pizza1High, chef } = imagesJson;
   return (
     <div className="fadeOut">
-      <PageHeadImage value="Our Work" image={servicesPage} short={true} />
+      <PageHeadImage
+        alt="web design photography digital and many other service"
+        value="Our Work"
+        image={servicesPage}
+        short={true}
+      />
       <ServicesWrapper />
       <WebsitesArray
         arrayNumber={2}

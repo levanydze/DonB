@@ -15,6 +15,7 @@ export default function servicesPage() {
       <PageHeadImage
         value="Website Templates"
         image={websitePage}
+        alt="website building digitalised"
         short={true}
       />
       <WebsitesArray
