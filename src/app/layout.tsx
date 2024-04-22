@@ -5,6 +5,7 @@ import Header from "../../components/header/header1/Header";
 import Footer from "../../components/footer/footer3/Footer";
 import LowerFoot from "../../components/footer/lowerFooter2/LowerFoot";
 import { googleAnalyticsId } from "../../controlFolder/control";
+import { Analytics } from "@vercel/analytics/react";
 
 //fonts
 const roboto = Roboto_Flex({
@@ -74,6 +75,7 @@ export default function LocaleLayout({
         <Header />
         <div></div>
         {children}
+        <Analytics />
         <Footer />
         <LowerFoot />
       </body>

@@ -14,57 +14,67 @@ export const PhotoTextData: ArrayProps = {
   Restaurant: [
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Digital Presence for Restaurants",
-      title: "Website Development",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
+      upperTitle: "Building Restaurant Website",
+      title: "Delicious Web Creation",
       text1:
-        "Creating a website for your restaurant is not just about going online, it's about opening your doors to a digital dining experience t",
+        "Custom websites that reflect your restaurant's unique style and ambiance, showcasing its excellence, website that speaks for you.",
       text2:
-        "customersBuilding  website for restaurants to attract more customersions effectively.",
+        "This will attract more online visitors and enhance the onsite experience, crucial for advancing your business.",
+    },
+    {
+      image:
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
+      upperTitle: "Food & Design Photography",
+      title: "Guide to the Right Choice",
+      text1:
+        "Custom photography that captures your restaurant's unique style and delicious menu, showcasing its excellence.",
+      text2:
+        "Menu images that help your customers make the right and easy choices, giving them a taste of what to order today and what they might try next, ensuring a great dining experience.",
       text3:
-        "urants to attract more customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
-      text4:
-        "customersBuildmore customersBuilding user-friendly, visually compelling website for restaurants to attract more customersions effectively.",
+        "Custom photography of your interior and menu will attract more people online.",
     },
+
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Culinary Storytelling",
-      title: "Professional Photography",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/phone%20qr%20code%20.webp",
+      upperTitle: "QR Menu",
+      title: "Advanced Dining Tech",
       text1:
-        "A picture is worth a thousand words, and in the culinary world, a photo can be as enticing as the aroma of a gourmet dish. Our professional photography service is designed to capture the heart and soul of your culinary creations, presenting them in the most appetizing and attractive light. From the vibrant colors of fresh ingredients to the elegant plating of your signature dishes, we focus on the details that make your food unique. Our goal is to produce a portfolio of images that not only showcase your menu but also tell the story of your brand, ingredients, and the passion that goes into each dish. Enhance your restaurant's narrative with visuals that draw customers in and leave them craving more.",
+        "QR codes placed on every table to automate and streamline your restaurant's service",
+      text2:
+        "It allows your customers to access the menu on their phones and easily navigate between sections.",
+      text3:
+        "makes it easy to translate  and  know more what are they ordering for international people",
     },
+
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Menu Management Made Easy",
-      title: "QR Menu + Control Panel",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/restaurantMenuUpdating.webp",
+      upperTitle: "Menu Control Panel",
+      title: "Updated Menus",
       text1:
-        "In today’s dynamic dining environment, agility is key. Our QR Menu and Control Panel solutions provide you with the flexibility to adapt your menu to seasonal ingredients, special events, and customer preferences with unparalleled ease. No more reprinting menus or leaving diners with outdated options. Our intuitive system allows for real-time updates, giving you the power to add, remove, or modify items instantly. A QR code-based menu also enhances the customer experience, offering contactless access and interactive elements like dish recommendations and pairings. It's a modern approach to menu management that saves time, reduces costs, and puts you in full control of your culinary offerings.",
+        "The control panel allows restaurant managers to easily update all menu items from a phone or any device in just seconds.",
+      text2:
+        "Using the control panel, you can add new items, delete old ones, edit details, disable or enable them, or even change their position, pretty much everything you need for menu management.",
     },
+
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Responsive Restaurant Designs",
-      title: "Cross-Device Compatibility",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/responsive3.webp",
+      upperTitle: "Responsive Design",
+      title: "Mobile Friendly Webpage",
       text1:
-        "Your patrons live in a multi-screen world, and your website should cater to them wherever they are. We specialize in creating responsive web designs that ensure your restaurant's website performs flawlessly across all devices. Whether your customers are browsing on a smartphone during their commute, a tablet from the comfort of their home, or a desktop at work, your website will offer a consistent and engaging user experience. We prioritize quick load times, easy navigation, and interactive features that make it simple for diners to view your menu, book a table, or place an order for takeout. Our cross-device compatible designs mean that no matter how your customers access your site, they're guaranteed an experience that's as satisfying as your food.",
+        "Experience seamless navigation with our webpages designed for optimal performance across all devices. Whether you're accessing from a smartphone, tablet, or desktop, our responsive design ensures your website looks great and functions perfectly. This universal compatibility is essential for reaching all your customers effectively, wherever they are.",
     },
+
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Findability is Flavorful",
-      title: "SEO Optimization",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/Images/googleSearchRestaurant.webp",
+      upperTitle: "SEO Optimisation",
+      title: "Rank Higher, Reach Further",
       text1:
-        "Visibility is key in the crowded online landscape, and our SEO optimization service ensures that your restaurant stands out. We delve into the algorithmic intricacies that search engines use to rank websites, applying meticulous keyword research, on-page optimizations, and quality content creation to elevate your online presence. By enhancing your website's SEO, we help you attract more diners who are searching for the unique dining experience you provide. From local SEO strategies that target your immediate geographic area to broader campaigns that capture a larger audience, we're here to position your restaurant at the top of the search results – where it belongs.",
-    },
-    {
-      image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
-      upperTitle: "Location Discovery",
-      title: "Google Map Integration",
-      text1:
-        "A key part of the dining experience is locating the perfect place to eat. Our Google Map integration service ensures that when potential diners search for the ideal dining spot, they can easily find and navigate to your restaurant. We go beyond mere pin placement on a map; we enhance your Google Maps listing with rich photos, accurate information, and a direct link to your website. This not only aids in driving foot traffic to your physical location but also strengthens your online presence. By integrating Google Maps into your website, we provide a bridge between the digital and physical realms of your business, offering convenience and clarity to your customers, so theytion. Highlight your location prominently on your site, making it easy for guests to find and visit your restaurant.",
+        "Boost your online visibility with our tailored SEO strategies. Increase your search rankings and attract more customers by optimizing content and enhancing user engagement.",
     },
   ],
   Construction: [
@@ -128,7 +138,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
 
       upperTitle: "Photography",
       title: "Photography",
@@ -146,7 +156,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://github.com/levanydze/constructionSupport/blob/main/high%20resolution%20images/pizza-vegetables-high.jpeg?raw=true",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/responsive2.webp",
 
       upperTitle: "Design For Any Devices",
       title: "Design For Any Devices",

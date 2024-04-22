@@ -10,110 +10,119 @@ interface Services {
 export const services: Services = {
   Restaurant: [
     {
-      title: "Building website",
-      text: "Building user-friendly, visually compelling website for restaurants to attract more customers.",
+      title: "Building Website",
+      text: "Make your restaurant stand out with our modern, easy to navigate websites. We build sites that satisfy and attract more customers",
     },
     {
       extraTitle: "Food",
       title: "Photography",
-      text: "Capturing the ambiance and dishes of your restaurant with professional photography.",
+      text: "Professional photography showcases your menu and restaurant interiors, setisfies customers. ",
     },
     {
-      title: "QR Menu + Control Panel",
-      important: true,
-      text: "Quickly control of your menu: add, delete, edit, or toggle items. from your mobile phone or computer",
+      extraTitle: "QR Menu",
+      title: "",
+      text: "Boost your restaurant's service with our QR menu, easily updated and translated on any customer’s phone.",
     },
     {
-      title: "Design For Any Devices",
-      text: "Ensuring your restaurant’s website is perfectly operational across all devices.",
+      title: "",
+      extraTitle: " Menu Control Panel",
+      text: "Our control panel lets you easily add, delete, or update menu items instantly, keeping your offerings fresh and current",
     },
+    {
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Our responsive web design ensures smooth navigation including mobile, tablet, laptop, or any devices",
+    },
+
     {
       title: "SEO Optimisation",
-      text: "Optimizing your restaurant’s website to enhance its visibility and attract more diners via search engines.",
-    },
-    {
-      title: "Google Map Setup",
-      text: "Integrating Google Maps with your restaurant’s website for easier location access by customers.",
+      text: "Imrove your restaurant's search engine visibility to attract more customers online with our optimized website design.",
     },
   ],
   Construction: [
     {
-      title: "Building website",
-      text: "Constructing robust website that showcase the capabilities and past projects of construction firms.",
+      title: "Building Website",
+      text: "Modern, easy to navigate web design that speaks for your construction business will attracts more clients",
     },
     {
-      title: "Photography",
-      text: "Documenting the progression and detail of construction projects through professional photography.",
-    },
-    {
-      title: "Logo Creation",
-      text: "Creating strong, impactful logos that embody the essence of your construction business.",
-    },
-    {
-      title: "Design For Any Devices",
-      text: "Creating responsive website that work flawlessly for construction industry professionals on any device.",
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Your customers can access your business website on mobile phones, laptops, and other devices, ensuring the best user experience.",
     },
     {
       title: "SEO Optimisation",
-      text: "Boosting the search engine rankings of construction companies to attract more business opportunities.",
+      text: "Good SEO helps your business rank higher on Google, making it easier for customers to find you when searching online.",
+    },
+    {
+      extraTitle: "Targeted",
+      title: "Photography",
+      text: "We offer high quality photography for your projects, adding a trustworthy feel to your webpage",
+    },
+
+    {
+      title: "Logo Creation",
+      text: "We can assist with branding and logo creation to elevate your business identity",
     },
     {
       title: "Google Map Setup",
-      text: "Utilizing Google Maps to showcase construction sites and office locations effectively.",
+      text: "Use Google Maps to help local people find and use your services.",
     },
   ],
   Gardening: [
     {
-      title: "Building website",
-      text: "Developing website for gardening services that highlight portfolio galleries and service offerings.",
+      title: "Building Website",
+      text: "Modern, easy to navigate web design that speaks for your gardening business will attracts more clients.",
     },
     {
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Your customers can access your business website on mobile phones, laptops, and other devices, ensuring the best user experience.",
+    },
+    {
+      extraTitle: "Targeted",
       title: "Photography",
-      text: "Highlighting the beauty and intricacy of garden designs with stunning photographic detail.",
-    },
-    {
-      title: "Logo Creation",
-      text: "Crafting logos that reflect the creativity and sustainability of your gardening business.",
-    },
-    {
-      title: "Design For Any Devices",
-      text: "Designing responsive website that make garden and landscape portfolios accessible on any device.",
+      text: "We offer high quality photography for your projects, adding a trustworthy feel to your webpage.",
     },
     {
       title: "SEO Optimisation",
-      text: "Improving the online presence of your gardening services to increase customer engagement.",
+      text: "Good SEO helps your business rank higher on Google, making it easier for customers to find you when searching online.",
+    },
+    {
+      title: "Logo Creation",
+      text: "Create logos that reflect the creativity and sustainability of your gardening business.",
     },
     {
       title: "Google Map Setup",
-      text: "Embedding Google Maps to help clients locate your gardening centers or project sites easily.",
+      text: "Use Google Maps to help local people find and use your services.",
     },
   ],
 
   Other: [
     {
-      title: "Building website",
-      text: "Providing versatile website solutions tailored to any industry’s needs.",
+      title: "Building Website",
+      text: "We build custom websites with modern designs that are easy to navigate, suitable for any industry.",
     },
     {
+      extraTitle: "Targeted",
       title: "Photography",
-      text: "Adapting our photography services to a wide range of client needs and sectors.",
+      text: "Our photography services are customized to highlight the unique aspects of a wide range of sectors and client needs.",
     },
     {
       title: "SEO Optimisation",
-      text: "Custom SEO strategies that elevate your business's visibility across various search engines.",
+      text: "Good SEO helps your business rank higher on Google, making it easier for customers to find you when searching online.",
     },
     {
       title: "Logo Creation",
-      text: "Developing distinctive logos that capture the core identity of diverse businesses.",
+      text: "We design distinctive logos that effectively capture and represent the core identity of diverse businesses.",
     },
     {
-      title: "Design For Any Devices",
-      text: "Ensuring optimal functionality and design across all devices for any type of business.",
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Our responsive designs ensure smooth navigation across all devices, enhancing user experience for any business.",
     },
-
     {
       title: "Google Map Setup",
-      text: "Implementing Google Maps to enhance the geographical accessibility of diverse businesses.",
+      text: "We implement Google Maps to improve geographical accessibility and showcase your business locations effectively.",
     },
   ],
 };

@@ -5,12 +5,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  gap: 4%;
 }
 .reverse {
   flex-direction: row-reverse;
 }
 .imageDiv {
-  width: 50%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,13 +23,12 @@
 }
 
 .textDiv {
-  width: 50%;
-  padding: 0 50px;
+  width: 48%;
+  /* padding: 0 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .textDiv h3 {
   padding-top: 10px;
 }
@@ -43,6 +43,9 @@
   gap: 20px;
   padding-left: 15px;
 }
+
+/* @media (max-width: 1200px) { */
+/* } */
 
 @media (max-width: 1000px) {
   .innerWrapper {

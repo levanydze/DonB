@@ -27,6 +27,9 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
   text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .imgOverlay:hover {
   opacity: 1;
@@ -37,4 +40,11 @@
 }
 .textWrapper p {
   padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .imgOverlay p {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
