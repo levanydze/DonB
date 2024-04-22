@@ -16,6 +16,7 @@ export default function Reservation() {
         value="RESERV A TABLE"
         image={pizzaHeadImage}
         short={false}
+        alt="reserv table"
       />
       <ReservationContactForm />
     </div>

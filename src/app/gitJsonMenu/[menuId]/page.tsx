@@ -45,7 +45,12 @@ export default function MenuDetailsPage({ params }: MenuDetailsPageProps) {
 
   return (
     <div className={`fadeOut ${styles.pageDetailWrapper}`}>
-      <PageHeadImage image={headImage} short={true} value="Yummy Yummy" />
+      <PageHeadImage
+        image={headImage}
+        short={true}
+        value="Yummy Yummy"
+        alt="pizza"
+      />
       <div className={styles.lowerDiv}>
         <Link href="./">
           <RiArrowGoBackFill className={styles.goBackIcon} />

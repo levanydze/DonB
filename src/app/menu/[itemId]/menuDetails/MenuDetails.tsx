@@ -18,7 +18,12 @@ export default async function MenuDetails({ itemId }: { itemId: string }) {
   }
   return (
     <>
-      <PageHeadImage image={headImage} short={true} value={data.name} />
+      <PageHeadImage
+        image={headImage}
+        short={true}
+        value={data.name}
+        alt={data.name}
+      />
       <Link href="./">
         <RiArrowGoBackFill className={styles.goBackIcon} />
       </Link>

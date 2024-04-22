@@ -17,6 +17,7 @@ export default function MenuPage() {
         value="OUR DELICIOUS MENU"
         image={pizza3High}
         short={true}
+        alt="pizza"
       />
       <Suspense fallback={<LoadingComponent />}>
         <MenuList category="pizza" />

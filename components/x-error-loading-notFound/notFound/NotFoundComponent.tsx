@@ -7,7 +7,12 @@ function NotFoundComponent() {
   const { notFoundPage } = imagesJson;
   return (
     <div>
-      <PageHeadImage value="Not Found" short={true} image={notFoundPage} />
+      <PageHeadImage
+        value="Not Found"
+        short={true}
+        image={notFoundPage}
+        alt="not found"
+      />
       <div className={styles.notFound}>
         <h6 className="title5">404</h6>
         <h1 className="title3">

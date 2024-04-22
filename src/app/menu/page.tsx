@@ -33,6 +33,7 @@ export default async function ServerMenu() {
         value="OUR DELICIOUS MENU"
         image={pizza3High}
         short={true}
+        alt="pizza"
       />
       <div className="container2 ">
         {sortedSections.map((section) => (
