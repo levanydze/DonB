@@ -74,15 +74,16 @@ export const services: Services = {
       text: "Modern, easy to navigate web design that speaks for your gardening business will attracts more clients.",
     },
     {
-      extraTitle: "Responsive",
-      title: "Design",
-      text: "Your customers can access your business website on mobile phones, laptops, and other devices, ensuring the best user experience.",
-    },
-    {
       extraTitle: "Targeted",
       title: "Photography",
       text: "We offer high quality photography for your projects, adding a trustworthy feel to your webpage.",
     },
+    {
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Your customers can access your business website on mobile phones, laptops, and other devices, ensuring the best user experience.",
+    },
+
     {
       title: "SEO Optimisation",
       text: "Good SEO helps your business rank higher on Google, making it easier for customers to find you when searching online.",
@@ -108,6 +109,11 @@ export const services: Services = {
       text: "Our photography services are customized to highlight the unique aspects of a wide range of sectors and client needs.",
     },
     {
+      extraTitle: "Responsive",
+      title: "Design",
+      text: "Our responsive designs ensure smooth navigation across all devices, enhancing user experience for any business.",
+    },
+    {
       title: "SEO Optimisation",
       text: "Good SEO helps your business rank higher on Google, making it easier for customers to find you when searching online.",
     },
@@ -115,11 +121,7 @@ export const services: Services = {
       title: "Logo Creation",
       text: "We design distinctive logos that effectively capture and represent the core identity of diverse businesses.",
     },
-    {
-      extraTitle: "Responsive",
-      title: "Design",
-      text: "Our responsive designs ensure smooth navigation across all devices, enhancing user experience for any business.",
-    },
+
     {
       title: "Google Map Setup",
       text: "We implement Google Maps to improve geographical accessibility and showcase your business locations effectively.",

@@ -10,10 +10,10 @@ export default function ContactPage() {
   return (
     <div className="fadeOut">
       <PageHeadImage
-        value=""
+        value="Contact Us"
         image={contactPage}
         short={true}
-        alt="shake a hand bussiness"
+        alt="shake a hand"
       />
       <ContactForm />
     </div>

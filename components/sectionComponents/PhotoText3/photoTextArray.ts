@@ -213,7 +213,7 @@ export const PhotoTextData: ArrayProps = {
     },
     {
       image:
-        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/web-buiilding.webp",
+        "https://raw.githubusercontent.com/levanydze/SUP/main/Cha/shooting-without-person.webp",
       upperTitle: "Photography",
       title: "Captivating Visuals",
       text1:

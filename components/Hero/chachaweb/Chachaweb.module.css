@@ -23,6 +23,7 @@
   width: 100%;
   background-color: var(--overlay);
   display: none;
+  z-index: 2;
 }
 .blueBox {
   height: 150px;
@@ -101,6 +102,8 @@
   transform: translate(-50%, -50%); /* Center the button */
   width: max-content;
   color: var(--color3);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+
   cursor: pointer;
   animation: jumpOverAndShake 3s ease-in-out; /* Changed to ease-in-out for smoothness */
   animation-delay: 15s;
@@ -197,7 +200,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .overlay {
     display: block;
   }

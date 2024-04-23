@@ -2,3 +2,10 @@
   color: var(--textDark);
   padding: 0 30px 50px 70px;
 }
+
+@media (max-width: 550px) {
+  .title {
+    color: var(--textDark);
+    padding: 0 30px 30px 30px;
+  }
+}

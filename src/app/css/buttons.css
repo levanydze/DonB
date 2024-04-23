@@ -13,6 +13,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .button1:hover {
   background-color: var(--color2);
@@ -49,6 +50,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .button2:hover {
   background-color: var(--color1);
@@ -68,6 +70,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .button3:hover {
   background-color: var(--color3);

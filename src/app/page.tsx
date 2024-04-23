@@ -32,8 +32,8 @@ export default function Home() {
       <ShortImageText
         image={responsiveScreens}
         alt="mobile responsive screens laptop phone "
-        title="Websites That Provides Best Practice in Any Devices"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, minus eveniet, iste id officia, voluptates expedita aliquid sit laudantium nisi illum recusandae eligendi molestias aut dolor vitae deleniti dolorum ea."
+        title="Optimal Performance on Any Device"
+        text="Experience flawless functionality and design with our websites, optimized for every device. Whether you’re on a phone, tablet, or desktop, our sites deliver the best user experience, adapting seamlessly to meet your needs. Enjoy perfect viewing and interactive ease no matter where you are."
       />
       <TitleThree
         mainTitle={"What we do?"}
@@ -46,6 +46,15 @@ export default function Home() {
         title1={"Photography"}
         title2={"Web Development"}
         title3={"Result"}
+        text1={
+          "Our photos show the story of your work. We take great care with light and detail to make pictures that really show off what you do."
+        }
+        text2={
+          "Turning ideas into websites. Our development make what you want happen with modern and right fit web services."
+        }
+        text3={
+          "The final product is a modern and custom website with simple navigation and great images attracts people and builds trust"
+        }
       />
       <PhotoText
         image={photoSceneWithout}

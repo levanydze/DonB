@@ -12,6 +12,9 @@ interface TitleThreeProps {
   title1: string;
   title2: string;
   title3: string;
+  text1: string;
+  text2: string;
+  text3: string;
 }
 export default function TitleThree({
   mainTitle,
@@ -24,6 +27,9 @@ export default function TitleThree({
   title1,
   title2,
   title3,
+  text1,
+  text2,
+  text3,
 }: TitleThreeProps) {
   return (
     <div className="container1">
@@ -32,15 +38,27 @@ export default function TitleThree({
           <h2 className="title6">Our Mission</h2>
           <div className={styles.threeWrapper}>
             <div className={styles.eachDiv}>
-              <h3 className="title3">{title1}</h3>
+              <div className={styles.textDiv}>
+                <h3 className="title3">{title1}</h3>
+                <h4 className="text1">{text1}</h4>
+              </div>
+
               <Image src={image1} alt={alt1} width={1000} height={1000}></Image>
             </div>
             <div className={styles.eachDiv}>
-              <h3 className="title3">{title2}</h3>
+              <div className={styles.textDiv}>
+                <h3 className="title3">{title2}</h3>
+                <h4 className="text1">{text2}</h4>
+              </div>
+
               <Image src={image2} alt={alt2} width={1400} height={1500}></Image>
             </div>
             <div className={styles.eachDiv}>
-              <h3 className="title3">{title3}</h3>
+              <div className={styles.textDiv}>
+                <h3 className="title3">{title3}</h3>
+                <h4 className="text1">{text3}</h4>
+              </div>
+
               <Image src={image3} alt={alt3} width={1000} height={1000}></Image>
             </div>
           </div>
