@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { sendEmail } from "./EmailService"; // npm install --save @emailjs/browser
 import styles from "./ContactForm.module.css";
 
-const ContactForm: React.FC = () => {
+export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
   const [emailSent, setEmailSent] = useState<boolean>(false);
   const [buttonDisable, setButtonDisable] = useState<boolean>(false);
@@ -44,9 +44,11 @@ const ContactForm: React.FC = () => {
           <div className={styles.leftSide}>
             <h2 className="title8">Want to grow your business with us?</h2>
             <p>
-              Sollicitudin arcu accumsan nisi sit malesuada fermentum id libero,
-              feugiat. Ullamcorper placerat mattis quis non in adipiscing cursus
-              odio nibh.
+              We're here to support businesses of every kind. Whether you're a
+              startup or a seasoned enterprise, we're ready to assist you. Have
+              questions? Don't hesitate to reach out! Our team is always
+              available to provide you with the information and assistance you
+              need. Your success is our priority
             </p>
           </div>
 
@@ -124,6 +126,4 @@ const ContactForm: React.FC = () => {
       </section>
     </div>
   );
-};
-
-export default ContactForm;
+}

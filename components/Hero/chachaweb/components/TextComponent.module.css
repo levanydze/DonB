@@ -194,8 +194,10 @@
     position: absolute;
     height: 100vh;
   }
-  .textWrapper li,
   .textWrapper h1 {
+    font-size: 25px;
+  }
+  .textWrapper li {
     font-size: 20px;
   }
   .textWrapper h2 {

@@ -18,7 +18,7 @@ export default function ShortImageText({
   reverse,
 }: compProps) {
   return (
-    <div className={` container1 ${styles.background} `}>
+    <div className={` container3 ${styles.background} `}>
       <section>
         <div
           className={`${styles.mainWrapper} ${reverse ? styles.reverse : ""}`}

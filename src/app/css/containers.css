@@ -1,7 +1,8 @@
 .container1 section {
   max-width: 2000px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 30px 100px;
+
   color: var(--textDark);
 }
 
@@ -11,7 +12,7 @@
 .container2 section {
   max-width: 2000px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 30px 100px;
   color: var(--textLight);
 }
 .container3 {
@@ -30,6 +31,13 @@
   max-width: 2000px;
   margin: 0 auto;
   color: var(--textLight);
+}
+
+@media (max-width: 1500px) {
+  .container1 section,
+  .container2 section {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 700px) {
