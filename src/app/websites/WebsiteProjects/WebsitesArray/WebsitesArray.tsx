@@ -51,7 +51,7 @@ export default function WebsitesArray({
           </div>
           {arrayNumber !== 99 ? (
             <div className={styles.viewAll}>
-              <Link className=" button3 " href={"/"}>
+              <Link className=" button3 " href={"/websites"}>
                 View All Projects
               </Link>
             </div>

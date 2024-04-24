@@ -43,7 +43,7 @@ export default function ContactForm() {
         <div className={styles.contactWrapper}>
           <div className={styles.leftSide}>
             <h2 className="title8">Want to grow your business with us?</h2>
-            <p>
+            <p className="text2">
               We're here to support businesses of every kind. Whether you're a
               startup or a seasoned enterprise, we're ready to assist you. Have
               questions? Don't hesitate to reach out! Our team is always

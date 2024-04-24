@@ -18,6 +18,7 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon } = assetsJson;
+  const { photoSceneAbowePasta } = imagesJson;
   const {
     responsiveScreens,
     responsiveTall,
@@ -57,7 +58,7 @@ export default function Home() {
         }
       />
       <PhotoText
-        image={photoSceneWithout}
+        image={photoSceneAbowePasta}
         alt="food photography camera tripod softboxes light  "
         reverse
         title1="PHOTOSHOOTING"

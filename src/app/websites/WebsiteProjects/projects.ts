@@ -12,7 +12,7 @@ export interface ProjectProps {
 export const projects: ProjectProps = {
   acme: {
     text: "Restaurant Webpage",
-    link: "/",
+    link: "https://vuvuleo.com",
     title: "Build Everything From Scratch",
     image:
       "https://github.com/levanydze/portfoliosupport/blob/main/constr.png?raw=true",
@@ -22,7 +22,7 @@ export const projects: ProjectProps = {
   },
   acme2: {
     text: "Elevating your corporate identity",
-    link: "/",
+    link: "https://artoflevanidze.com",
     title: "Brand Identity Configuration",
     image:
       "https://github.com/levanydze/portfoliosupport/blob/main/artofl.jpg?raw=true",
@@ -32,7 +32,7 @@ export const projects: ProjectProps = {
   },
   acme3: {
     text: "Seo Optimisaton",
-    link: "/",
+    link: "https://restaurant2024.vercel.app",
     title: "Logo Creation and Market Strategy",
     image:
       "https://github.com/levanydze/portfoliosupport/blob/main/vuvuleo.png?raw=true",
@@ -42,7 +42,7 @@ export const projects: ProjectProps = {
   },
   acme4: {
     text: "Focused on innovation",
-    link: "/",
+    link: "https://levanidze.com",
     title: "Menu Control Panel",
     image:
       "https://github.com/levanydze/portfoliosupport/blob/main/LEVANIDZE.jpg?raw=true",

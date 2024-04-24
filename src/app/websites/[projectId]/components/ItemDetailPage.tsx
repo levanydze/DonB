@@ -23,7 +23,7 @@ export default function ItemDetailPage({
             >
               <p>View Live Website</p>
             </Link>
-            <Image src={image} width={2000} height={1500} alt={alt} />
+            <Image src={image} width={1000} height={800} alt={alt} />
           </div>
           <div className={styles.textWrapper}>
             <h3 className="title6">{title}</h3>

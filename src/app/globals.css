@@ -35,7 +35,7 @@ body {
 
   --color1: #e35069; /*pripary bright color */
   --color2: #13141e; /* secondary dark color*/
-  --color3: rgb(50, 157, 207);
+  --color3: #329dcf;
 
   /* used for components background*/
   --backgroundDark: #13141e;
