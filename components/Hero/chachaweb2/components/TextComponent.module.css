@@ -6,6 +6,8 @@
   justify-content: center;
   gap: 7%;
   padding-left: 50px;
+  position: relative;
+  z-index: 1;
 }
 .buttonsDiv {
   display: flex;
@@ -34,37 +36,31 @@
 }
 @media (max-width: 1000px) {
   .textDiv {
-    margin-top: 5%;
-    gap: 15%;
-    justify-content: flex-start;
-    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 10% auto 0 auto;
+    gap: 10%;
+    justify-content: space-evenly;
+    height: 75%;
+    padding-top: 15%;
+    /* padding-left: 0px; */
+    padding: 15% 10px 0 10px;
   }
-  .mainTitle {
-    text-wrap: nowrap;
+  .textDiv h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--gray1);
   }
   .buttonsDiv {
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 5%;
   }
 }
 
 @media (max-width: 700px) {
   .textDiv {
-    gap: 10%;
-  }
-  .mainTitle {
-    font-size: 20px;
-    text-wrap: wrap;
-
-    width: 300px;
-  }
-  .textDiv h2 {
-    font-size: 17px;
-  }
-  .buttonsDiv {
-    flex-direction: column;
-  }
-  .buttonsDiv a {
-    margin-bottom: 20px;
+    gap: 5%;
   }
 }
