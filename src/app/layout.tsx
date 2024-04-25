@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Flex, Gabriela, Great_Vibes } from "next/font/google";
+import {
+  Inter,
+  Roboto_Flex,
+  Gabriela,
+  Montserrat,
+  Great_Vibes,
+} from "next/font/google";
 import "./globals.css";
 import Header from "../../components/header/header1/Header";
 import Footer from "../../components/footer/footer3/Footer";
@@ -17,9 +23,14 @@ const inter = Inter({
   variable: "--font1",
   weight: ["200", "300", "400", "500", "600", "700"],
 });
-const gabriela = Gabriela({
+// const gabriela = Gabriela({
+//   subsets: ["latin"],
+//   weight: ["400"],
+//   variable: "--font2",
+// });
+const montseraat = Montserrat({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font2",
 });
 const great = Great_Vibes({
@@ -70,10 +81,9 @@ export default function LocaleLayout({
         </Script>
       </head>
       <body
-        className={`${gabriela.variable} ${roboto.className} ${inter.variable} ${great.variable}   `}
+        className={`${montseraat.variable} ${roboto.className} ${inter.variable} ${great.variable}   `}
       >
         <Header />
-        <div></div>
         {children}
         <Analytics />
         <Footer />

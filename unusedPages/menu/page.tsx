@@ -1,8 +1,8 @@
 import { fireData } from "./functions";
 import ServerCard from "./components/ServerCard";
-import imagesJson from "../../../json/images.json";
-import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
-import { sectionOrder } from "../../../controlFolder/control";
+import imagesJson from "../../json/images.json";
+import PageHeadImage from "../../components/anyPageHead/PageHeadImage/PageHeadImage";
+import { sectionOrder } from "../../controlFolder/control";
 export const revalidate = 300; // 5 minutes
 
 export const metadata = {

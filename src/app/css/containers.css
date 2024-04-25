@@ -1,13 +1,18 @@
 .container1 section {
+  /* component's wrapper Light color with padding */
   max-width: 2000px;
   margin: 0 auto;
   padding: 30px 100px;
-
   color: var(--textDark);
 }
 
+/* _______ */
+/* _______ */
+/* _______ */
+
 .container2 {
   background-color: var(--color2);
+  /* component's wrapper Dark color with padding */
 }
 .container2 section {
   max-width: 2000px;
@@ -15,8 +20,13 @@
   padding: 30px 100px;
   color: var(--textLight);
 }
+
+/* _______ */
+/* _______ */
+/* _______ */
+
 .container3 {
-  background-color: var(--color2);
+  /* background color light without padding */
 }
 .container3 section {
   max-width: 2000px;
@@ -24,14 +34,23 @@
   color: var(--textDark);
 }
 
+/* _______ */
+/* _______ */
+/* _______ */
+
 .container4 {
   background-color: var(--color2);
+  /* background color DARK without padding */
 }
 .container4 section {
   max-width: 2000px;
   margin: 0 auto;
   color: var(--textLight);
 }
+
+/* _______ */
+/* _______ */
+/* _______ */
 
 @media (max-width: 1500px) {
   .container1 section,

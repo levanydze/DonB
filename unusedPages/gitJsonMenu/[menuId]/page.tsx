@@ -4,9 +4,9 @@ import { RiArrowGoBackFill } from "react-icons/ri";
 
 import styles from "./page.module.css";
 import MenuDetails from "./menuDetails/MenuDetails";
-import PageHeadImage from "../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
-import LoadingComponent from "../../../../components/x-error-loading-notFound/loading/LoadingComponent";
-import imageJson from "../../../../json/images.json";
+import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
+import LoadingComponent from "../../../components/x-error-loading-notFound/loading/LoadingComponent";
+import imageJson from "../../../json/images.json";
 
 import { getData } from "../DataFetch";
 

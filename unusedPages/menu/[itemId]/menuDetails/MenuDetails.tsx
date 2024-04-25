@@ -2,11 +2,11 @@ import styles from "./MenuDetails.module.css";
 import Image from "next/image";
 import { fireEachData } from "../../functions";
 // import { MenuItemProps } from "../../functions";
-import imageJson from "../../../../../json/images.json";
-import PageHeadImage from "../../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
+import imageJson from "../../../../json/images.json";
+import PageHeadImage from "../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import Link from "next/link";
-import NotFoundComponent from "../../../../../components/x-error-loading-notFound/notFound/NotFoundComponent";
+import NotFoundComponent from "../../../../components/x-error-loading-notFound/notFound/NotFoundComponent";
 
 export default async function MenuDetails({ itemId }: { itemId: string }) {
   const { headImage } = imageJson;

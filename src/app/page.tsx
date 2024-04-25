@@ -2,7 +2,7 @@ import imagesJson from "../../json/images.json";
 import assetsJson from "../../json/assets.json";
 import { mainTitle } from "../../controlFolder/control";
 import { companyDescription } from "../../controlFolder/control";
-import Chachaweb from "../../components/Hero/chachaweb/Chachaweb";
+import Chachaweb from "../../components/Hero/chachaweb2/Chachaweb";
 import ShortImageText from "../../components/sectionComponents/shortImageText/ShortImageText";
 import ServiceCards from "../../components/sectionComponents/ServicesList/ServiceCards";
 import ContactForm from "../../components/contactForms/CotactForm2/ContactForm";

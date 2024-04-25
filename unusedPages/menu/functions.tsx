@@ -27,7 +27,7 @@ export interface MenuSection {
   menuCategory: string;
   menuItems: MenuItemProps[];
 }
-import { firebaseMenuLink } from "../../../controlFolder/control";
+import { firebaseMenuLink } from "../../controlFolder/control";
 export async function fireData(): Promise<MenuSection[] | null> {
   try {
     const db = getDatabase(app);
