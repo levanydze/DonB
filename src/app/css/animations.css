@@ -141,9 +141,9 @@
   .slideOut,
   .slideUp,
   .fadeUp {
-    animation: none;
-    transform: translateX(0);
-    transform: translatey(0);
-    opacity: 1;
+    /* animation: none; */
+    /* transform: translateX(0); */
+    /* transform: translatey(0); */
+    /* opacity: 1; */
   }
 }
