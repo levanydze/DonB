@@ -17,8 +17,8 @@ export default function TextComponent() {
         <Link href={"/contact"} className="button2 moveUp3">
           Became a Client
         </Link>
-        <Link href={"/contact"} className={`button3 moveUp5`}>
-          See Examples
+        <Link href={"/websites"} className={`button3 moveUp5`}>
+          Example Websites
         </Link>
       </div>
     </div>
