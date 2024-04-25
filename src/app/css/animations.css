@@ -63,26 +63,40 @@
 /* ------------------------------------------- */
 .moveUp1 {
   transform: translateY(200px);
-  animation: moveUp 1s ease forwards;
+  animation: moveUp 2s forwards, cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
 }
 .moveUp2 {
   transform: translateY(200px);
-  animation: moveUp 1.5s ease forwards;
+  animation: moveUp 2.5s forwards, cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
 }
 .moveUp3 {
   transform: translateY(200px);
-  animation: moveUp 1.8s ease forwards;
+  animation: moveUp 2.8s forwards, cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
 }
 .moveUp4 {
   transform: translateY(200px);
-  animation: moveUp 2.2s ease forwards;
+  animation: moveUp 3.2s forwards, cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
+}
+.moveUp5 {
+  transform: translateY(200px);
+  animation: moveUp 3.8s forwards, cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
 }
 
 @keyframes moveUp {
-  from {
+  0% {
+    opacity: 0;
   }
-  to {
+  30% {
+    opacity: 0;
+  }
+  100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -130,5 +144,6 @@
     animation: none;
     transform: translateX(0);
     transform: translatey(0);
+    opacity: 1;
   }
 }

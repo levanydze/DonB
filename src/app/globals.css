@@ -144,6 +144,9 @@ body {
 .font3 {
   font-family: var(--font3);
 }
+.font4 {
+  font-family: var(--font4);
+}
 
 .text2 {
   font-family: var(--font1);

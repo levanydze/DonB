@@ -1,3 +1,70 @@
-/* .heroMainWrapper{
-  
-} */
+.textDiv {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  padding-left: 50px;
+}
+.buttonsDiv {
+  display: flex;
+  gap: 10%;
+}
+
+.mainTitle {
+  font-weight: 400;
+}
+.textDiv h2 {
+  color: var(--gray5);
+  max-width: 80%;
+  font-weight: 300;
+}
+
+@media (max-width: 1300px) {
+  .textDiv {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .mainTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .textDiv {
+    margin-top: 5%;
+    gap: 15%;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .mainTitle {
+    text-wrap: nowrap;
+  }
+  .buttonsDiv {
+    display: flex;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .textDiv {
+    gap: 10%;
+  }
+  .mainTitle {
+    font-size: 20px;
+    text-wrap: wrap;
+
+    width: 300px;
+  }
+  .textDiv h2 {
+    font-size: 17px;
+  }
+  .buttonsDiv {
+    flex-direction: column;
+  }
+  .buttonsDiv a {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+.imgDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.imgsOne,
+.imgsSecond {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2%;
+}
+
+.imgDiv img {
+  object-fit: cover;
+}
+.img1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  animation: boxShape1 4s forwards cubic-bezier(0.025, 0.42, 0.165, 1);
+}
+.img1 img {
+  /* width: 300px; */
+  height: 300px;
+}
+.img2 {
+  overflow: hidden;
+  animation: boxShape3 4s forwards cubic-bezier(0.39, 0.56, 0.83, 0.37);
+}
+.img2 img {
+  width: 500px;
+  height: 500px;
+}
+.img3 {
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  animation: boxShape3 4s forwards cubic-bezier(0.39, 0.56, 0.83, 0.37);
+}
+.img3 img {
+  width: 500px;
+  height: 500px;
+}
+.img4 {
+  overflow: hidden;
+  animation: boxShape4 4s forwards cubic-bezier(0.025, 0.42, 0.165, 1);
+}
+.img4 img {
+  /* width: 300px; */
+  height: 300px;
+}
+
+@keyframes boxShape1 {
+  from {
+  }
+  to {
+    border-radius: 50% 50% 7% 93% / 54% 93% 7% 46%;
+  }
+}
+
+@keyframes boxShape2 {
+  from {
+  }
+  to {
+    border-radius: 97% 0% 100% 100% / 100% 0% 88% 0%;
+  }
+}
+
+@keyframes boxShape3 {
+  from {
+  }
+  to {
+    border-radius: 97% 0% 100% 100% / 100% 0% 88% 0%;
+  }
+}
+@keyframes boxShape4 {
+  from {
+  }
+  to {
+    border-radius: 7% 93% 42% 58% / 6% 46% 54% 94%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .imgDiv {
+    width: 48%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imgDiv {
+    padding-top: 50px;
+    height: 80%;
+    margin-top: 20%;
+  }
+}

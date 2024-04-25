@@ -23,11 +23,11 @@ const inter = Inter({
   variable: "--font1",
   weight: ["200", "300", "400", "500", "600", "700"],
 });
-// const gabriela = Gabriela({
-//   subsets: ["latin"],
-//   weight: ["400"],
-//   variable: "--font2",
-// });
+const gabriela = Gabriela({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font4",
+});
 const montseraat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -81,7 +81,7 @@ export default function LocaleLayout({
         </Script>
       </head>
       <body
-        className={`${montseraat.variable} ${roboto.className} ${inter.variable} ${great.variable}   `}
+        className={`${montseraat.variable} ${roboto.className} ${inter.variable} ${great.variable} ${gabriela.variable}   `}
       >
         <Header />
         {children}
