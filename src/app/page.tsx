@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Home() {
   const { houseIcon } = assetsJson;
-  const { photoSceneAbowePasta } = imagesJson;
+  const { photoSceneAbowePasta, roofDrone } = imagesJson;
   const {
     responsiveScreens,
     responsiveTall,
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main className="fadeOut">
       <Chachaweb />
-      <ServiceCards serviceCat={"Other"} arrayEmaunt={3} />
+      <ServiceCards serviceCat={"Restaurant"} arrayEmaunt={3} />
       <ShortImageText
         image={responsiveScreens}
         alt="mobile responsive screens laptop phone "
@@ -38,7 +38,7 @@ export default function Home() {
       />
       <TitleThree
         mainTitle={"What we do?"}
-        image1={photoSceneWithout}
+        image1={roofDrone}
         image2={webBuilding}
         image3={responsiveTall}
         alt1={"blabla"}
@@ -58,22 +58,22 @@ export default function Home() {
         }
       />
       <PhotoText
-        image={photoSceneAbowePasta}
-        alt="food photography camera tripod softboxes light  "
-        reverse
-        title1="PHOTOSHOOTING"
-        title2="Createing Restaurant Menu From Scratch"
-        text1="We also tailor your menu to fit your restaurant's style, ensuring it's easy to read and visually appealing. Each dish is accompanied by a short, enticing description that resonates with your audience."
-        text2="Creating a restaurant menu from scratch goes beyond just listing dishes. We start with professional photography that highlights your food in the best light. Our photographers use expert lighting techniques to make the colors and details of each dish pop."
-        text3="Ultimately, your menu does more than list food it attracts and excites customers, prompting them to explore and enjoy your culinary offerings"
-      />
-      <PhotoText
         image={PaitingWall}
+        reverse
         alt="wall painting construction renovation"
         title1="RENOVATION"
         title2="CAPTURING RENOVATION WORK"
         text1="Our team takes photos that show the fine details and big changes in your renovation projects. We focus on the hard work and care your team puts into every job"
         text2="We also take before and after photos to clearly show how much your projects change. These photos prove the quality and impact of your work, helping you attract new clients"
+      />
+      <PhotoText
+        image={photoSceneAbowePasta}
+        alt="food photography camera tripod softboxes light  "
+        title1="PHOTOSHOOTING"
+        title2="Createing Restaurant Menu From Scratch"
+        text1="We also tailor your menu to fit your restaurant's style, ensuring it's easy to read and visually appealing. Each dish is accompanied by a short, enticing description that resonates with your audience."
+        text2="Creating a restaurant menu from scratch goes beyond just listing dishes. We start with professional photography that highlights your food in the best light. Our photographers use expert lighting techniques to make the colors and details of each dish pop."
+        text3="Ultimately, your menu does more than list food it attracts and excites customers, prompting them to explore and enjoy your culinary offerings"
       />
 
       <WebsitesArray

@@ -11,7 +11,7 @@
 .textDiv {
   padding-bottom: 40px;
 }
-/* .caregory {
+.caregory {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -33,7 +33,7 @@
 .caregory input:hover {
   background-color: var(--gray8);
   color: var(--gray2);
-} */
+}
 
 .cardWrapper {
   display: flex;

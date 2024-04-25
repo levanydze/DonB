@@ -1,7 +1,10 @@
 .imgDiv {
+  padding-top: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 40%;
+  height: 95%;
+  gap: 2%;
 }
 .imgsOne,
 .imgsSecond {
