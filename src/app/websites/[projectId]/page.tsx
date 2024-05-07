@@ -27,7 +27,7 @@ export const generateMetadata = ({ params }: SlugPageProps) => {
       title: data.title,
       description: data.text,
       alternates: {
-        canonical: `/menu/${data.title.replace(/\s+/g, "-").toLowerCase()}`, // Clean up title for URL
+        canonical: `/projects/${data.title.replace(/\s+/g, "-").toLowerCase()}`, // Clean up title for URL
       },
     };
   } catch (error) {
