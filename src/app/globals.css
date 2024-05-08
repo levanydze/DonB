@@ -2,17 +2,14 @@
 @import "./css/animations";
 @import "./css/buttons";
 @import "./css/containers";
+@import "./css/reset";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
+  /* body color */
   background-color: var(--backgroundLight);
 }
 .background {
@@ -20,22 +17,10 @@ body {
 }
 
 :root {
-  --black: #000000;
-  --ash-black: #222;
-  --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
-  --blue: #1300ff;
-  --dusk: #6600ff;
-  --purple: #9900ff;
-  --pink: #ff0066;
-  --red: #fe0222;
-  --orange: #fd7702;
-  --yellow: #ffbb00;
-
-  --color1: #e35069; /*pripary bright color */
-  --color2: #13141e; /* secondary dark color*/
-  --color3: #329dcf;
+  --color1: #03531b; /*pripary bright color */
+  --color2: #0b1b10; /* secondary dark color*/
+  --color3: #342001;
+  --blur: rgba(0, 0, 0, 0.133);
 
   /* used for components background*/
   --backgroundDark: #13141e;
@@ -45,6 +30,10 @@ body {
   --overlayLight: rgba(0, 0, 0, 0.218);
   --overlay: rgba(0, 0, 0, 0.526);
   --overlayDark: rgba(0, 0, 0, 0.736);
+
+  --overlayWhite: #ffffffc4;
+  --overlayGray: #dedede95;
+  --overlayGreen: #03391335;
 
   /* font colors*/
   --textLight: rgb(255, 255, 255);
@@ -62,17 +51,6 @@ body {
   --gray3: rgb(200, 200, 200);
   --gray2: rgb(220, 220, 220);
   --gray1: rgb(245, 245, 245);
-
-  /* some additional colors*/
-  --green: rgb(40, 186, 40);
-  --red: rgb(231, 65, 65);
-  --blue: blue;
-
-  /* colors for restaurant menu*/
-  --spicy: purple;
-  --new: rgb(231, 65, 65);
-  --vegan: rgb(40, 186, 40);
-  --season: rgb(49, 145, 160);
 
   font-family: var(--font1); /* Nicer  font for Navigation  or Title etc... */
   font-family: var(--font2); /* fancy font can be not so much readable*/
@@ -153,6 +131,9 @@ body {
   font-size: 17px;
 }
 
+.textMini {
+  font-size: 13px;
+}
 .text1 {
   font-size: 15px;
   font-family: var(--font1);

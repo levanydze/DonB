@@ -5,6 +5,7 @@
   justify-content: center;
   height: 100%;
   gap: 20px;
+  text-transform: uppercase;
 }
 .ftMap li {
   color: var(--gray3);

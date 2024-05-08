@@ -2,21 +2,26 @@ import type { Metadata } from "next";
 import {
   Inter,
   Roboto_Flex,
+  Open_Sans,
   Gabriela,
   Montserrat,
   Great_Vibes,
 } from "next/font/google";
 import "./globals.css";
-import Header from "../../components/header/header1/Header";
+import Header from "../../components/header/header4/Header";
 import Footer from "../../components/footer/footer3/Footer";
 import LowerFoot from "../../components/footer/lowerFooter2/LowerFoot";
 import { googleAnalyticsId } from "../../controlFolder/control";
-import { Analytics } from "@vercel/analytics/react";
 
 //fonts
 const roboto = Roboto_Flex({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+const openS = Open_Sans({
+  subsets: ["latin"],
+  style: ["normal"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 const inter = Inter({
   subsets: ["latin"],
@@ -81,11 +86,10 @@ export default function LocaleLayout({
         </Script>
       </head>
       <body
-        className={`${montseraat.variable} ${roboto.className} ${inter.variable} ${great.variable} ${gabriela.variable}   `}
+        className={`${montseraat.variable} ${openS.className} ${inter.variable} ${great.variable} ${gabriela.variable}   `}
       >
         <Header />
         {children}
-        <Analytics />
         <Footer />
         <LowerFoot />
       </body>

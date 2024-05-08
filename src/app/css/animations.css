@@ -138,12 +138,13 @@
   .moveUp2,
   .moveUp3,
   .moveUp4,
+  .moveUp5,
   .slideOut,
   .slideUp,
   .fadeUp {
-    /* animation: none; */
-    /* transform: translateX(0); */
-    /* transform: translatey(0); */
-    /* opacity: 1; */
+    animation: none;
+    transform: translateX(0);
+    transform: translatey(0);
+    opacity: 1;
   }
 }

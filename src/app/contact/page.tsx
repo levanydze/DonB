@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../../components/contactForms/CotactForm4/ContactForm";
+import ContactForm from "../../../components/contactForms/CotactForm5/ContactForm";
 import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
 export const metadata = {
@@ -15,6 +15,7 @@ export default function ContactPage() {
         short={true}
         alt="shake a hand"
       />
+
       <ContactForm />
     </div>
   );

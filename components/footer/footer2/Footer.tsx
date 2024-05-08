@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import First from "./fotComponents/First";
 import Second from "./fotComponents/Second";
 import Third from "./fotComponents/Third";
-import Fourth from "./fotComponents/Fourth";
+// import Fourth from "./fotComponents/Fourth";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
         <First />
         <Second />
         <Third />
-        <Fourth />
+        {/* <Fourth /> */}
       </div>
     </footer>
   );

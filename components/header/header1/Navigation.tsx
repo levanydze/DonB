@@ -4,7 +4,7 @@ import styles from "./Navigation.module.css";
 import BurgerNav from "./Navigations/BurgerNav";
 import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
-import { companyName } from "@/controlFolder/control";
+import { companyName } from "../../../controlFolder/control";
 
 export interface NavItemProps {
   title: string;

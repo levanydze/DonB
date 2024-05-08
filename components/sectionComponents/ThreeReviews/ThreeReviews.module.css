@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .eachcard {
   margin: 20px;
   border: 1px solid var(--gray2);

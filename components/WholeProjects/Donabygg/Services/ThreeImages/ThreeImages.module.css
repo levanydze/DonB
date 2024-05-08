@@ -1,0 +1,92 @@
+.threeMainWrapper {
+  padding: 30px 0;
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  padding: 2% 0;
+}
+.imageDiv {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageDiv a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.imageDiv a:hover {
+  background-color: var(--overlayLight);
+}
+
+.imageDiv img {
+  height: 800px;
+  object-fit: cover;
+}
+
+.textDiv {
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--overlay);
+  backdrop-filter: blur(5px) !important;
+  border-radius: 10px;
+}
+
+.cardsWrapper > .imageDiv:nth-child(2) > .textDiv {
+  background-color: var(--overlayGreen);
+}
+
+.cardsWrapper > .imageDiv:nth-child(3) > .textDiv {
+  background-color: rgba(5, 101, 5, 0.336);
+}
+
+.buttonDiv {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+@media (max-width: 1800px) {
+  .imageDiv img {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .imageDiv img {
+    height: 600px;
+  }
+}
+@media (max-width: 1300px) {
+  .imageDiv img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imageDiv img {
+    height: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cardsWrapper {
+    flex-direction: column;
+    height: 100%;
+  }
+  .imageDiv {
+    margin: 20px 0;
+  }
+  .imageDiv img {
+    height: 400px;
+    width: 100%;
+  }
+}

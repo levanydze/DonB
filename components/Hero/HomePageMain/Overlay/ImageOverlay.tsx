@@ -5,7 +5,7 @@ import SocialMedia from "../../../miniComponents/SocialMedia2/SocialMedia";
 import Button1 from "../../../Buttons/Button1";
 import infoJson from "../../../../json/info.json";
 import Link from "next/link";
-import { companyName } from "@/controlFolder/control";
+import { companyName } from "../../../../controlFolder/control";
 
 export interface HomePageOverlayProps {
   button1Target: string;

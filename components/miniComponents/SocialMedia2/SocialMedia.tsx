@@ -1,9 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./SocialMedia.module.css";
-import infoJson from "../../../json/info.json";
-import { IoRestaurantOutline } from "react-icons/io5";
-import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaUserCircle,
+  FaInfo,
+  FaGoogle,
+} from "react-icons/fa";
 import { socialMediaLinks } from "../../../controlFolder/control";
 
 export default function SocialMedia() {
@@ -12,19 +18,22 @@ export default function SocialMedia() {
       {socialMediaLinks.map((links, index) => (
         <div key={index} className={styles.socialMedia}>
           {Object.entries(links).map(([media, url]) => (
-            <Link href={url} target="_blank">
+            <Link href={url} key={url} target="_blank">
               {media === "instagram" ? (
                 <FaInstagram className={styles.socialMediaIcon} />
-              ) : null}
-              {media === "facebook" ? (
+              ) : media === "facebook" ? (
                 <FaFacebook className={styles.socialMediaIcon} />
-              ) : null}
-              {media === "linkedin" ? (
+              ) : media === "linkedin" ? (
                 <FaLinkedin className={styles.socialMediaIcon} />
-              ) : null}
-              {media === "twitter" ? (
+              ) : media === "twitter" ? (
                 <FaTwitter className={styles.socialMediaIcon} />
-              ) : null}
+              ) : media === "offerta" ? (
+                <FaUserCircle className={styles.socialMediaIcon} />
+              ) : media === "google" ? (
+                <FaGoogle className={styles.socialMediaIcon} />
+              ) : (
+                <FaInfo className={styles.socialMediaIcon} />
+              )}
             </Link>
           ))}
         </div>

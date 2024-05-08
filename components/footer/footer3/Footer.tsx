@@ -5,7 +5,7 @@ import FotMapping from "./component/FotNavMapping";
 import FotSocialMap from "./component/FotSocialMap";
 export default function footer() {
   return (
-    <footer className="container3">
+    <footer className="container2">
       <section>
         <div className={styles.mainWrapper}>
           <div className={styles.leftSide}>
@@ -13,21 +13,13 @@ export default function footer() {
               {companyName}
             </Link>
           </div>
-          <div className={styles.contactInfo}>
-            <p>
-              <Link href="tel:+46707174030">+46 707 174 030</Link>
-            </p>
-            <p>
-              <Link href="mailto:levanydze@gmail.com">levanydze@gmail.com</Link>
-            </p>
-            <Link href={"/"}>ChaCha AB</Link>
-          </div>
+          <div className={styles.contactInfo}></div>
           <div className={styles.rightSide}>
             <div className={styles.footContact}>
               <Link href={"/contact"}>Contact</Link>
             </div>
             <FotMapping />
-            {/* <FotSocialMap /> */}
+            <FotSocialMap />
           </div>
         </div>
       </section>
