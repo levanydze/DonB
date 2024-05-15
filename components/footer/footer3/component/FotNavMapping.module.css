@@ -8,7 +8,7 @@
   text-transform: uppercase;
 }
 .ftMap li {
-  color: var(--gray3);
+  /* color: var(--gray3); */
   transition: all 0.3s;
 }
 

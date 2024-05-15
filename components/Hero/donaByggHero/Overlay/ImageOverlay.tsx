@@ -31,7 +31,7 @@ export default function ImageOverlay({
         <h1 className="title6 font2 moveUp1">{mainTitle}</h1>
         <p className="text1 moveUp3">{text}</p>
         <div className={styles.buttons}>
-          <Link href={button1Target} className="moveUp5 button4">
+          <Link href={button1Target} className="moveUp5 button3">
             {button1Value}
           </Link>
         </div>

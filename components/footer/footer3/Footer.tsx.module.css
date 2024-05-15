@@ -1,5 +1,5 @@
 .mainWrapper {
-  color: var(--textLight);
+  /* color: var(--textLight); */
   display: flex;
   padding: 50px 100px;
 }

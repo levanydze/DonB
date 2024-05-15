@@ -17,10 +17,12 @@ body {
 }
 
 :root {
-  --color1: #03531b; /*pripary bright color */
-  --color2: #0b1b10; /* secondary dark color*/
-  --color3: #342001;
-  --blur: rgba(0, 0, 0, 0.133);
+  --color1: rgb(219, 190, 140); /*pripary bright color */
+  --color2: rgba(64, 44, 34, 1); /* secondary dark color*/
+  --color3: #271801;
+  --blur: rgba(55, 36, 4, 0.336);
+
+  --container2: rgb(236, 224, 205);
 
   /* used for components background*/
   --backgroundDark: #13141e;
@@ -36,9 +38,9 @@ body {
   --overlayGreen: #03391335;
 
   /* font colors*/
-  --textLight: rgb(255, 255, 255);
-  --textMedium: #737373;
-  --textDark: rgb(19, 19, 19);
+  --textLight: rgba(222, 207, 183, 1);
+  --textMedium: rgba(136, 100, 69, 1);
+  --textDark: rgba(64, 44, 34, 1);
 
   /* gray colors */
   --gray10: rgb(20, 20, 20);
