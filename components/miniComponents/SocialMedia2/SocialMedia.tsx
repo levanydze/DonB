@@ -6,9 +6,9 @@ import {
   FaFacebook,
   FaLinkedin,
   FaTwitter,
-  FaUserCircle,
   FaInfo,
   FaGoogle,
+  FaRegCircle,
 } from "react-icons/fa";
 import { socialMediaLinks } from "../../../controlFolder/control";
 
@@ -28,7 +28,7 @@ export default function SocialMedia() {
               ) : media === "twitter" ? (
                 <FaTwitter className={styles.socialMediaIcon} />
               ) : media === "offerta" ? (
-                <FaUserCircle className={styles.socialMediaIcon} />
+                <FaRegCircle className={styles.socialMediaIcon} />
               ) : media === "google" ? (
                 <FaGoogle className={styles.socialMediaIcon} />
               ) : (

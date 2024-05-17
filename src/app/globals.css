@@ -17,15 +17,15 @@ body {
 }
 
 :root {
-  --color1: rgb(219, 190, 140); /*pripary bright color */
-  --color2: rgba(64, 44, 34, 1); /* secondary dark color*/
-  --color3: #271801;
+  --color1: rgb(255, 255, 255); /*pripary bright color */
+  --color2: rgb(35, 30, 28); /* secondary dark color*/
+  --color3: rgb(27, 25, 24);
   --blur: rgba(55, 36, 4, 0.336);
 
   --container2: rgb(236, 224, 205);
 
   /* used for components background*/
-  --backgroundDark: #13141e;
+  --backgroundDark: #100f0e;
   --backgroundLight: rgb(255, 255, 255);
 
   /* used for photo overlay to write text over */
@@ -34,13 +34,13 @@ body {
   --overlayDark: rgba(0, 0, 0, 0.736);
 
   --overlayWhite: #ffffffc4;
-  --overlayGray: #dedede95;
+  --overlayGray: #dedede30;
   --overlayGreen: #03391335;
 
   /* font colors*/
-  --textLight: rgba(222, 207, 183, 1);
-  --textMedium: rgba(136, 100, 69, 1);
-  --textDark: rgba(64, 44, 34, 1);
+  --textLight: rgb(226, 221, 213);
+  --textMedium: rgb(143, 143, 143);
+  --textDark: rgb(10, 9, 9);
 
   /* gray colors */
   --gray10: rgb(20, 20, 20);
@@ -88,9 +88,21 @@ body {
   color: var(--textLight);
   line-height: 10px;
 }
-
-.signature {
-  font-family: var(--font3);
+.widgetHider {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: var(--backgroundDark);
+  margin-top: -50px;
+  z-index: 999999;
+}
+.widgetHider2 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: var(--backgroundDark);
+  margin-top: -100px;
+  z-index: 999999;
 }
 /* text color classes */
 

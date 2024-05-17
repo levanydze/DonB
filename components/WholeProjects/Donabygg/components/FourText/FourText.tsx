@@ -44,7 +44,7 @@ export default function FourText() {
               </div>
               <div className={styles.textWrapper}>
                 <h6 className="title1">{section.title}</h6>
-                <p className="textMini textMedium">{section.text}</p>
+                <p className="text1 textMedium">{section.text}</p>
               </div>
             </div>
           ))}

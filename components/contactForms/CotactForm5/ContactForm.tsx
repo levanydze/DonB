@@ -51,6 +51,7 @@ export default function ContactForm() {
               className="elfsight-app-3c78140d-9a86-4d6c-9c76-3e064928bfb1"
               data-elfsight-app-lazy
             ></div>
+            <div className="widgetHider2"></div>
           </div>
 
           <div className={styles.rightSide}>

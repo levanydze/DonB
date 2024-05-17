@@ -26,22 +26,22 @@ export default function EachFourBox({
           <Image src={image} width={70} height={70} alt={alt} />
           <p className="twoLines"></p>
           {email ? (
-            <Link href={`mailto:${title}`} className="text1 textMedium">
+            <Link href={`mailto:${title}`} className="text1 textDark">
               {title}
             </Link>
           ) : phone ? (
-            <Link href={`tel:${title}`} className="text1 textMedium">
+            <Link href={`tel:${title}`} className="text1 textDark">
               {title}
             </Link>
           ) : (
-            <h4 className="text1 textMedium">{title}</h4>
+            <h4 className="text1 textDark">{title}</h4>
           )}
         </div>
       ) : (
         <Link href="/contact">
           <Image src={image} width={70} height={70} alt={alt} />
           <p className="twoLines"></p>
-          <h4 className="text1 textMedium">{title}</h4>
+          <h4 className="text1 textDark">{title}</h4>
         </Link>
       )}
     </>

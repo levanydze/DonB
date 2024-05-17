@@ -11,14 +11,14 @@
 /* _______ */
 
 .container2 {
-  background-color: var(--container2);
+  background-color: var(--backgroundDark);
   /* component's wrapper Dark color with padding */
 }
 .container2 section {
   max-width: 2000px;
   margin: 0 auto;
   padding: 30px 100px;
-  color: var(--textDark);
+  color: var(--textLight);
 }
 
 /* _______ */

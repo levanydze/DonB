@@ -17,7 +17,7 @@
 }
 .form input,
 .form textarea {
-  background-color: var(--color2);
+  background-color: var(--backgroundDark);
   border-bottom: 1px solid var(--textMedium);
   width: 100%;
 }
@@ -90,6 +90,9 @@
 .buttonSend {
   margin: 0 auto;
   width: 200px;
+}
+.input::placeholder {
+  color: var(--gray8);
 }
 
 .inputRed::placeholder,

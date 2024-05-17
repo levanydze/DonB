@@ -18,5 +18,5 @@
   transition: all 0.3s ease-in-out;
 }
 .socialMedia a:hover {
-  background-color: var(--color1);
+  background-color: var(--color2);
 }

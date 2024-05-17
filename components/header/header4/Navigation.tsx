@@ -47,7 +47,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           ></Image>
         </Link>
         <Link href={"/contact"} className={` ${styles.rightButton}`}>
-          A
+          Get a Quote
         </Link>
         <StandartNav isScrolled={isScrolled} />
         <BurgerNav

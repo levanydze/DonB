@@ -56,21 +56,21 @@
 
 /* button3 START */
 .button3 {
-  background-color: var(--color2);
+  background-color: var(--gray3);
   width: max-content;
-  padding: 15px 20px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 5px;
   transition: all 0.2s;
-  color: var(--textLight);
+  color: var(--textDark);
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
 .button3:hover {
-  background-color: var(--color3);
+  background-color: var(--gray6);
 }
 .button3Disabled {
   background-color: var(--gray8);

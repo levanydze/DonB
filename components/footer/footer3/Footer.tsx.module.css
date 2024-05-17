@@ -30,6 +30,7 @@
 }
 .footContact a {
   background-color: var(--color1);
+  color: var(--textDark);
   font-weight: 600;
   border-radius: 50%;
   height: 150px;

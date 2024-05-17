@@ -49,10 +49,10 @@ export default function Home() {
             className="elfsight-app-07cf9a40-aaef-4514-bcb7-a371f9c7292f"
             data-elfsight-app-lazy
           ></div>
+          <div className="widgetHider"></div>
         </section>
       </div>
-      <ThreeReviews />
-      <SliderPeople />
+      {/* <SliderPeople /> */}
       <FourBox />
     </main>
   );
