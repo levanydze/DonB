@@ -1,6 +1,7 @@
 "use server";
+import { ProjectProps } from "./ItemsServicesArray/ItemsServicesArray";
 
-export async function fetchData() {
+export async function fetchData(): Promise<ProjectProps[]> {
   try {
     const response = await fetch(
       "https://raw.githubusercontent.com/levanydze/SUP/main/DonB/donaServices.json",

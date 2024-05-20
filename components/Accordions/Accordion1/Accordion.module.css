@@ -7,20 +7,21 @@
   flex-wrap: wrap;
   width: 100%;
   border-radius: 4px;
-  padding: 2% 0;
+  padding-bottom: 40px;
   width: 100%;
 }
 
 .headTitle {
-  padding-top: 40px;
+  padding: 40px 0 20px 0;
+
   width: 100%;
   text-align: center;
 }
 .eachAccordion {
   width: 49%;
   margin: 1% 0;
-  padding: 1em;
-  border: 1px solid #ddd;
+  /* padding: 1em; */
+  /* border: 1px solid var(--textMedium); */
   /* background: #f7f7f7; */
   cursor: pointer;
   text-align: left;
@@ -31,10 +32,20 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 1em;
+  border: 1px solid var(--textMedium);
+}
+
+.title {
+  color: var(--gray8);
+}
+.titleActive {
+  color: var(--gray2);
 }
 
 .accordion p {
   padding-top: 20px;
+  padding: 1em;
 }
 
 .accordion span {
@@ -45,6 +56,9 @@
 .active {
   background-color: var(--backgroundDark);
   color: var(--textLight);
+}
+.active div {
+  border: none;
 }
 
 .content {

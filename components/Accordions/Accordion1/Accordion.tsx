@@ -29,7 +29,13 @@ export default function Accordion() {
                 onClick={() => handleClick(index)}
               >
                 <div className={styles.head}>
-                  <h6 className="title3 ">{item.title}</h6>
+                  <h6
+                    className={`title3  ${
+                      activeIndex === index ? styles.titleActive : styles.title
+                    }`}
+                  >
+                    {item.title}
+                  </h6>
                   <span> {activeIndex === index ? "-" : "+"} </span>
                 </div>
                 <div
