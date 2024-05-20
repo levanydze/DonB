@@ -11,6 +11,7 @@
   backdrop-filter: blur(5px) !important;
 }
 .navigationWrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +30,7 @@
 
 .rightButton {
   position: absolute;
-  right: 30px;
+  right: 0px;
   background-color: var(--overlayWhite);
   padding: 8px 20px;
   border-radius: 20px;
