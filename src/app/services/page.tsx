@@ -19,8 +19,7 @@ export default function AboutPage() {
         span="Services You Can Order"
         arrayNumber={99}
       />
-      <ThreeReviews />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }

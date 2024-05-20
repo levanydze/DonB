@@ -19,8 +19,6 @@ export default function projectsPage() {
         span="Our Work"
         arrayNumber={99}
       />
-      <FourBox />
-      <SliderPeople />
     </div>
   );
 }

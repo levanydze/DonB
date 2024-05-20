@@ -108,6 +108,9 @@
   .rightSide {
     width: 100%;
   }
+  .leftSide {
+    padding-top: 40px;
+  }
   .formSent {
     padding: 10px 10px;
     width: 100%;
