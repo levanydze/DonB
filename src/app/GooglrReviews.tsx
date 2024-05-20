@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function GooglrReviews() {
+export default async function GooglrReviews() {
   return (
     <div className="container2">
       <h4 className=" textMedium textCenter">Customer Reviews </h4>

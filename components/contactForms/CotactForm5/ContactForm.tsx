@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { sendEmail } from "./EmailService"; // npm install --save @emailjs/browser
 import styles from "./ContactForm.module.css";
 
-export default function ContactForm() {
+export default async function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
   const [emailSent, setEmailSent] = useState<boolean>(false);
   const [buttonDisable, setButtonDisable] = useState<boolean>(false);

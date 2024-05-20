@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Instagram() {
+export default async function Instagram() {
   return (
     <div className="container1">
       <section>
