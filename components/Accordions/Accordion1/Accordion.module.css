@@ -11,12 +11,17 @@
   width: 100%;
 }
 
+.headTitle {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
 .eachAccordion {
   width: 49%;
   margin: 1% 0;
   padding: 1em;
   border: 1px solid #ddd;
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
   cursor: pointer;
   text-align: left;
   transition: all 0.2s ease-out;
@@ -33,7 +38,7 @@
 
 .accordion span {
   font-size: 30px;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .active {
@@ -44,7 +49,7 @@
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .show {

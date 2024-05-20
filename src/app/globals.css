@@ -108,6 +108,7 @@ body {
   text-align: center;
   padding: 2% 0;
   font-size: 40px;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .textCenter {
