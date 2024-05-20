@@ -1,4 +1,5 @@
-.spacer {
-  width: 100%;
-  height: 0px;
+@media (max-width: 1500px) {
+  .spacer {
+    height: 60px;
+  }
 }

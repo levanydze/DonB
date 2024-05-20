@@ -40,7 +40,7 @@ export default async function ItemsArray({
           <div className={styles.twoProjectContainer}>
             {data.slice(0, arrayNumber).map((project) => (
               <div className={styles.imageDiv} key={project.id}>
-                <Link href={`/gallery/${project.id}`}>
+                <Link href={`/gallery/${project.id}`} className={styles.link}>
                   <Image
                     src={project.mainImage}
                     width={1200}

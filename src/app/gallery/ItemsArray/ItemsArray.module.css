@@ -18,14 +18,14 @@
   color: var(--textLight);
 }
 
-.imageDiv a {
-  position: absolute;
+.link {
+  /* position: absolute; */
   height: 100%;
   width: 100%;
   z-index: 1;
   transition: all 0.3s;
 }
-.imageDiv a:hover {
+.link:hover {
   background-color: var(--overlayLight);
 }
 

@@ -1,7 +1,4 @@
-import PageHeadImage from "../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import imagesJson from "../../../json/images.json";
-import SliderPeople from "../../../components/Sliders/SliderPeople/SliderPeople";
-import FourBox from "../../../components/sectionComponents/FourBoxes/FourBox";
 import ItemsArray from "./ItemsArray/ItemsArray";
 import PageHeadSpace from "../../../components/anyPageHead/PageHadSpace/PageHeadSpace";
 
