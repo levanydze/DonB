@@ -1,0 +1,62 @@
+/* styles/Accordion.module.css */
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 4px;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.eachAccordion {
+  width: 49%;
+  margin: 1% 0;
+  padding: 1em;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease-out;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion p {
+  padding-top: 20px;
+}
+
+.accordion span {
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.active {
+  background-color: var(--backgroundDark);
+  color: var(--textLight);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.show {
+  max-height: 200px;
+}
+
+.hide {
+  max-height: 0;
+}
+
+@media (max-width: 700px) {
+  .eachAccordion {
+    width: 100%;
+  }
+}

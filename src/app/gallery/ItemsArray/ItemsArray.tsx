@@ -48,8 +48,8 @@ export default async function ItemsArray({
                     alt={project.alt}
                   />
                   <div className={styles.textDiv}>
-                    <p className="text1">{project.text}</p>
-                    <h3 className="title3">{project.title}</h3>
+                    <p className="textMini">{project.text}</p>
+                    <h3 className="title2">{project.title}</h3>
                   </div>
                 </Link>
               </div>

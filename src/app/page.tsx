@@ -16,17 +16,22 @@ import FourText from "../../components/WholeProjects/Donabygg/components/FourTex
 import SliderPeople from "../../components/Sliders/SliderPeople/SliderPeople";
 
 //sources
+import imagesJson from "../../json/images.json";
 import assetsJson from "../../json/assets.json";
 import ItemsArray from "./gallery/ItemsArray/ItemsArray";
 import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
+import Image from "next/image";
+import PhotoText from "@/components/sectionComponents/PhotoText2/PhotoText";
+import Accordion from "@/components/Accordions/Accordion1/Accordion";
 
 export default function Home() {
   const { houseIcon } = assetsJson;
-  // const { photoSceneAbowePasta, roofDrone } = imagesJson;
+  const { photoSceneAbowePasta, roofDrone } = imagesJson;
   // const { webBuilding, PaitingWall } = imagesJson;
   return (
     <main className="fadeOut">
       <Hero overlay />
+      <Accordion />
       <ItemsServicesArray
         arrayNumber={3}
         title="Services We Offer"
@@ -34,11 +39,12 @@ export default function Home() {
       />
       <FourText />
       <ItemsArray
-        arrayNumber={2}
+        arrayNumber={6}
         title="Recently Done Projects"
         span="Our Work"
       />
       <div className="container2">
+        <h4 className=" textMedium textCenter">Customer Reviews </h4>
         <section>
           <script
             src="https://static.elfsight.com/platform/platform.js"

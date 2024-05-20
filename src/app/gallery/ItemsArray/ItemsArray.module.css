@@ -3,7 +3,7 @@
 }
 .twoProjectContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 2%;
   padding-top: 2%;
@@ -12,9 +12,9 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  width: 49%;
+  width: 32%;
   margin-bottom: 2%;
-  height: 500px;
+  height: 350px;
   color: var(--textLight);
 }
 
@@ -44,7 +44,7 @@
   background-color: var(--blur);
   backdrop-filter: blur(5px) !important;
   border-radius: 10px;
-  max-width: 300px;
+  max-width: 250px;
   overflow: hidden;
   text-wrap: noWrap;
 }
@@ -57,40 +57,47 @@
 
 @media (max-width: 1700px) {
   .imageDiv {
-    height: 450px;
+    height: 300px;
   }
 }
 
 @media (max-width: 1400px) {
   .imageDiv {
-    height: 380px;
+    height: 250px;
   }
 }
 
 @media (max-width: 1200px) {
   .imageDiv {
-    height: 320px;
+    height: 200px;
   }
 }
 
 @media (max-width: 1000px) {
   .imageDiv {
-    height: 280px;
+    height: 200px;
+    width: 49%;
   }
 }
 
 @media (max-width: 850px) {
+  .imageDiv {
+    /* height: 250px; */
+  }
+}
+@media (max-width: 700px) {
   .twoProjectContainer {
     flex-direction: column;
   }
   .imageDiv {
-    height: 350px;
+    margin-bottom: 3%;
+    height: 220px;
     width: 100%;
-    margin-bottom: 4%;
   }
 }
 @media (max-width: 500px) {
   .imageDiv {
     height: 220px;
+    margin-bottom: 4%;
   }
 }

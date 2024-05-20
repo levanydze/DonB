@@ -104,7 +104,16 @@ body {
   margin-top: -100px;
   z-index: 999999;
 }
-/* text color classes */
+.textCenter {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .textCenter {
+    font-size: 5vw;
+  }
+}
 
 .auto {
   margin: 0 auto;
