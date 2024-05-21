@@ -18,9 +18,9 @@ export default async function NestedDetails({ arrayId }: MenuDetailsProps) {
         <AlbumSlider images={data.images} title={data.title} />
         <section>
           <div className={styles.mainWrapper}>
-            <h2 className="title4">{data.text}</h2>
+            <h1 className="title4">{data.text}</h1>
             <div className={styles.textWrapper}>
-              <h3 className="title6">{data.title}</h3>
+              <h2 className="title6">{data.title}</h2>
               <p className="text1 ">{data.describtion}</p>
             </div>
             <Link className="button3" href="/contact">

@@ -8,7 +8,8 @@
   font-size: 13px;
 }
 .lowerWrap a {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  color: var(--gray8);
 }
 @media (max-width: 700px) {
   .lowerWrap {

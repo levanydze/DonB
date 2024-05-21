@@ -12,7 +12,7 @@ export default function GoogleReviews() {
 
   return (
     <div className="container2">
-      <h4 className="textMedium textCenter">Customer Reviews</h4>
+      <h4 className="textMedium textCenter">WHAT OUR CUSTOMERS SAY</h4>
       <section>
         <div
           className="elfsight-app-07cf9a40-aaef-4514-bcb7-a371f9c7292f"

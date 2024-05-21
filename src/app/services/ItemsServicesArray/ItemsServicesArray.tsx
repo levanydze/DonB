@@ -34,7 +34,7 @@ export default async function ItemsServicesArray({
       <section>
         <div className={`${styles.threeMainWrapper}`}>
           <span className="text1 textMedium">{span}</span>
-          <p className="title4">{title}</p>
+          <h1 className="title4">{title}</h1>
           <div className={styles.cardsWrapper}>
             {data.slice(0, arrayNumber).map((project) => (
               <div className={styles.imageDiv} key={project.id}>
