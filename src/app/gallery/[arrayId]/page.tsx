@@ -42,8 +42,6 @@ export default function ArrayNestedPage({ params }: MenuDetailsPageProps) {
         </Link>
       </div>
       <NestedDetails arrayId={params.arrayId} />
-      <SliderPeople />
-      <ContactForm />
     </div>
   );
 }
