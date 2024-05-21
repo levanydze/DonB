@@ -42,8 +42,8 @@ const Navigation = ({ isScrolled }: NavProps) => {
             onClick={navClose}
             src={donabyggLogo}
             alt={""}
-            width={50}
-            height={50}
+            width={200}
+            height={200}
           ></Image>
         </Link>
         <Link href={"/contact"} className={` ${styles.rightButton}`}>

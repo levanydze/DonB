@@ -1,12 +1,12 @@
 .mainWrapper {
   /* color: var(--textLight); */
   display: flex;
-  padding: 50px 100px;
+  padding: 50px 0;
+  justify-content: space-between;
 }
 
 .mainWrapper div {
   height: 100%;
-  flex: 1;
 }
 .mainWrapper ul {
   padding: 0 50px;
@@ -47,6 +47,10 @@
   justify-content: space-evenly;
   height: 100%;
   gap: 10px;
+}
+.logo img {
+  height: 150px;
+  width: 150px;
 }
 
 @media (max-width: 950px) {
