@@ -117,7 +117,7 @@
 }
 @media (max-width: 650px) {
   .contactWrapper {
-    padding: 50px;
+    padding: 50px 0;
   }
   .form div {
     flex-direction: column;
