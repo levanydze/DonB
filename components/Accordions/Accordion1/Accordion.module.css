@@ -13,6 +13,8 @@
 
 .headTitle {
   padding: 40px 0 20px 0;
+  color: var(--gray7);
+  font-weight: 400;
 
   width: 100%;
   text-align: center;

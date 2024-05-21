@@ -14,7 +14,6 @@ import FourText from "../../components/WholeProjects/Donabygg/components/FourTex
 //sources
 import ItemsArray from "./gallery/ItemsArray/ItemsArray";
 import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
-import Accordion from "@/components/Accordions/Accordion1/Accordion";
 import Instagram from "../../components/elfsightWidgets/Instagram";
 import GooglrReviews from "../../components/elfsightWidgets/GoogleReviews";
 
@@ -22,7 +21,6 @@ export default function Home() {
   return (
     <main className="fadeOut">
       <Hero overlay />
-      <Accordion />
       <ItemsServicesArray
         arrayNumber={3}
         title="Services We Offer"

@@ -2,7 +2,6 @@
 } */
 
 .burgerMenu {
-  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -10,9 +9,9 @@
   height: auto;
   font-family: var(--font1);
   padding-top: 80px;
-  width: 130%;
-  margin-left: -15%;
-  margin-top: -420px;
+  /* width: 130%; */
+  /* margin-left: -15%; */
+  margin-top: -450px;
 }
 .burgerUl {
   font-size: 15px;
@@ -23,6 +22,8 @@
   text-align: center;
   transition: 0.5s cubic-bezier(1, 0.23, 0.59, 1.12);
   z-index: 99;
+  width: 100vw;
+  margin-left: -70px;
 }
 .burgerLi {
   padding: 15px 0;

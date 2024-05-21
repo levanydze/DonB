@@ -16,7 +16,7 @@ export default function Accordion() {
     <div className="container1">
       <section>
         <div>
-          <h5 className={`title4 ${styles.headTitle}`}>
+          <h5 className={`title7 ${styles.headTitle}`}>
             Feequntly Asked Questions
           </h5>
           <div className={styles.accordion}>
