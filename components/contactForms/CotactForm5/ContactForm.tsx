@@ -2,8 +2,9 @@
 import React, { useRef, useState } from "react";
 import { sendEmail } from "./EmailService"; // npm install --save @emailjs/browser
 import styles from "./ContactForm.module.css";
+import GoogleReviews from "../../../components/elfsightWidgets/GoogleReviews2";
 
-export default async function ContactForm() {
+export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
   const [emailSent, setEmailSent] = useState<boolean>(false);
   const [buttonDisable, setButtonDisable] = useState<boolean>(false);
@@ -42,18 +43,8 @@ export default async function ContactForm() {
       <section>
         <div className={styles.contactWrapper}>
           <div className={styles.leftSide}>
-            <script
-              src="https://static.elfsight.com/platform/platform.js"
-              data-use-service-core
-              defer
-            ></script>
-            <div
-              className="elfsight-app-3c78140d-9a86-4d6c-9c76-3e064928bfb1"
-              data-elfsight-app-lazy
-            ></div>
-            <div className="widgetHider2"></div>
+            <GoogleReviews />
           </div>
-
           <div className={styles.rightSide}>
             <form
               className={`${styles.form} ${emailSent ? styles.none : ""}`}

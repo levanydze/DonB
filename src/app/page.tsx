@@ -15,8 +15,8 @@ import FourText from "../../components/WholeProjects/Donabygg/components/FourTex
 import ItemsArray from "./gallery/ItemsArray/ItemsArray";
 import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
 import Accordion from "@/components/Accordions/Accordion1/Accordion";
-import Instagram from "./Instagram";
-import GooglrReviews from "./GooglrReviews";
+import Instagram from "../../components/elfsightWidgets/Instagram";
+import GooglrReviews from "../../components/elfsightWidgets/GoogleReviews";
 
 export default function Home() {
   return (
