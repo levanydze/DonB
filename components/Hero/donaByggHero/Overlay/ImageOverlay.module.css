@@ -37,6 +37,7 @@
 
 .buttons {
   display: flex;
+  margin-top: 40px;
   gap: 5%;
   padding: 20px 0;
 }

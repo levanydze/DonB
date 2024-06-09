@@ -7,11 +7,11 @@ import {
   Montserrat,
   Great_Vibes,
 } from "next/font/google";
-import "./globals.css";
-import Header from "../../components/header/header4/Header";
-import Footer from "../../components/footer/footer3/Footer";
-import LowerFoot from "../../components/footer/lowerFooter2/LowerFoot";
-import { googleAnalyticsId } from "../../controlFolder/control";
+import "../globals.css";
+import Header from "../../../components/header/header4/Header";
+import Footer from "../../../components/footer/footer3/Footer";
+import LowerFoot from "../../../components/footer/lowerFooter2/LowerFoot";
+import { googleAnalyticsId } from "../../../controlFolder/control";
 
 //fonts
 const roboto = Roboto_Flex({
@@ -45,25 +45,25 @@ const great = Great_Vibes({
 });
 
 // SEO Metadata and title tags
-// import {
-// mainTitle,
-// companyDescription,
-// companyDomain,
-// googleVerification,
-// } from "../../controlFolder/control";
-// import Script from "next/script";
-// export const metadata: Metadata = {
-// metadataBase: new URL(companyDomain),
-// title: {
-// absolute: "", // If I write absolute title it will ignore template title
-// default: `${mainTitle}`, // Corrected usage of template literal
-// template: `%s | ${mainTitle}`, // Corrected usage of template literal
-// },
-// description: `${companyDescription}`,
-// verification: {
-// google: `${googleVerification}`,
-// },
-// };
+import {
+  mainTitle,
+  companyDescription,
+  companyDomain,
+  googleVerification,
+} from "../../../controlFolder/control";
+import Script from "next/script";
+export const metadata: Metadata = {
+  metadataBase: new URL(companyDomain),
+  title: {
+    // absolute: "", // If I write absolute title it will ignore template title
+    default: `${mainTitle}`, // Corrected usage of template literal
+    template: `%s | ${mainTitle}`, // Corrected usage of template literal
+  },
+  description: `${companyDescription}`,
+  verification: {
+    google: `${googleVerification}`,
+  },
+};
 
 export default function LocaleLayout({
   children,
@@ -73,25 +73,25 @@ export default function LocaleLayout({
   return (
     <html lang="en">
       <head>
-        {/* <Script */}
-        {/* async */}
-        {/* src={`https://www.googletagmanager.com/gtag/js?${googleAnalyticsId}`} */}
-        {/* ></Script> */}
-        {/* <Script id="google-analytics">
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?${googleAnalyticsId}`}
+        ></Script>
+        <Script id="google-analytics">
           {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', '${googleAnalyticsId}');`}
-        </Script> */}
+        </Script>
       </head>
       <body
         className={`${montseraat.variable} ${openS.className} ${inter.variable} ${great.variable} ${gabriela.variable}   `}
       >
-        {/* <Header /> */}
+        <Header />
         {children}
-        {/* <Footer /> */}
-        {/* <LowerFoot /> */}
+        <Footer />
+        <LowerFoot />
       </body>
     </html>
   );

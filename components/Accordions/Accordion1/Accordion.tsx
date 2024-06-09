@@ -17,7 +17,7 @@ export default function Accordion() {
       <section>
         <div>
           <h5 className={`title7 ${styles.headTitle}`}>
-            Feequntly Asked Questions
+            Frequntly Asked Questions
           </h5>
           <div className={styles.accordion}>
             {accordionItems.map((item, index) => (

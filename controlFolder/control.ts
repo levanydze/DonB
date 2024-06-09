@@ -38,12 +38,19 @@ export const socialMediaLinks = [
 //nav items and sort
 import { NavItemProps } from "../components/header/header3/Navigation";
 export const navItems: NavItemProps[] = [
-  { title: "Home", url: "/", homePage: true },
-  // { title: "Menu", url: "/menu" },
-  // { title: "Home2", url: "/home2" },
-  { title: "Services", url: "/services" },
-  { title: "Gallery", url: "/gallery" },
-  { title: "Contact", url: "/contact" },
+  { title: "Home", url: "/en", homePage: true },
+  { title: "Services", url: "/en/services" },
+  { title: "Gallery", url: "/en/gallery" },
+  { title: "FAQ", url: "/en/faq" },
+  { title: "Contact", url: "/en/contact" },
+  // { title: "BOOK A MEET", url: "/reservation", button: true },
+];
+export const navItemsSe: NavItemProps[] = [
+  { title: "Hem", url: "/se", homePage: true },
+  { title: "Tjänster", url: "/se/services" },
+  { title: "Galleri", url: "/se/gallery" },
+  { title: "Frågor", url: "/se/faq" },
+  { title: "Kontakt", url: "/se/contact" },
   // { title: "BOOK A MEET", url: "/reservation", button: true },
 ];
 

@@ -4,7 +4,6 @@ import styles from "./Navigation.module.css";
 import BurgerNav from "./Navigations/BurgerNav";
 import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
-import { companyName } from "../../../controlFolder/control";
 import Image from "next/image";
 import imageJson from "../../../json/images.json";
 
@@ -30,14 +29,12 @@ const Navigation = ({ isScrolled }: NavProps) => {
 
   return (
     <div className={`${styles.mainWrap}`}>
-      {/* <div className={styles.blur}></div> */}
       <div
         className={`${styles.navigationWrapper} ${
           isScrolled ? styles.marginNull : ""
         } `}
       >
         <Link href={"/"} className={styles.logo}>
-          {/* <h3 onClick={navClose}>{companyName}</h3> */}
           <Image
             onClick={navClose}
             src={donabyggLogo}
@@ -47,11 +44,11 @@ const Navigation = ({ isScrolled }: NavProps) => {
           ></Image>
         </Link>
         <div className={styles.navRight}>
-          <Link href={"/se"} className={styles.language}>
-            SE
+          <Link href={"/en"} className={styles.language}>
+            EN
           </Link>
           <Link href={"/contact"} className={` ${styles.rightButton}`}>
-            Get a Quote
+            Få en Offert
           </Link>
         </div>
         <StandartNav isScrolled={isScrolled} />

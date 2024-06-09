@@ -16,6 +16,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/en",
+        permanent: false, // Set to true if this is a permanent redirect
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -4,7 +4,7 @@ import { FiPhone } from "react-icons/fi";
 import SocialMedia from "../../../miniComponents/SocialMedia2/SocialMedia";
 import infoJson from "../../../../json/info.json";
 import Link from "next/link";
-import { companyName } from "../../../../controlFolder/control";
+// import { companyName } from "../../../../controlFolder/control";
 
 export interface HomePageOverlayProps {
   button1Target: string;
@@ -18,8 +18,8 @@ export interface HomePageOverlayProps {
 export default function ImageOverlay({
   button1Target,
   button1Value,
-  button2Target,
-  button2Value,
+  // button2Target,
+  // button2Value,
   mainTitle,
   text,
 }: HomePageOverlayProps) {
@@ -29,7 +29,7 @@ export default function ImageOverlay({
       <div className={styles.empty}></div>
       <div className={styles.middle}>
         <h1 className="title6 font2 moveUp1">{mainTitle}</h1>
-        <p className="text1 moveUp3">{text}</p>
+        <p className="text1 moveUp3 italic">{text}</p>
         <div className={styles.buttons}>
           <Link href={button1Target} className="moveUp5 button3">
             {button1Value}

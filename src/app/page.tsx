@@ -12,15 +12,16 @@ import FourBox from "../../components/sectionComponents/FourBoxes/FourBox";
 import FourText from "../../components/WholeProjects/Donabygg/components/FourText/FourText";
 
 //sources
-import ItemsArray from "./gallery/ItemsArray/ItemsArray";
+// import ItemsArray from "./gallery/ItemsArray/ItemsArray";
 import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
 import Instagram from "../../components/elfsightWidgets/Instagram";
 import GooglrReviews from "../../components/elfsightWidgets/GoogleReviews";
+import Accordion from "../../components/Accordions/Accordion1/Accordion";
 
 export default function Home() {
   return (
     <main className="fadeOut">
-      <Hero overlay />
+      {/* <Hero overlay />
       <ItemsServicesArray
         arrayNumber={3}
         title="Services We Offer"
@@ -35,8 +36,9 @@ export default function Home() {
       <GooglrReviews />
       <Instagram />
 
-      {/* <SliderPeople /> */}
-      <FourBox />
+      <Accordion />
+
+      <FourBox /> */}
     </main>
   );
 }
