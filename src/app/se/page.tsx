@@ -24,13 +24,11 @@ import Accordion from "../../../components/Accordions/Accordion1/Accordion";
 export default function Home() {
   return (
     <main className="fadeOut">
-      <Header />
-
       <Hero
         overlay
+        mainTitle="Svenska here"
         button1Target="/se/contact"
         button1Value="Börja nu"
-        mainTitle="Sovloft. WIC och platbyggda garderober. Skräddarsydda bokhyllor."
         text="Om du kan drömma det - kan vi bygga det!"
       />
       {/* <ItemsServicesArray
@@ -50,8 +48,6 @@ export default function Home() {
       <Accordion />
 
       <FourBox />*/}
-      <Footer />
-      <LowerFoot />
     </main>
   );
 }

@@ -29,7 +29,7 @@ export default function ImageOverlay({
       <div className={styles.empty}></div>
       <div className={styles.middle}>
         <h1 className="title6 font2 moveUp1">{mainTitle}</h1>
-        <p className="text1 moveUp3 italic">{text}</p>
+        <p className="text1 moveUp3 fontItalic">{text}</p>
         <div className={styles.buttons}>
           <Link href={button1Target} className="moveUp5 button3">
             {button1Value}

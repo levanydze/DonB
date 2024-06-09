@@ -23,7 +23,7 @@ export default async function NestedDetails({ arrayId }: MenuDetailsProps) {
               <h2 className="title6">{data.title}</h2>
               <p className="text1 ">{data.describtion}</p>
             </div>
-            <Link className="button3" href="/contact">
+            <Link className="button3" href="/en/contact">
               Get Yours
             </Link>
           </div>

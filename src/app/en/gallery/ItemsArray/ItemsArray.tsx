@@ -40,7 +40,10 @@ export default async function ItemsArray({
           <div className={styles.twoProjectContainer}>
             {data.slice(0, arrayNumber).map((project) => (
               <div className={styles.imageDiv} key={project.id}>
-                <Link href={`/gallery/${project.id}`} className={styles.link}>
+                <Link
+                  href={`/en/gallery/${project.id}`}
+                  className={styles.link}
+                >
                   <Image
                     src={project.mainImage}
                     width={1200}
@@ -57,7 +60,7 @@ export default async function ItemsArray({
           </div>
           {arrayNumber < 99 && (
             <div className={styles.buttonDiv}>
-              <Link href="/gallery" className="button3">
+              <Link href="/en/gallery" className="button3">
                 View All Projects
               </Link>
             </div>

@@ -34,7 +34,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           isScrolled ? styles.marginNull : ""
         } `}
       >
-        <Link href={"/"} className={styles.logo}>
+        <Link href={"/se"} className={styles.logo}>
           <Image
             onClick={navClose}
             src={donabyggLogo}
@@ -47,7 +47,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           <Link href={"/en"} className={styles.language}>
             EN
           </Link>
-          <Link href={"/contact"} className={` ${styles.rightButton}`}>
+          <Link href={"/se/contact"} className={` ${styles.rightButton}`}>
             Få en Offert
           </Link>
         </div>

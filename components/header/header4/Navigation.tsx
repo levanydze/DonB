@@ -36,8 +36,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           isScrolled ? styles.marginNull : ""
         } `}
       >
-        <Link href={"/"} className={styles.logo}>
-          {/* <h3 onClick={navClose}>{companyName}</h3> */}
+        <Link href={"/en"} className={styles.logo}>
           <Image
             onClick={navClose}
             src={donabyggLogo}
@@ -50,7 +49,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           <Link href={"/se"} className={styles.language}>
             SE
           </Link>
-          <Link href={"/contact"} className={` ${styles.rightButton}`}>
+          <Link href={"/en/contact"} className={` ${styles.rightButton}`}>
             Get a Quote
           </Link>
         </div>
