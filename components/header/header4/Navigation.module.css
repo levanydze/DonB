@@ -48,11 +48,6 @@
   background-color: var(--gray5);
 }
 
-@media (max-width: 550px) {
-  .navigationWrapper h3 {
-    scale: 0.7;
-  }
-}
 @media (max-width: 1000px) {
   .rightButton {
     display: none;
@@ -62,12 +57,7 @@
   }
 }
 @media (max-width: 1200px) {
-  .navigationWrapper h3 {
-    position: relative;
-  }
   .logo {
     position: relative;
   }
-  /* .navigationWrapper {
-  } */
 }

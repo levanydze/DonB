@@ -30,7 +30,6 @@ const Navigation = ({ isScrolled }: NavProps) => {
 
   return (
     <div className={`${styles.mainWrap}`}>
-      {/* <div className={styles.blur}></div> */}
       <div
         className={`${styles.navigationWrapper} ${
           isScrolled ? styles.marginNull : ""
