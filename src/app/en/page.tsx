@@ -26,7 +26,7 @@ export default function Home() {
     <main className="fadeOut">
       <Hero
         overlay
-        button1Target="/se/contact"
+        button1Target="/en/contact"
         button1Value="Get Started"
         mainTitle="Site built.  Spacesaving. Custom made."
         text="If you can dream it -we can build it!"
