@@ -4,9 +4,9 @@ import styles from "./Navigation.module.css";
 import BurgerNav from "./Navigations/BurgerNav";
 import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
-import { companyName } from "../../../controlFolder/control";
 import Image from "next/image";
 import imageJson from "../../../json/images.json";
+import ReactCountryFlag from "react-country-flag";
 
 export interface NavItemProps {
   title: string;
@@ -47,7 +47,14 @@ const Navigation = ({ isScrolled }: NavProps) => {
         </Link>
         <div className={styles.navRight}>
           <Link href={"/se"} className={styles.language}>
-            SE
+            <ReactCountryFlag
+              countryCode="SE"
+              svg
+              style={{
+                width: "2em",
+                height: "2em",
+              }}
+            />
           </Link>
           <Link href={"/en/contact"} className={` ${styles.rightButton}`}>
             Get a Quote

@@ -6,6 +6,7 @@ import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
 import Image from "next/image";
 import imageJson from "../../../json/images.json";
+import ReactCountryFlag from "react-country-flag";
 
 export interface NavItemProps {
   title: string;
@@ -45,7 +46,14 @@ const Navigation = ({ isScrolled }: NavProps) => {
         </Link>
         <div className={styles.navRight}>
           <Link href={"/en"} className={styles.language}>
-            EN
+            <ReactCountryFlag
+              countryCode="GB"
+              svg
+              style={{
+                width: "2em",
+                height: "2em",
+              }}
+            />
           </Link>
           <Link href={"/se/contact"} className={` ${styles.rightButton}`}>
             Få en Offert

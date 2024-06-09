@@ -35,15 +35,9 @@
   z-index: 20;
 }
 .language {
-  background-color: var(--overlayWhite);
-  padding: 8px 13px;
-  border-radius: 20px;
-  transition: all 0.2s;
   margin-right: 20px;
 }
-.language:hover {
-  background-color: var(--gray5);
-}
+
 .rightButton {
   background-color: var(--overlayWhite);
   padding: 8px 20px;
