@@ -1,16 +1,13 @@
 import React, { Suspense } from "react";
 import Link from "next/link";
 import { RiArrowGoBackFill } from "react-icons/ri";
-import PageHeadImage from "../../../../components/anyPageHead/PageHeadImage/PageHeadImage";
 import styles from "./page.module.css";
 import NestedDetails from "./NestedDetails/NestedDetails";
-import imageJson from "../../../../json/images.json";
+import imageJson from "../../../../../json/images.json";
 
 // metadata
 import { findDataById } from "../DataFetch";
-import SliderPeople from "../../../../components/Sliders/SliderPeople/SliderPeople";
-import ContactForm from "../../../../components/contactForms/CotactForm5/ContactForm";
-import PageHeadSpace from "../../../../components/anyPageHead/PageHadSpace/PageHeadSpace";
+import PageHeadSpace from "../../../../../components/anyPageHead/PageHadSpace/PageHeadSpace";
 export const generateMetadata = async ({ params }: MenuDetailsPageProps) => {
   try {
     const data = await findDataById(params.arrayId);

@@ -1,6 +1,6 @@
 import styles from "./NestedDetails.module.css";
 import Link from "next/link";
-import AlbumSlider from "../../../../../components/Sliders/AlbumSlider/AlbumSlider";
+import AlbumSlider from "../../../../../../components/Sliders/AlbumSlider/AlbumSlider";
 
 //mapping and routes
 import { findDataById } from "../../DataFetch";
