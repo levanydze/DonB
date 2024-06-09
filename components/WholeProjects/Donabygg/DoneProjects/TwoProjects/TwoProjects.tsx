@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./TwoProjects.module.css";
-import { fetchData } from "../../../../../src/app/gallery/DataFetch"; // Correct the path as needed
+import { fetchData } from "../../../../../src/app/en/gallery/DataFetch"; // Correct the path as needed
 
 interface Project {
   id: string;
