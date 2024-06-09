@@ -16,7 +16,7 @@ import FourText from "../../../components/WholeProjects/Donabygg/components/Four
 
 //sources
 import ItemsArray from "./gallery/ItemsArray/ItemsArray";
-import ItemsServicesArray from "../services/ItemsServicesArray/ItemsServicesArray";
+import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
 import Instagram from "../../../components/elfsightWidgets/Instagram";
 import GooglrReviews from "../../../components/elfsightWidgets/GoogleReviews";
 import Accordion from "../../../components/Accordions/Accordion1/Accordion";

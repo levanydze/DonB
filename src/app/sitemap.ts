@@ -1,7 +1,7 @@
 import { companyDomain } from "../../controlFolder/control";
 import { navItems } from "../../controlFolder/control";
-import { fetchData as fetchGalleryData } from "./gallery/DataFetch";
-import { fetchData as fetchServicesData } from "./services/DataFetch";
+import { fetchData as fetchGalleryData } from "./en/gallery/DataFetch";
+import { fetchData as fetchServicesData } from "./en/services/DataFetch";
 
 export default async function sitemap() {
   const galleryData = await fetchGalleryData();
