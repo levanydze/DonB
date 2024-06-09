@@ -57,8 +57,8 @@
   .rightButton {
     display: none;
   }
-  .language {
-    margin-right: 60px;
+  .navRight {
+    margin-right: 40px;
   }
 }
 @media (max-width: 1200px) {
