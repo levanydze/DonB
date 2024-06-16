@@ -4,17 +4,17 @@ import { fetchData } from "../DataFetch";
 import Image from "next/image";
 import Link from "next/link";
 
-export interface ProjectProps {
-  id: string;
-  text: string;
-  link: string;
-  title: string;
-  mainImage: string;
-  images: string[];
-  alt: string;
-  description: string;
-  [key: string]: any;
-}
+// export interface ProjectProps {
+//   id: string;
+//   text: string;
+//   link: string;
+//   title: string;
+//   mainImage: string;
+//   images: string[];
+//   alt: string;
+//   description: string;
+//   [key: string]: any;
+// }
 
 interface ItemsArrayProps {
   title: string;
@@ -27,7 +27,8 @@ export default async function ItemsServicesArray({
   span,
   arrayNumber,
 }: ItemsArrayProps) {
-  const data: ProjectProps[] = await fetchData();
+  // const data: ProjectProps[] = await fetchData();
+  const data = await fetchData(); //in case of local data
 
   return (
     <div className="container2">
@@ -38,23 +39,23 @@ export default async function ItemsServicesArray({
           <div className={styles.cardsWrapper}>
             {data.slice(0, arrayNumber).map((project) => (
               <div className={styles.imageDiv} key={project.id}>
-                <Link href={`/services/${project.id}`}></Link>
+                <Link href={`/en/services/${project.id}`}></Link>
                 <div className={styles.textDiv}>
-                  <p className="text1">{project.text}</p>
-                  <h3 className="title3">{project.title}</h3>
+                  <p className="text1">{project.textENG}</p>
+                  <h3 className="title3">{project.titleENG}</h3>
                 </div>
                 <Image
                   src={project.mainImage}
                   width={800}
                   height={1000}
-                  alt=""
+                  alt={project.titleENG}
                 ></Image>
               </div>
             ))}
           </div>
           {arrayNumber < 99 && (
             <div className={styles.buttonDiv}>
-              <Link href="/gallery" className="button3">
+              <Link href="/en/gallery" className="button3">
                 View All Services
               </Link>
             </div>

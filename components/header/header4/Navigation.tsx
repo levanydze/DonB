@@ -28,6 +28,23 @@ const Navigation = ({ isScrolled }: NavProps) => {
     setIsNavOpen(false);
   };
 
+  //language
+  const [en, setEn] = useState(false);
+  const [se, setSe] = useState(true);
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = event.target.value;
+    if (selectedLanguage === "en") {
+      setEn(true);
+      setSe(false);
+      window.location.href = "/en";
+    } else if (selectedLanguage === "se") {
+      setEn(false);
+      setSe(true);
+      window.location.href = "/se";
+    }
+  };
+
   return (
     <div className={`${styles.mainWrap}`}>
       <div
@@ -45,7 +62,7 @@ const Navigation = ({ isScrolled }: NavProps) => {
           ></Image>
         </Link>
         <div className={styles.navRight}>
-          <Link href={"/se"} className={styles.language}>
+          {/* <Link href={"/se"} className={styles.language}>
             <ReactCountryFlag
               countryCode="SE"
               svg
@@ -54,7 +71,16 @@ const Navigation = ({ isScrolled }: NavProps) => {
                 height: "2em",
               }}
             />
-          </Link>
+          </Link> */}
+          <select
+            onChange={handleChange}
+            className={styles.language}
+            defaultValue=""
+          >
+            <option value="en">En</option>
+            <option value="se">Se</option>
+          </select>
+
           <Link href={"/en/contact"} className={` ${styles.rightButton}`}>
             Get a Quote
           </Link>

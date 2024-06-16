@@ -1,9 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import Link from "next/link";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import styles from "./page.module.css";
 import NestedDetails from "./NestedDetails/NestedDetails";
-import imageJson from "../../../../../json/images.json";
 
 // metadata
 import { findDataById } from "../DataFetch";
@@ -12,10 +11,12 @@ export const generateMetadata = async ({ params }: MenuDetailsPageProps) => {
   try {
     const data = await findDataById(params.arrayId);
     return {
-      title: data.title,
-      description: data.description, // Assuming there's a 'description' field
+      title: data.titleENG,
+      description: data.descriptionENG, // Assuming there's a 'description' field
       alternates: {
-        canonical: `/gallery/${data.title.replace(/\s+/g, "-").toLowerCase()}`, // Clean up title for URL
+        canonical: `/en/gallery/${data.titleENG
+          .replace(/\s+/g, "-")
+          .toLowerCase()}`, // Clean up title for URL
       },
     };
   } catch (error) {}
@@ -28,8 +29,6 @@ interface MenuDetailsPageProps {
 }
 
 export default function ArrayNestedPage({ params }: MenuDetailsPageProps) {
-  const { headImage } = imageJson;
-
   return (
     <div className={`fadeOut ${styles.pageDetailWrapper}`}>
       <PageHeadSpace />

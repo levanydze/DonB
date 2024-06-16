@@ -36,6 +36,9 @@
 }
 .language {
   margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--textLight);
 }
 
 .rightButton {

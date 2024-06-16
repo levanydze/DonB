@@ -1,4 +1,3 @@
-import imagesJson from "../../../../json/images.json";
 import ItemsServicesArray from "./ItemsServicesArray/ItemsServicesArray";
 import PageHeadSpace from "../../../../components/anyPageHead/PageHadSpace/PageHeadSpace";
 export const metadata = {
@@ -6,7 +5,6 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  const { roofDrone } = imagesJson;
   return (
     <div className="fadeOut">
       <PageHeadSpace />

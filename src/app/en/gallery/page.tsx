@@ -1,4 +1,3 @@
-import imagesJson from "../../../../json/images.json";
 import ItemsArray from "./ItemsArray/ItemsArray";
 import PageHeadSpace from "../../../../components/anyPageHead/PageHadSpace/PageHeadSpace";
 
@@ -7,7 +6,6 @@ export const metadata = {
 };
 
 export default function projectsPage() {
-  const { headImage, websitePage } = imagesJson;
   return (
     <div className="fadeOut">
       <PageHeadSpace />
