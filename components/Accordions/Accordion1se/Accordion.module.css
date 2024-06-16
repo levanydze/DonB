@@ -1,0 +1,84 @@
+/* styles/Accordion.module.css */
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 4px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.headTitle {
+  padding: 40px 0 20px 0;
+  color: var(--gray7);
+  font-weight: 400;
+
+  width: 100%;
+  text-align: center;
+}
+.eachAccordion {
+  width: 49%;
+  margin: 1% 0;
+  /* padding: 1em; */
+  /* border: 1px solid var(--textMedium); */
+  /* background: #f7f7f7; */
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease-out;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1em;
+  border: 1px solid var(--textMedium);
+}
+
+.title {
+  color: var(--gray8);
+}
+.titleActive {
+  color: var(--gray2);
+}
+
+.accordion p {
+  padding-top: 20px;
+  padding: 1em;
+}
+
+.accordion span {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.active {
+  background-color: var(--backgroundDark);
+  color: var(--textLight);
+}
+.active div {
+  border: none;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.show {
+  max-height: 500px;
+}
+
+.hide {
+  max-height: 0;
+}
+
+@media (max-width: 700px) {
+  .eachAccordion {
+    width: 100%;
+  }
+}

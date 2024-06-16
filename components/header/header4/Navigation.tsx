@@ -6,7 +6,6 @@ import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
 import Image from "next/image";
 import imageJson from "../../../json/images.json";
-import ReactCountryFlag from "react-country-flag";
 
 export interface NavItemProps {
   title: string;
@@ -77,8 +76,8 @@ const Navigation = ({ isScrolled }: NavProps) => {
             className={styles.language}
             defaultValue=""
           >
-            <option value="en">En</option>
-            <option value="se">Se</option>
+            <option value="en">EN</option>
+            <option value="se">SE</option>
           </select>
 
           <Link href={"/en/contact"} className={` ${styles.rightButton}`}>

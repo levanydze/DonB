@@ -7,25 +7,20 @@ export const metadata = {
 };
 
 //components
-import Header from "../../../components/header/header4se/Header";
-import Footer from "../../../components/footer/footer3/Footer";
-import LowerFoot from "../../../components/footer/lowerFooter2/LowerFoot";
 import Hero from "../../../components/Hero/donaByggHero/Hero";
 import FourBox from "../../../components/sectionComponents/FourBoxes/FourBox";
-import FourText from "../../../components/WholeProjects/Donabygg/components/FourText/FourText";
+import FourText from "../../../components/WholeProjects/Donabygg/components/FourTextSe/FourText";
 
 //sources
-// import ItemsArray from "../gallery/ItemsArray/ItemsArray";
-// import ItemsServicesArray from "../services/ItemsServicesArray/ItemsServicesArray";
+import ItemsArray from "./gallery/ItemsArray/ItemsArray";
+import ItemsServicesArray from "./services/ItemsServicesArray/ItemsServicesArray";
 import Instagram from "../../../components/elfsightWidgets/Instagram";
-import GooglrReviews from "../../../components/elfsightWidgets/GoogleReviews";
-import Accordion from "../../../components/Accordions/Accordion1/Accordion";
+import GooglrReviews from "../../../components/elfsightWidgets/GoogleReviews1se";
+import Accordion from "../../../components/Accordions/Accordion1se/Accordion";
 
 export default function Home() {
   return (
     <main className="fadeOut">
-      {/* <Header /> */}
-
       <Hero
         overlay
         button1Target="/se/contact"
@@ -33,25 +28,23 @@ export default function Home() {
         mainTitle="Sovloft. WIC och platbyggda garderober. Skräddarsydda bokhyllor."
         text="Om du kan drömma det - kan vi bygga det!"
       />
-      {/* <ItemsServicesArray
+      <ItemsServicesArray
         arrayNumber={3}
-        title="Services We Offer"
-        span="Our Work"
+        title="se Services We Offer"
+        span="se Our Work"
       />
-      {/* <FourText />
+      <FourText />
       <ItemsArray
         arrayNumber={6}
-        title="Recently Done Projects"
-        span="Our Work"
+        title="se Recently Done Projects"
+        span="se Our Work"
       />
       <GooglrReviews />
       <Instagram />
 
       <Accordion />
 
-      <FourBox />*/}
-      {/* <Footer /> */}
-      {/* <LowerFoot /> */}
+      <FourBox />
     </main>
   );
 }

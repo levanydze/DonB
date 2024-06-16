@@ -1,0 +1,19 @@
+.lowerWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: var(--textMedium);
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+.lowerWrap a {
+  letter-spacing: 1px;
+  color: var(--gray8);
+}
+@media (max-width: 700px) {
+  .lowerWrap {
+    padding: 30px 0;
+    gap: 20px;
+  }
+}

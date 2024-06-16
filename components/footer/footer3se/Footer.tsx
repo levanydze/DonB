@@ -12,14 +12,14 @@ export default function footer() {
       <section>
         <div className={styles.mainWrapper}>
           <div className={styles.leftSide}>
-            <Link href={"/en"} className={styles.logo}>
+            <Link href={"/se"} className={styles.logo}>
               <Image src={donabyggLogo} alt="" height={300} width={300}></Image>
             </Link>
           </div>
           <div className={styles.contactInfo}></div>
           <div className={styles.rightSide}>
             <div className={styles.footContact}>
-              <Link href={"/contact"}>Contact</Link>
+              <Link href={"se/contact"}>Kontakt</Link>
             </div>
             <FotMapping />
             <FotSocialMap />

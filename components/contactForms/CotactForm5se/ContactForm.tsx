@@ -53,14 +53,14 @@ export default function ContactForm() {
             >
               <div className={styles.smallInputs}>
                 <div className={styles.inputDiv}>
-                  <p>Name</p>
+                  <p>Namn</p>
                   <input
                     className={`${styles.input} ${styles.miniInput} ${
                       nameError ? styles.inputRed : ""
                     }`}
                     type="text"
                     name="user_name"
-                    placeholder="Enter your full name"
+                    placeholder="Ange ditt fullständiga namn"
                     value={nameValue}
                     onChange={(e) => setNameValue(e.target.value)}
                   />
@@ -74,20 +74,20 @@ export default function ContactForm() {
            `}
                     type="email"
                     name="user_email"
-                    placeholder="Enter your email address"
+                    placeholder="Ange din e-postadress"
                     value={emailValue}
                     onChange={(e) => setEmailValue(e.target.value)}
                   />
                 </div>
               </div>
               <div className={styles.messageDiv}>
-                <p>Message</p>
+                <p>Meddelande</p>
                 <textarea
                   className={`${styles.textArea} ${styles.input}
            ${messageError ? styles.inputRed : ""}
          `}
                   name="message"
-                  placeholder="Enter our message "
+                  placeholder="Ange ditt meddelande"
                   value={messageValue}
                   onChange={(e) => setMessageValue(e.target.value)}
                 />
@@ -108,11 +108,11 @@ export default function ContactForm() {
                     : () => setButtonDisable(true)
                 }
               >
-                Send
+                Skicka
               </button>
             </form>
             <div className={emailSent ? styles.formSent : styles.hide}>
-              <h6 className="title5"> Thank you for your message</h6>
+              <h6 className="title5"> Tack för ditt meddelande.</h6>
             </div>
           </div>
         </div>

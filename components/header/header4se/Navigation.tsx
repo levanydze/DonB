@@ -6,7 +6,7 @@ import StandartNav from "./Navigations/StandartNav";
 import Link from "next/link";
 import Image from "next/image";
 import imageJson from "../../../json/images.json";
-import ReactCountryFlag from "react-country-flag";
+import { companyFullName } from "@/controlFolder/control";
 
 export interface NavItemProps {
   title: string;
@@ -28,6 +28,23 @@ const Navigation = ({ isScrolled }: NavProps) => {
     setIsNavOpen(false);
   };
 
+  //language
+  const [en, setEn] = useState(Boolean);
+  const [se, setSe] = useState(Boolean);
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = event.target.value;
+    if (selectedLanguage === "en") {
+      setEn(true);
+      setSe(false);
+      window.location.href = "/en";
+    } else if (selectedLanguage === "se") {
+      setEn(false);
+      setSe(true);
+      window.location.href = "/se";
+    }
+  };
+
   return (
     <div className={`${styles.mainWrap}`}>
       <div
@@ -39,22 +56,21 @@ const Navigation = ({ isScrolled }: NavProps) => {
           <Image
             onClick={navClose}
             src={donabyggLogo}
-            alt={""}
+            alt={companyFullName}
             width={200}
             height={200}
           ></Image>
         </Link>
         <div className={styles.navRight}>
-          <Link href={"/en"} className={styles.language}>
-            <ReactCountryFlag
-              countryCode="GB"
-              svg
-              style={{
-                width: "2em",
-                height: "2em",
-              }}
-            />
-          </Link>
+          <select
+            onChange={handleChange}
+            className={styles.language}
+            defaultValue=""
+          >
+            <option value="se">SE</option>
+            <option value="en">EN</option>
+          </select>
+
           <Link href={"/se/contact"} className={` ${styles.rightButton}`}>
             Få en Offert
           </Link>

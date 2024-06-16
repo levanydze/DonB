@@ -9,8 +9,8 @@ import {
 } from "next/font/google";
 import "../globals.css";
 import Header from "../../../components/header/header4se/Header";
-import Footer from "../../../components/footer/footer3/Footer";
-import LowerFoot from "../../../components/footer/lowerFooter2/LowerFoot";
+import Footer from "../../../components/footer/footer3se/Footer";
+import LowerFoot from "../../../components/footer/lowerFooter2se/LowerFoot";
 import { googleAnalyticsId } from "../../../controlFolder/control";
 
 //fonts
