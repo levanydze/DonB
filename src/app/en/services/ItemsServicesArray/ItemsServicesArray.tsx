@@ -4,17 +4,17 @@ import { fetchData } from "../DataFetch";
 import Image from "next/image";
 import Link from "next/link";
 
-// export interface ProjectProps {
-//   id: string;
-//   text: string;
-//   link: string;
-//   title: string;
-//   mainImage: string;
-//   images: string[];
-//   alt: string;
-//   description: string;
-//   [key: string]: any;
-// }
+export interface ProjectProps {
+  id: string;
+  text: string;
+  link: string;
+  title: string;
+  mainImage: string;
+  images: string[];
+  alt: string;
+  description: string;
+  [key: string]: any;
+}
 
 interface ItemsArrayProps {
   title: string;
@@ -27,8 +27,7 @@ export default async function ItemsServicesArray({
   span,
   arrayNumber,
 }: ItemsArrayProps) {
-  // const data: ProjectProps[] = await fetchData();
-  const data = await fetchData(); //in case of local data
+  const data: ProjectProps[] = await fetchData();
 
   return (
     <div className="container2">

@@ -6,17 +6,17 @@ import Link from "next/link";
 
 // export const revalidate = 5
 
-// export interface ProjectProps {
-//   id: string;
-//   text: string;
-//   link: string;
-//   title: string;
-//   mainImage: string;
-//   images: string[];
-//   alt: string;
-//   description: string;
-//   [key: string]: any;
-// }
+export interface ProjectProps {
+  id: string;
+  text: string;
+  link: string;
+  title: string;
+  mainImage: string;
+  images: string[];
+  alt: string;
+  description: string;
+  [key: string]: any;
+}
 
 interface ItemsArrayProps {
   title: string;
@@ -29,8 +29,7 @@ export default async function ItemsArray({
   span,
   arrayNumber,
 }: ItemsArrayProps) {
-  // const data: ProjectProps[] = await fetchData();  in case of local data
-  const data = await fetchData();
+  const data: ProjectProps[] = await fetchData();
 
   return (
     <div className="container2">

@@ -4,14 +4,13 @@ import AlbumSlider from "../../../../../../components/Sliders/AlbumSlider/AlbumS
 
 //mapping and routes
 import { findDataById } from "../../DataFetch";
-// import { ProjectProps } from "../../ItemsServicesArray/ItemsServicesArray";
+import { ProjectProps } from "../../ItemsServicesArray/ItemsServicesArray";
 interface MenuDetailsProps {
   arrayId: string;
 }
 
 export default async function NestedDetails({ arrayId }: MenuDetailsProps) {
-  // const data: ProjectProps = await findDataById(arrayId); // in case fo local data
-  const data = await findDataById(arrayId);
+  const data: ProjectProps = await findDataById(arrayId);
 
   return (
     <>
