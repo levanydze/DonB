@@ -12,7 +12,7 @@ interface GuyWithServicesProps {
 
 export default function GuyWithServices({ image }: GuyWithServicesProps) {
   const { isIntersecting, ref } = useIntersectionObserver({});
-  const { houseIcon, paintIcon, roofIcon } = assetsJson;
+  // const { houseIcon, paintIcon, roofIcon } = assetsJson;
 
   return (
     <div className="container1">
@@ -29,9 +29,9 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
               isIntersecting ? "moveRight" : null
             }`}
           >
-            <EachService icon={paintIcon} title="Basement" url="./" />
-            <EachService icon={roofIcon} title="Floor & Roofs" url="./" />
-            <EachService icon={houseIcon} title="Management" url="./" />
+            {/* <EachService icon={paintIcon} title="Basement" url="./" /> */}
+            {/* <EachService icon={roofIcon} title="Floor & Roofs" url="./" /> */}
+            {/* <EachService icon={houseIcon} title="Management" url="./" /> */}
           </div>
           <Image
             className={styles.image}
@@ -45,9 +45,9 @@ export default function GuyWithServices({ image }: GuyWithServicesProps) {
               isIntersecting ? "moveLeft" : null
             }`}
           >
-            <EachService icon={roofIcon} title="Floor & Roofs" url="./" />
-            <EachService icon={houseIcon} title="Management" url="./" />
-            <EachService icon={paintIcon} title="Basement" url="./" />
+            {/* <EachService icon={roofIcon} title="Floor & Roofs" url="./" /> */}
+            {/* <EachService icon={houseIcon} title="Management" url="./" /> */}
+            {/* <EachService icon={paintIcon} title="Basement" url="./" /> */}
           </div>
         </div>
       </div>
