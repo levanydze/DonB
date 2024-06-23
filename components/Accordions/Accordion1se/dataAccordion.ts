@@ -1,47 +1,47 @@
 export const accordionItems = [
   {
-    title: "How many kilos can loft bed hold?",
+    title: "Hur många kilon tål loftet?",
     content:
-      "Normally we attach loft bed to the walls with appr. 14 special screws. Each and everyone can hold up to 70 kilos. On top of this, loft bed is also hanging on specially made ceiling mount which can hold extra 500 kilos. Or alternatively, loft bed is held by ladder or stairs. Shortly: our loft beds are extremely stable and they can hold weight of as many people as can fit on the bed, plus some more.",
+      "Vanligtvis sitter loftet monterat med sammanlagt 14 st. special skruvar. Varje skruv bär lätt upp ungefär 70 kg. Utöver detta hänger loftet på en specialtillverkad takfäste som bär ungefär 500 kg. Eller så bär stegen upp ett hörn av sängen. Kort sagt: loftet är mycket stabilt och det tål mer personer än som kan få plats på det.",
   },
   {
-    title: "What is the damage that's left after loft bed?",
+    title: "Vad blir det för åverkan på lägenheten?",
     content:
-      "It usually is up to 14 small holes (8-10 mm diameter) in the wall. These holes can easily be filed and removed with spackle.",
+      "Det blir normalt 14 st. borrhål i väggen som är 8-10 mm i diameter. Dessa går lätt att spackla igen. Detta är all åverkan som blir.",
   },
   {
-    title: "How long does the work take?",
+    title: "Hur lång tid tar arbetet?",
     content:
-      "It all depends on what design you choose. But after we have prepared everything in our workshop the work in the apartment takes 1 to 3 days.",
+      "Allt beror på vilken design ni väljer. Men arbetet i lägenheten tar vanligtvis 1-3 arbetsdagar. Då har vi förberett materialet på vårt snickeri redan innan.",
   },
   {
-    title: "How high should the loft bed be hanging?",
+    title: "Hur högt upp ska loftet vara?",
     content:
-      "The height is of course depending on how big space do you want to have above or under the bed. Minimum space that we recommend between madras and ceiling is 70 cm. Then you need to add the thickness of your madras and thickness of loft bed, which is around 9 cm (depending on the design). The rest is the free space you get under your loft bed.",
+      "Loftets höjd beror naturligtvis på hur mycket plats man vill ha över respektive under. Vi rekommenderar minst 70 cm mellan tak och madrass. Lägg sedan till madrassens tjocklek plus 9 cm vilket motsvarar loftets tjocklek (beroende på design). Det som återstår av rummets takhöjd motsvarar frigången under loftet.",
   },
   {
-    title: "What type of madras can I use on my loft bed?",
+    title: "Vilken typ av madrass får jag använda?",
     content:
-      "You can use any kind of madras you want. It can be sponge or wooden framed madras.",
+      "Du kan använda vilken madrass som helst, allt ifrån skumgummi till resårsäng. ",
   },
   {
-    title: "Is the ladder removable?",
+    title: "Är stegen löstagbar?",
     content:
-      "We have a big variety of ladders. You can absolutely get removable ladder which you can put up on the loftbed or hang on the side when you are not using loft bed anymore.",
+      "Vi har flera olika alternativ av stegar, det beror på hur man vill ha det. Man kan få en löstagbar stege som man antingen lägger på loftet eller så hänger man bredvid, när man inte använder loftet.",
   },
   {
-    title: "Can I get the safety fence on the loft bed?",
+    title: "Kan jag få räcket?",
     content:
-      "If you want to feel extra safe up there you can absolutely get a safety fence from us in addition. It can either be removable or stationary fence, it is also up to you.",
+      "Vill man känna sig extra trygg i loftet kan man välja ett räcke som komplement. Räcket kan vara fast monterat eller löstagbart. ",
   },
   {
-    title: "What kind of material do you use?",
+    title: "Vad använder ni för material?",
     content:
-      "We use pine, oak, etc. Wood can either be untouched and natural color or painted, oiled, patinated or refined with different sorts of stains.  ",
+      "Vi bygger i obehandlad furu, gran, ek m.m. Man kan ha det obehandlat om man vill, det blir mörkare och blankare med tiden. Annars kan man olja, betsa, lacka eller måla det.",
   },
   {
-    title: "Do you do inspection?",
+    title: "Gör ni besiktning?",
     content:
-      "Absolutely. Once you have contacted us and are interested, we come by and do the inspection for free. We inspect walls where the loft bed is going to be. Afterwards, if you have already decided the design, we explain where and how loft bed is going to be mounted. Or, alternatively, you can get advise, sketch and design from us.",
+      "Om du är intresserad så kontaktar ni oss så kommer vi förbi och kollar på väggarna. Om du har redan valt design vi ger dig förslag hur loftet kan monteras. Eller så får du sketch och design av oss enligt din ide.Därefter får du antingen boka tid för bygget eller avvakta och fundera vidare.OBS besiktningen är alltid gratis!",
   },
 ];

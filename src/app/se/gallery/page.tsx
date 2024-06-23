@@ -10,8 +10,8 @@ export default function projectsPage() {
     <div className="fadeOut">
       <PageHeadSpace />
       <ItemsArray
-        title="se Recently Completed Projects"
-        span="se Our Work"
+        title="Nyligen gjorda projekt"
+        span="Våra byggen"
         arrayNumber={99}
       />
     </div>

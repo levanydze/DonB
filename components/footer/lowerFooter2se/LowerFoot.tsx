@@ -12,7 +12,7 @@ export default function LowerFoot() {
           <Link href={"https://chachaweb.se"}>
             DESIGNED AND POWERED BY CHACHA AB
           </Link>
-          <p>Alla rättigheter förbehållna &copy; {companyFullName} </p>
+          <p>Eftertryck förbjudes &copy; {companyFullName} </p>
         </div>
       </section>
     </div>

@@ -61,7 +61,7 @@ export default async function ItemsArray({
           {arrayNumber < 99 && (
             <div className={styles.buttonDiv}>
               <Link href="/se/gallery" className="button3">
-                se View All Projects
+                Alla projekt
               </Link>
             </div>
           )}

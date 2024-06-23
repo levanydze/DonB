@@ -9,8 +9,8 @@ export default function AboutPage() {
     <div className="fadeOut">
       <PageHeadSpace />
       <ItemsServicesArray
-        title="se Our Services"
-        span="se Services You Can Order"
+        title="Våra tjänster"
+        span="Tjänster du kan beställa"
         arrayNumber={99}
       />
     </div>

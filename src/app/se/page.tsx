@@ -26,18 +26,18 @@ export default function Home() {
         button1Target="/se/contact"
         button1Value="Börja nu"
         mainTitle="Sovloft. WIC och platbyggda garderober. Skräddarsydda bokhyllor."
-        text="Om du kan drömma det - kan vi bygga det!"
+        text="Om du kan drömma det - vi kan bygga det!"
       />
       <ItemsServicesArray
         arrayNumber={3}
-        title="se Services We Offer"
-        span="se Our Work"
+        title="Våra tjänster"
+        span="Våra byggen"
       />
       <FourText />
       <ItemsArray
         arrayNumber={6}
-        title="se Recently Done Projects"
-        span="se Our Work"
+        title="Nyligen gjorda projekt"
+        span="Våra byggen"
       />
       <GooglrReviews />
       <Instagram />
