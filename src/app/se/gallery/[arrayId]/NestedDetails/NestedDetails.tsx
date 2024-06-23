@@ -24,7 +24,7 @@ export default async function NestedDetails({ arrayId }: MenuDetailsProps) {
               <p className="text1 ">{data.describtionSVE}</p>
             </div>
             <Link className="button3" href="/se/contact">
-              se Get Yours
+              Skaffa din
             </Link>
           </div>
         </section>
