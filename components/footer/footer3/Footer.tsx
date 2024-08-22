@@ -19,7 +19,7 @@ export default function footer() {
           <div className={styles.contactInfo}></div>
           <div className={styles.rightSide}>
             <div className={styles.footContact}>
-              <Link href={"/contact"}>Contact</Link>
+              <Link href={"en/contact"}>Contact</Link>
             </div>
             <FotMapping />
             <FotSocialMap />

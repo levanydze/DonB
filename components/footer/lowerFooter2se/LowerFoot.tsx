@@ -9,9 +9,9 @@ export default function LowerFoot() {
     <div className="container2">
       <section>
         <div className={styles.lowerWrap}>
-          <Link href={"https://chachaweb.se"}>
-            DESIGNED AND POWERED BY CHACHA AB
-          </Link>
+          {/* <Link href={"https://levanidze.com"}> */}
+          {/* DESIGNED AND POWERED BY Levanidze.com */}
+          {/* </Link> */}
           <p>Eftertryck förbjudes &copy; {companyFullName} </p>
         </div>
       </section>
