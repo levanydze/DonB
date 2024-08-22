@@ -9,7 +9,7 @@
 }
 .lowerWrap a {
   letter-spacing: 1px;
-  color: var(--gray8);
+  color: var(--gray6);
 }
 @media (max-width: 700px) {
   .lowerWrap {

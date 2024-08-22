@@ -10,7 +10,7 @@ export default function LowerFoot() {
       <section>
         <div className={styles.lowerWrap}>
           <Link href={"https://levanidze.com"}>
-            DESIGNED AND POWERED BY Levanidze.com
+            DESIGNED AND POWERED BY LEVANIDZE.COM
           </Link>
           <p>Eftertryck förbjudes &copy; {companyFullName} </p>
         </div>
